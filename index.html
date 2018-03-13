@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>TraditionalFire&apos;s Skyrim Mods, Tools, and Merges</title>
+    <title>traditional-fire&apos;s Skyrim Setup</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/loader.css">
     <style type="text/css">
         body {
+            min-height: 75rem;
+            padding-bottom: 4.5rem;
+            padding-top: 4.5rem;
+        }
+        
+        main button,
+        main .btn,
+        main p,
+        main dt,
+        main dd,
+        main td,
+        main th,
+        main .dropdown-menu,
+        main .form-control,
+        main .navbar,
+        .modal-body button,
+        .modal-body p,
+        .modal-body dt,
+        .modal-body dd,
+        .modal-footer button {
             font-size: 0.8rem;
         }
         
@@ -14,99 +35,157 @@
             display: block;
         }
         
-        .h2,
-        h2 {
-            font-size: 1.75rem;
-        }
-        
         p+ul {
             margin-top: -0.75rem;
+        }
+        
+        section.invisible {
+            display: none;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Documentation: https://getbootstrap.com/docs/4.0/getting-started/introduction/ -->
+    <!-- Bootstrap 4 documentation: https://getbootstrap.com/docs/4.0/getting-started/introduction/ -->
 
-    <div id="container-fluid" class="card">
-        <nav class="card-header text-center">
-            <ul class="nav nav-tabs card-header-tabs" role="tablist">
-                <li class="nav-item"><a class="nav-link active" id="mods-nav" href="#mods" data-toggle="tab" role="tab">Mods</a></li>
-                <li class="nav-item"><a class="nav-link" id="tools-nav" href="#tools" data-toggle="tab" role="tab">Tools</a></li>
-                <li class="nav-item"><a class="nav-link" id="merges-nav" href="#merges" data-toggle="tab" role="tab">Merges</a></li>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbar-top">
+        <a class="navbar-brand" href="?view=mods">traditional-fire&apos;s Skyrim Setup</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-top-content"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbar-top-content">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" id="navbar-top-mods">
+                    <a class="nav-link" href="?view=mods">Mods</a>
+                </li>
+                <li class="nav-item" id="navbar-top-tools">
+                    <a class="nav-link" href="?view=tools">Tools</a>
+                </li>
+                <li class="nav-item" id="navbar-top-merges">
+                    <a class="nav-link" href="?view=merges">Merges</a>
+                </li>
             </ul>
-        </nav>
-        <div class="tab-content">
-            <section id="mods" class="row-fluid card-body tab-pane fade show active" role="tabpanel">
-                <div class="table-responsive table-sm row-fluid">
-                    <h2 class="card-title text-center">Mods</h2>
-                    <table id="mods-table" class="table table-striped table-hover">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Name</th>
-                                <th>Source</th>
-                                <th>Version(s)</th>
-                                <th>Category</th>
-                                <th>Merged to</th>
-                                <th>Status</th>
-                                <th>Comments</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
-                </div>
-                <nav id="pagination" class="row-fluid">
-                </nav>
-                <div id="mod-stats" class="row-fluid">
-                </div>
-            </section>
-            <section id="tools" class="row-fluid card-body tab-pane fade" role="tabpanel">
-                <div class="table-responsive table-sm row-fluid">
-                    <h2 class="card-title text-center">Tools</h2>
-                    <table id="tools-table" class="table table-striped table-hover">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Name</th>
-                                <th>Source</th>
-                                <th>Version</th>
-                                <th>Status</th>
-                                <th>Comments</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-            <section id="merges" class="row-fluid card-body tab-pane fade" role="tabpanel">
-                <div class="table-responsive table-sm row-fluid">
-                    <h2 class="card-title text-center">Merged .esps</h2>
-                    <table id="merges-table" class="table table-striped table-hover">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Name</th>
-                                <th>Rebuild navmesh after merge?</th>
-                                <th>Comments</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
         </div>
-    </div>
+    </nav>
 
-    <div class="modal fade" id="mod-modal" tabindex="-1" role="dialog">
+    <main class="container-fluid" id="container-main" role="main">
+        <section class="row-fluid text-center visible" id="loading">
+            <div class="lds-default">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+        <section class="row-fluid invisible" id="mods">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mods-content"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbar-mods-content">
+                    <span class="navbar-brand">Filters:</span>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="mods-view-navbar-dropdown" href="#">View</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" id="filter-all-mods" href="?view=mods&amp;show=all">All mods</a>
+                                <a class="dropdown-item" id="filter-mods-by-page" href="?view=mods">By page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="mods-category-navbar-dropdown" href="#">Categories</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">All</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="mods-source-navbar-dropdown" href="#">Sources</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">All</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+
+            <div class="table-responsive row-fluid">
+                <table class="table table-striped table-hover table-sm" id="table-mods">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Source</th>
+                            <th scope="col">Version(s)</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Merged to</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <nav class="row-fluid" id="pagination-mods">
+            </nav>
+
+            <div class="row-fluid" id="stats-mods">
+            </div>
+        </section>
+
+        <section class="row-fluid invisible" id="tools">
+            <div class="table-responsive row-fluid">
+                <table class="table table-striped table-hover table-sm" id="table-tools">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Source</th>
+                            <th scope="col">Version</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="row-fluid invisible" id="merges">
+            <div class="table-responsive row-fluid">
+                <table class="table table-striped table-hover table-sm" id="table-merges">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Rebuild navmesh after merge?</th>
+                            <th scope="col">Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="modal-mods" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header" id="mod-modal-header">
-                    <h5 class="modal-title" id="mod-modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title" id="modal-mods-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
                 </div>
-                <div class="modal-body" id="mod-modal-content">
+                <div class="modal-body" id="modal-mods-content">
                     <p>Modal content</p>
                 </div>
                 <div class="modal-footer">
@@ -116,14 +195,14 @@
         </div>
     </div>
 
-    <div class="modal fade" id="merge-modal" tabindex="-1" role="dialog">
+    <div class="modal fade" id="modal-merges" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header" id="merge-modal-header">
-                    <h5 class="modal-title" id="merge-modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="modal-header" id="modal-merges-header">
+                    <h5 class="modal-title" id="modal-merges-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
                 </div>
-                <div class="modal-body" id="merge-modal-content">
+                <div class="modal-body" id="modal-merges-content">
                     <p>Modal content</p>
                 </div>
                 <div class="modal-footer">

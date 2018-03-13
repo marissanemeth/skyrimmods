@@ -2,20 +2,29 @@
     "lastUpdated": "2018-03-05",
     "status": "incomplete",
     "mods": [{
+            "name": "Test mod",
+            "url": "",
+            "source": "N/A",
+            "versions": "1.0",
+            "category": "N/A",
+            "status": "Disabled",
+            "comments": "<p>This is fake and just a test.</p>"
+        },
+        {
             "name": "2K Ancient Nordic Pickaxe Retexture",
             "url": "http://www.nexusmods.com/skyrim/mods/74220/?",
             "source": "Nexus",
             "versions": "1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "2K Sign Overhaul",
             "url": "http://www.nexusmods.com/skyrim/mods/72080/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "2spooky4me ghosts",
@@ -35,15 +44,15 @@
             "url": "http://www.nexusmods.com/skyrim/mods/3583/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "9204 Bless Armor Pack by Team TAL",
             "url": "https://www.patreon.com/posts/9204-bless-armor-14816824",
             "source": "Patreon",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -51,8 +60,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/69378/?",
             "source": "Nexus",
             "versions": "4 September 2015",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "A lute from Witcher 3",
@@ -62,15 +71,15 @@
                 "A lute": "FIX",
                 "Lute for loadscreen": "13 March 2016"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "A Matter of Time - A HUD Clock Widget",
             "url": "http://www.nexusmods.com/skyrim/mods/44091/?",
             "source": "Nexus",
             "versions": "2.0.7",
-            "category": "User Interfaces",
+            "category": "UI",
             "status": "Enabled",
             "hasEsps": "y",
             "mergedFiles": {
@@ -88,7 +97,7 @@
                 "Add-On - New World Map Objects": "8.4HRWM",
                 "Add-On - Clear Map Skies": "9.0.1CMS"
             },
-            "category": "User Interfaces",
+            "category": "UI",
             "status": "Enabled",
             "mergedFiles": {
                 "Interfaces - Merged.esp": [
@@ -101,7 +110,7 @@
             "url": "",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Original post/blog deleted</p><p>Removed worldspace, NPC edits</p><p>Removed extraneous container + renamed other one to something logical in English</p><p>Removed cloth versions</p>"
         },
@@ -110,7 +119,7 @@
             "url": "https://www.flickr.com/photos/125472966@N04/15323425636",
             "source": "Flickr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Removed cell edits</p><p>Renamed items</p>"
         },
@@ -132,8 +141,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/59519/?",
             "source": "Nexus",
             "versions": "1.02",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "AddItemMenu - Ultimate Mod Explorer",
@@ -148,7 +157,7 @@
             "url": "https://www.nexusmods.com/skyrim/mods/50998/?",
             "source": "Nexus",
             "versions": "1.25",
-            "category": "Animation - Poses",
+            "category": "Poses",
             "status": "Enabled",
             "hasEsps": "n",
             "comments": "<p>Moved/renamed files to replace 15th module of Public Poser since Halo&apos;s Poser has changed since this was released</p>"
@@ -158,7 +167,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/28951/?",
             "source": "Nexus",
             "versions": "1.6",
-            "category": "Audio - Music",
+            "category": "Audio",
             "status": "Enabled",
             "mergedFiles": {
                 "Audio - Merged.esp": [
@@ -172,7 +181,7 @@
             "url": "http://ninirim.tistory.com/46",
             "source": "Ninirm",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -185,7 +194,7 @@
             "url": "http://wtfuun.tumblr.com/post/147015338295/adler-armor-uunp-hdt-need-this-by-ninirim",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -196,7 +205,7 @@
                 "Main file": "1.2",
                 "UUNP HDT Bodslide Sliders": "1.1"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -219,7 +228,7 @@
             "url": "http://robton.nu/aether-suite-house-of-dibella-unprt/",
             "source": "Robton&apos;s Mods",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -227,7 +236,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/74766/?",
             "source": "Nexus",
             "versions": "1.2",
-            "category": "Textures & Meshes",
+            "category": "Textures | Meshes",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -240,8 +249,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/32635/?",
             "source": "Nexus",
             "versions": "1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "All Thieves Guild Jobs Concurrently",
@@ -261,7 +270,7 @@
             "url": "http://www.loverslab.com/files/file/2476-all-in-one-hdt-animated-pussy/",
             "source": "LoversLab",
             "versions": "3.3",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled",
             "nsfw": "y",
             "comments": "<p>Only HDT-related files installed</p>"
@@ -271,7 +280,7 @@
             "url": "http://aloe-ygroot.tumblr.com/post/115535676262/aloe-poser-%E5%87%BA%E6%9D%A5%E3%81%9F%E3%82%88",
             "source": "Tumblr",
             "versions": "0.1",
-            "category": "Animation - Poses",
+            "category": "Poses",
             "status": "Enabled",
             "mergedFiles": {
                 "Poses - Merged.esp": [
@@ -299,8 +308,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/51130/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "aMidianBorn Book of Silence",
@@ -314,8 +323,8 @@
                 "Unique Items": "1.9",
                 "Weapons": "1.9"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC",
+            "category": "SMC",
+            "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
                     "aMidianBorn_ContentAddon.esp"
@@ -328,32 +337,32 @@
             "url": "http://www.nexusmods.com/skyrim/mods/39190/?",
             "source": "Nexus",
             "versions": "3",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "aMidianBorn Hide and Studded Hide",
             "url": "http://www.nexusmods.com/skyrim/mods/26770/?",
             "source": "Nexus",
             "versions": "Nexus",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "aMidianBorn imperial light and studded",
             "url": "http://www.nexusmods.com/skyrim/mods/50887/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "aMidianBorn Landscape",
             "url": "http://www.nexusmods.com/skyrim/mods/37865/?",
             "source": "Nexus",
             "versions": "5",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "aMidianBorn Solstheim Landscape",
@@ -368,16 +377,16 @@
             "url": "http://www.nexusmods.com/skyrim/mods/45692/?",
             "source": "Nexus",
             "versions": "1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "aMidianBorn Whiterun",
             "url": "http://www.nexusmods.com/skyrim/mods/38491/?",
             "source": "Nexus",
             "versions": "2.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Amulets of Skyrim",
@@ -390,7 +399,7 @@
                 "Lifted up meshes for Male model": "4.01",
                 "Update file": "4.061"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -406,7 +415,7 @@
             "versions": {
                 "4K": "1.03"
             },
-            "category": "Textures &amp; Meshes - SMC",
+            "category": "SMC",
             "status": "Disabled",
             "comments": "<p>No longer part of SMC?</p>"
         },
@@ -415,7 +424,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/54423/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -424,7 +433,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/69740/?",
             "source": "Nexus",
             "versions": "1.01",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -435,8 +444,8 @@
                 "4K": "1.01",
                 "Ancient Automatons 4K": "1.06"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Ancient Nord Pickaxe Replacer",
@@ -446,15 +455,15 @@
                 "2K": "1",
                 "Rusted - 2K": "1"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Angelika Amulets",
             "url": "http://tes-game.ru/load/skyrim/bronja_i_odezhda/4199/39-1-0-5600",
             "source": "TES-GAME.RU",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -504,8 +513,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/48287/?",
             "source": "Nexus",
             "versions": "1.9",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Animated Dragon Wings",
@@ -533,8 +542,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/7255/?",
             "source": "Nexus",
             "versions": "Nexus",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Apachii Divine Elegance Store",
@@ -549,7 +558,7 @@
                 "UNP conversion v5": "1.4",
                 "UUNP Bodyslide HDT_v_1_0": "1.0"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Disabled included patch (why racial edits??)</p><p>Removed cell, container, door, faction, furniture, head part, leveled item, light, location, magic effect, movable static, navigation mesh info map, NPC, outfit, package, race, and worldspace entries</p><p>Removed crafting recipes</p><p>Removed unwanted items<br>Removed unreferenced entries</p>"
         },
@@ -562,7 +571,7 @@
                 "Full": "1.6.Full",
                 "Male": "1.2"
             },
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled",
             "comments": "<p>Mod enabled to provide assets to NPC overhauls but ESP files hidden</p>"
         },
@@ -576,7 +585,7 @@
                 "Male retexture": "2.0",
                 "Update to 2.4": "2.4"
             },
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled"
         },
         {
@@ -599,7 +608,7 @@
                 "Main file": "5.0a",
                 "Warmonger Armory Compatibility Patch": "5.0a"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -629,8 +638,8 @@
                 "HD Argonian Scars": "1.0",
                 "HD Nostrils Tintmask": "1.0"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Armor of Intrigue",
@@ -642,7 +651,7 @@
                 "Beast Races Fix Update": "16 June 2013",
                 "Update": "23 October 2013"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -660,7 +669,7 @@
                 "Meshes for UNPB body with and without High Heel System": "1.21",
                 "Texture 2K for All Bodies": "1.21"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Removed worldspace edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -669,15 +678,15 @@
             "url": "http://www.nexusmods.com/skyrim/mods/68660/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Arsenic Pose",
             "url": "http://skyarsenic.tumblr.com/post/143757593163/arsenic-pose-2-released-yes-its-done-woo-hoo",
             "source": "Tumblr",
             "versions": "2",
-            "category": "Animation - Poses",
+            "category": "Poses",
             "status": "Enabled",
             "mergedFiles": {
                 "Poses - Merged.esp": [
@@ -703,8 +712,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/1838/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Ash Rocks - Solstheim ash improvements for Dragonborn DLC",
@@ -714,15 +723,15 @@
                 "Main file": "1.2.1",
                 "Skyrim Realistic Texture Overhaul Dragonborn Addon - fixed": "1.0"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Ashara Dimonized Dress and jewelry - UNP - Male",
             "url": "http://www.nexusmods.com/skyrim/mods/14146/?",
             "source": "Nexus",
             "versions": "4.1",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Removed cell and NPC edits</p><p>Added breakdown recipes and CCOR compatibility</p><p>Remove bear and falmer eye items</p>"
         },
@@ -735,7 +744,7 @@
                 "Boots BETA": "1.1",
                 "Stockings without ribbon and stripes": "1.0"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -743,7 +752,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/57613/?",
             "source": "Nexus",
             "versions": "Nexus",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -752,7 +761,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/18008/?",
             "source": "Nexus",
             "versions": "5.4",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -766,7 +775,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/26089/?",
             "source": "Nexus",
             "versions": "0.3",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -777,7 +786,7 @@
                 "Main file": "1.1",
                 "The Ashy Spellsword": "Beta"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -790,7 +799,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/74045/?",
             "source": "Nexus",
             "versions": "2.0",
-            "category": "User Interfaces",
+            "category": "UI",
             "status": "Enabled"
         },
         {
@@ -817,8 +826,8 @@
             "url": "",
             "source": "Nexus",
             "versions": "",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC",
+            "category": "SMC",
+            "status": "Enabled",
             "comments": "<p>No longer available on Nexus</p>"
         },
         {
@@ -860,14 +869,14 @@
             "url": "http://www.nexusmods.com/skyrim/mods/66263/?",
             "source": "Nexus",
             "versions": "2.0",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "AYUMI- Alternative facial diffuse for FAIR SKIN",
             "url": "http://enya67.tumblr.com/post/171569054632/massivemaster-ayumi-alternative-facial-diffuse",
             "source": "Tumblr",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Downloaded"
         },
         {
@@ -875,7 +884,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/16438/?",
             "source": "Nexus",
             "versions": "1.2",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Installed only assets for CCOR</p>"
         },
@@ -884,7 +893,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/22119/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Installed only assets for CCOR</p>"
         },
@@ -893,23 +902,23 @@
             "url": "http://www.nexusmods.com/skyrim/mods/63902/?",
             "source": "Nexus",
             "versions": "2.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Barenziah&apos;s Glowing - 1k Stones - New Colors",
             "url": "http://www.nexusmods.com/skyrim/mods/67239/?",
             "source": "Nexus",
             "versions": "2.0",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Baskets and Woven Decoratives UHD",
             "url": "http://www.nexusmods.com/skyrim/mods/38328/?",
             "source": "Nexus",
             "versions": "1.11",
-            "category": "Textures &amp; Meshes - SMC",
+            "category": "SMC",
             "status": "Disabled",
             "comments": "<p>No longer part of SMC?</p>"
         },
@@ -918,7 +927,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/34539/?",
             "source": "Nexus",
             "versions": "2.5",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled",
             "mergedFiles": {
                 "Body Hair Face - Merged.esp": [
@@ -932,7 +941,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/69681/?",
             "source": "Nexus",
             "versions": "1.5",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -946,23 +955,23 @@
             "url": "http://robton.nu/bd-leather-robe-tmb/",
             "source": "Robton&apos;s Mods",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
-            "status": "<p>Disabled</p>"
+            "category": "Equipment",
+            "status": "Disabled"
         },
         {
             "name": "BDLeatherRobe SevenBase 7B Cleavage BBP",
             "url": "http://mods247.blogspot.no/2014/07/bdleatherrobe-sevenbase-7b-bombshell-bbp.html",
             "source": "mods24/7",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
-            "status": "<p>Disabled</p>"
+            "category": "Equipment",
+            "status": "Disabled"
         },
         {
             "name": "BDO Ahon Kirus UUNP",
             "url": "https://kokoro-uunpwardrobe.tumblr.com/post/167867381809/bdo-ahon-kirus-uunp-download-require-bdo-armor",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Original is part of BDO Pirated Mods</p>"
         },
@@ -971,7 +980,7 @@
             "url": "http://regenbot.tistory.com/60",
             "source": "ReGenBot Nest",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment02 - Merged.esp": [
@@ -984,7 +993,7 @@
             "url": "http://wtfuun.tumblr.com/post/152106990385/bdo-clead-cuirass-retouched-uunp-hdt-require-the",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -992,7 +1001,7 @@
             "url": "http://wtfuun.tumblr.com/post/163518304990/wtfuuun-bdo-cokro-cuirass-femver-uunp-hdt",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "???",
             "comments": "<p>Original is part of BDO Pirated Mods</p><p>But the .esp was referring to a standalone, so I modified it to overwrite the main pack</p>"
         },
@@ -1001,7 +1010,7 @@
             "url": "http://wtfuun.tumblr.com/post/163086623570/wtfuuun-bdo-crowned-eagle-uunp-bs-require-the",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Original is part of BDO Pirated Mods</p>"
         },
@@ -1010,7 +1019,7 @@
             "url": "http://www.loverslab.com/topic/38362-project-unified-unp/?p=1997907",
             "source": "LoversLab",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Original is part of BDO Pirated Mods</p>"
         },
@@ -1019,7 +1028,7 @@
             "url": "http://wtfuun.tumblr.com/post/162477584530/wtfuuun-bdo-ignis-dress-uunp-bs-hdt-require-the",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Original is part of BDO Pirated Mods</p>"
         },
@@ -1028,7 +1037,7 @@
             "url": "http://wtfuun.tumblr.com/post/162700290395/wtfuuun-bdo-india-outfit-uunp-bs-hdt-require",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Original is part of BDO Pirated Mods</p>"
         },
@@ -1037,7 +1046,7 @@
             "url": "http://wtfuun.tumblr.com/post/162454098540/wtfuuun-i-heard-that-some-people-still-need",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Original is part of BDO Pirated Mods</p>"
         },
@@ -1046,7 +1055,7 @@
             "url": "http://eskrimmods.blogspot.com/2017/08/bdo-pack-ii-v10-by-team-tal-hdt-cloth.html",
             "source": "ESkyrim",
             "versions": "",
-            "category": "Armor &amp; Weapon Collections",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment02 - Merged.esp": [
@@ -1059,7 +1068,7 @@
             "url": "https://www.reddit.com/r/modpiracy/comments/6x71s0/whatcha_lookin_for/",
             "source": "Reddit",
             "versions": "",
-            "category": "Armor &amp; Weapon Collections",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Only the ones I wanted are installed - the rest are moved to the mod archive</p>"
         },
@@ -1068,7 +1077,7 @@
             "url": "http://wtfuun.tumblr.com/post/162651793090/wtfuuun-bdo-shudad-cuirass-uunp-bs-require-the",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Original is part of BDO Pirated Mods</p>"
         },
@@ -1077,7 +1086,7 @@
             "url": "http://regenbot.tistory.com/95",
             "source": "ReGenBot Nest",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -1085,7 +1094,7 @@
             "url": "https://kokoro-uunpwardrobe.tumblr.com/post/167804385434/bdo-tyrie-armor-uunp-download-require-bdo-armor?is_related_post=1",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Original is part of BDO Pirated Mods</p>"
         },
@@ -1094,7 +1103,7 @@
             "url": "http://wtfuun.tumblr.com/post/163146812050/wtfuuun-bdo-valkyrie-armor-uunp-hdt-require-the",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Original is part of BDO Pirated Mods</p>"
         },
@@ -1103,7 +1112,7 @@
             "url": "http://wtfuun.tumblr.com/post/155242801090/bdo-valkyrie-venslar-retouched-uunp-hdt-require",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment02 - Merged.esp": [
@@ -1116,7 +1125,7 @@
             "url": "http://regenbot.tistory.com/63",
             "source": "RegenBot Nest",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Standalone version of a BDO Pack armor</p>"
         },
@@ -1125,7 +1134,7 @@
             "url": "https://kokoro-uunpwardrobe.tumblr.com/post/167801878934/bdo-venslar-uunp-download-require-team-tals",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Original is part of BDO Pirated Mods</p>"
         },
@@ -1134,7 +1143,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/28363/?",
             "source": "Nexus",
             "versions": "4.1",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled",
             "mergedFiles": {
                 "Body Hair Face - Merged.esp": [
@@ -1161,16 +1170,16 @@
             "url": "http://www.nexusmods.com/skyrim/mods/3621/?",
             "source": "Nexus",
             "versions": "1.7",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Better Chopping Block",
             "url": "https://www.nexusmods.com/skyrim/mods/22654/",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Better Console",
@@ -1185,16 +1194,16 @@
             "url": "http://www.nexusmods.com/skyrim/mods/15701/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Better Dwemer Spider Textures",
             "url": "http://www.nexusmods.com/skyrim/mods/51270/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Better Falskaar and Wyrmstooth Map With Roads",
@@ -1209,8 +1218,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/16611/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Better Horse Pain Sounds",
@@ -1245,7 +1254,7 @@
                 "High Res Male Face Makeup for SKSE": "1.0",
                 "High Res Vanilla Male and Female Blackblood Warpaints for SKSE": "1.0"
             },
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled"
         },
         {
@@ -1253,15 +1262,15 @@
             "url": "http://www.nexusmods.com/skyrim/mods/62991/?",
             "source": "Nexus",
             "versions": "2.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Better Nirnroot - Hi-Res 2K Textures",
             "url": "http://www.nexusmods.com/skyrim/mods/36457/?",
             "source": "Nexus",
             "versions": "2",
-            "category": "Textures &amp; Meshes - SMC",
+            "category": "SMC",
             "status": "Enabled"
         },
         {
@@ -1277,7 +1286,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/28491/?",
             "source": "Nexus",
             "versions": "02b",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled"
         },
         {
@@ -1293,7 +1302,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/79740/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -1301,7 +1310,7 @@
             "url": "http://robton.nu/bewitching-clothes-tmb/",
             "source": "Robton&apos;s Mods",
             "versions": "29.10.16",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -1309,7 +1318,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/72626/?",
             "source": "Nexus",
             "versions": "1.2",
-            "category": "NPCs &amp; Followers",
+            "category": "NPCs | Followers",
             "status": "Disabled",
             "comments": "<p>NPC overhaul #11</p><p>Patched a few things for USLEEP that were missed</p><p>REPLACED WITH BIJIN WARMAIDENS 3.1.2</p>"
         },
@@ -1318,7 +1327,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/71054/?",
             "source": "Nexus",
             "versions": "1.2",
-            "category": "NPCs &amp; Followers",
+            "category": "NPCs | Followers",
             "status": "Enabled",
             "comments": "<p>NPC overhaul #10</p>"
         },
@@ -1331,7 +1340,7 @@
                 "AIO for USLEEP users": "16 March 2017",
                 "High-resolution skin textures for UNP": "3.1.2"
             },
-            "category": "NPCs &amp; Followers",
+            "category": "NPCs | Followers",
             "status": "Enabled",
             "mergedFiles": {
                 "NPCs - Merged.esp": [
@@ -1349,7 +1358,7 @@
                 "Fix for Temba hands texture path": "1.1.1",
                 "High-resolution skin textures for UNP": "1.1"
             },
-            "category": "NPCs &amp; Followers",
+            "category": "NPCs | Followers",
             "status": "Enabled",
             "comments": "<p>NPC overhaul #9</p>"
         },
@@ -1384,15 +1393,15 @@
             "url": "http://www.nexusmods.com/skyrim/mods/18818/?",
             "source": "Nexus",
             "versions": "0.9b",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Blacktalon Armor - TMB",
             "url": "http://robton.nu/blacktalon-armor-tmb/",
             "source": "Robton&apos;s Mods",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -1400,7 +1409,7 @@
             "url": "http://mods247.blogspot.com/2014/02/blacktalon-armor-for-unp.html",
             "source": "mods24/7",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -1412,7 +1421,7 @@
                 "Main file": "1.6",
                 "Sky Haven Temple esp": "1.0"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Removed worldspace edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -1432,7 +1441,7 @@
             "url": "http://ninirim.tistory.com/79",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -1445,7 +1454,7 @@
             "url": "http://wtfuun.tumblr.com/post/153558672755/bless-00022-dress-uunp-hdt-install-the-original",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -1453,7 +1462,7 @@
             "url": "http://regenbot.tistory.com/66",
             "source": "ReGenBot Nest",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -1461,7 +1470,7 @@
             "url": "http://devrabbitxx.tumblr.com/post/168364117179/ninirim-gif-by-ddppl-bless-hv-0102-all",
             "source": "Patreon",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -1469,7 +1478,7 @@
             "url": "http://skyrimfollower.blog.fc2.com/blog-entry-16.html",
             "source": "Skyrim Girls",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -1477,7 +1486,7 @@
             "url": "https://www.loverslab.com/topic/38362-project-unified-unp/?do=findComment&comment=2055746",
             "source": "LoversLab",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -1485,7 +1494,7 @@
             "url": "http://ninirimpiracy.blog.fc2.com/",
             "source": "Ninirim Piracy",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -1493,7 +1502,7 @@
             "url": "http://ninirim.tistory.com/77",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -1501,7 +1510,7 @@
             "url": "http://wtfuun.tumblr.com/post/153338645460/bless-md0007-uunp-hdt-install-the-original-mod",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -1509,7 +1518,7 @@
             "url": "http://ninirim.tistory.com/76",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -1517,7 +1526,7 @@
             "url": "http://wtfuun.tumblr.com/post/152856974125/bless-md3001-outfit-uunp-hdt-optional-unpb",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -1525,7 +1534,7 @@
             "url": "http://wtfuun.tumblr.com/post/152396699705/bless-online-armors-pack-uunp-hdt-optional-unpb",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -1533,7 +1542,7 @@
             "url": "http://ninirimpiracy.blog.fc2.com/",
             "source": "Ninirim Piracy",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -1570,15 +1579,15 @@
                 "Main file": "1",
                 "Glowing Fuller": "1"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "BLOODSTONE CHALICE REBORN",
             "url": "http://www.nexusmods.com/skyrim/mods/63551/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
+            "category": "SMC",
             "status": "Enabled"
         },
         {
@@ -1586,15 +1595,15 @@
             "url": "http://www.nexusmods.com/skyrim/mods/55628/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Body Scars for RaceMenu",
             "url": "http://www.nexusmods.com/skyrim/mods/66404/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled",
             "mergedFiles": {
                 "Body Hair Face - Merged.esp": [
@@ -1607,7 +1616,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/49015/?",
             "source": "Nexus",
             "versions": "4.4",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled",
             "mergedFiles": {
                 "RaceMenu - Merged.esp": [
@@ -1620,7 +1629,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/35399/?",
             "source": "Nexus",
             "versions": "3.4",
-            "category": "Textures &amp; Meshes",
+            "category": "Textures | Meshes",
             "status": "Enabled",
             "mergedFiles": {
                 "Book Covers Skyrim - Merged.esp": [
@@ -1633,7 +1642,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/57120/?",
             "source": "Nexus",
             "versions": "1.7",
-            "category": "Textures &amp; Meshes",
+            "category": "Textures | Meshes",
             "status": "Enabled",
             "mergedFiles": {
                 "Book Covers Skyrim - Merged.esp": [
@@ -1646,8 +1655,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/1618/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Brave Female Voice Replacer",
@@ -1674,7 +1683,7 @@
                 "Main file": "4",
                 "Patch": "26 February 2016"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -1688,7 +1697,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/71114/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -1714,7 +1723,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/20415/?",
             "source": "Nexus",
             "versions": "1",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -1723,7 +1732,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/30411/?",
             "source": "Nexus",
             "versions": "3.1",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled",
             "mergedFiles": {
                 "Body Hair Face - Merged.esp": [
@@ -1747,23 +1756,23 @@
                 "Main file": "3.6",
                 "Dragonborn Dawnguard": "3.6"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Business Ledger HD Retexture",
             "url": "http://www.nexusmods.com/skyrim/mods/38389/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Busu Object Poses",
             "url": "https://halosmods.tumblr.com/post/167974430552/manjushage2-busu-object-poses-this-mod",
             "source": "Tumblr",
             "versions": "",
-            "category": "Animation - Poses",
+            "category": "Poses",
             "status": "Enabled",
             "comments": "<p>Overwrites FNIS Object Poses</p>"
         },
@@ -1772,7 +1781,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/38829/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled"
         },
         {
@@ -1780,7 +1789,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/39549/?",
             "source": "Nexus",
             "versions": "1.2",
-            "category": "NPCs &amp; Followers",
+            "category": "NPCs | Followers",
             "status": "Enabled",
             "mergedFiles": {
                 "NPCs - Merged.esp": [
@@ -1803,7 +1812,7 @@
             "url": "http://calypsmods.tumblr.com/post/87802331347/calyps-iswearimakemods",
             "source": "Tumblr",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -1825,8 +1834,8 @@
             "url": "",
             "source": "Nexus",
             "versions": "",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Carriage and Ferry Travel Overhaul (Formerly Complete Fast Travel Overhaul)",
@@ -1845,7 +1854,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/68653/?",
             "source": "Nexus",
             "versions": "1.01",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Removed cell edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -1854,7 +1863,7 @@
             "url": "http://robton.nu/celes-nightingale-armor-unprt/",
             "source": "",
             "versions": "Robton&apos;s Mods",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -1862,7 +1871,7 @@
             "url": "http://robton.nu/celes-nightingale-armor-tmb/",
             "source": "Robton&amp;s Mods",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -1870,7 +1879,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/67595/?",
             "source": "Nexus",
             "versions": "1.21",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Removed cell edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -1883,7 +1892,7 @@
                 "Combat": "1.0",
                 "Dungeons v1.1": "1.1"
             },
-            "category": "Audio - Music",
+            "category": "Audio",
             "status": "Enabled",
             "mergedFiles": {
                 "Audio - Merged.esp": [
@@ -1941,7 +1950,7 @@
             "url": "http://www.loverslab.com/topic/10943-zzshop/",
             "source": "LoversLab",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -1955,7 +1964,7 @@
             "url": "",
             "source": "N/A",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Used &lsquo;Ciri (Witcher 3) Armor HD Retexture&rsquo; as base, changed diffuse maps to black with purple accents</p>"
         },
@@ -1964,7 +1973,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/69078/?",
             "source": "Nexus",
             "versions": "26 August 2015",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -1983,7 +1992,7 @@
                 "Main file": "1.3",
                 "UUNP BodySlide": "1.2"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility<br>Renamed items for better sorting</p>"
         },
@@ -1992,7 +2001,7 @@
             "url": "http://robton.nu/ciris-dlc-outfit-tmb/",
             "source": "Robton&apos;s Mods",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -2000,7 +2009,7 @@
             "url": "http://robton.nu/ciris-outfit-tmb/",
             "source": "",
             "versions": "Robton&apos;s Mods",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -2013,7 +2022,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/58989/?",
             "source": "Nexus",
             "versions": "BUBBLEGUM",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled"
         },
         {
@@ -2030,8 +2039,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/73433/?",
             "source": "Nexus",
             "versions": "1.6.3",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Clean Up",
@@ -2051,8 +2060,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/79679/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Clearwater Grotto",
@@ -2071,7 +2080,7 @@
                 "Main file": "1.1",
                 "Nif Fix": "1.2"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -2083,7 +2092,7 @@
                 "Main file": "1.2",
                 "Dawnguard": "1.2"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Installed only assets for CCOR</p>"
         },
@@ -2092,7 +2101,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/82717/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -2115,7 +2124,7 @@
                 "Main file": "1.1",
                 "Unenchanted Version": "1.1"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -2137,7 +2146,7 @@
             "url": "https://collyscraftbook.tumblr.com/post/170591261768/collygons-poser-version-3collygons-poser-a-pose",
             "source": "Tumblr",
             "versions": "3",
-            "category": "Animations - Poses",
+            "category": "Poses",
             "status": "Enabled"
         },
         {
@@ -2171,7 +2180,7 @@
                 "Main file": ".98",
                 "ESP- NPC Level List Distribution and Armor Craftable": ".98"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -2220,7 +2229,7 @@
                 "Contractor Armor": "1.0",
                 "Mavari Armor": "1.0"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -2246,7 +2255,7 @@
                 "Female Version": "1.0",
                 "Male Version": "1.0"
             },
-            "category": "Textures &amp; Meshes - SMC",
+            "category": "SMC",
             "status": "SMC - Disabled"
         },
         {
@@ -2257,7 +2266,7 @@
                 "Main file": "3.3",
                 "Add-on": "3.3"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -2297,7 +2306,7 @@
             "url": "",
             "source": "N/A",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -2311,7 +2320,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/59399/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -2319,7 +2328,7 @@
             "url": "http://robton.nu/crimson-twilight-armor-tmb/",
             "source": "Robton&apos;s Mods",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -2342,7 +2351,7 @@
         {
             "name": "CustomBreton - Mega Milkdrinker textures + Better Makeup for SKSE",
             "source": "N/A",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Disabled",
             "comments": "<p>Mega Milkdrinker from <a href=\"http://mod.dysintropi.me/eiries-and-honeyvanity/\">http://mod.dysintropi.me/eiries-and-honeyvanity/</a></p>"
         },
@@ -2350,7 +2359,7 @@
             "name": "CustomBreton: SRG Female Textures - Diffuse and normal maps",
             "url": "https://www.flickr.com/photos/seren4xx/15342092530",
             "source": "Flickr",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Disabled",
             "comments": "<p>Lightened in Photoshop</p>"
         },
@@ -2359,7 +2368,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/37347/?",
             "source": "Nexus",
             "versions": "1.9",
-            "category": "User Interfaces",
+            "category": "UI",
             "status": "Enabled",
             "mergedFiles": {
                 "Interfaces - Merged.esp": [
@@ -2382,7 +2391,7 @@
             "name": "DA2 Flemeth Armor (UNPB BBP)",
             "url": "http://www.loverslab.com/topic/10341-conversions-for-unpb-with-bbp/",
             "source": "LoversLab",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -2390,7 +2399,7 @@
             "name": "DA2 Flemeth UUNP HDT",
             "url": "http://wtfuun.tumblr.com/post/143045156312/da2-flemeth-uunp-hdt-need-this",
             "source": "Tumblr",
-            "category": "Armor, Clothing & Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -2398,7 +2407,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/51437/?",
             "source": "Nexus",
             "versions": "1",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -2406,7 +2415,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/4550/?",
             "source": "Nexus",
             "versions": "28 December 2011",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Disabled",
             "comments": "<p>Used as resource for Arya&apos;s fresh scar, does not need to be installed</p>"
         },
@@ -2415,8 +2424,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/82520/?",
             "source": "Nexus",
             "versions": "3 March 2017",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC",
+            "category": "SMC",
+            "status": "Enabled",
             "comments": "<p>4K version</p>"
         },
         {
@@ -2424,7 +2433,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/69640/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Removed NPC and worldspace entries</p>"
         },
@@ -2432,7 +2441,7 @@
             "name": "Dark Envoy - UUNP HDT Bodyslide files",
             "url": "http://www.loverslab.com/files/file/2311-dark-envoy-cbbe-uunp-bodyslide-hdt/",
             "source": "LoversLab",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -2454,21 +2463,21 @@
                 "Main file": "2.0",
                 "Update": "2.1"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Dawley Syande",
             "url": "http://eskrimmods.blogspot.com/2017/04/dawley-syande-cbbehdt-cloth.html",
             "source": "ESkyrim",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
             "name": "Dawley Syande - UUNP Bodyslide",
             "url": "https://goromajimayy.tumblr.com/post/159264240387/original-dawley-syande-full-hdt-uunp",
             "source": "Tumblr",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Original is part of Ninirim Pirated Mods</p>"
         },
@@ -2496,7 +2505,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/64559/?",
             "source": "Nexus",
             "versions": "8 April 2015",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -2508,16 +2517,16 @@
                 "Glow Version": "1",
                 "Gold Textures": "1"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Dawnguard Shield HD",
             "url": "http://www.nexusmods.com/skyrim/mods/66771/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Dawnwood Shallows",
@@ -2535,7 +2544,7 @@
             "name": "DB Monster Hunter",
             "url": "http://tesall.ru/files/file/8753-dizona-body-monster-hunter/",
             "source": "TESALL",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Male only</p><p>Removed all unnecessary edits from the .esp</p><p>Translated armor names</p>"
         },
@@ -2544,7 +2553,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/38301/?",
             "source": "Nexus",
             "versions": "3.0",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Disabled",
             "comments": "<p>2048x2048 Smooth Males version</p>"
         },
@@ -2553,8 +2562,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/30947/?",
             "source": "Nexus",
             "versions": "2.4",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Deadly Dragons",
@@ -2582,8 +2591,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/2947/?",
             "source": "Nexus",
             "versions": "1.6.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC",
+            "category": "SMC",
+            "status": "Enabled",
             "comments": "<p>Medium version</p>"
         },
         {
@@ -2594,7 +2603,7 @@
                 "Main file": "1.0",
                 "Update": "1 July 2013"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -2608,7 +2617,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/39601/?",
             "source": "Nexus",
             "versions": "1",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -2616,7 +2625,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/65033/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
+            "category": "SMC",
             "status": "SMC - Disabled",
             "comments": "<p>No longer part of SMC?</p>"
         },
@@ -2625,8 +2634,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/70133/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Deinsehun",
@@ -2646,7 +2655,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/42332/?",
             "source": "Nexus",
             "versions": "Black",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Black version</p>"
         },
@@ -2658,7 +2667,7 @@
                 "Main file": "3.0",
                 "UPDATE - fixes for both versions": "3.2"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -2671,7 +2680,7 @@
             "name": "Demon Hunter Armor UUNP HDT",
             "url": "http://www.loverslab.com/topic/38362-project-unified-unp/page-100#entry1533594",
             "source": "LoversLab",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -2679,7 +2688,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/70834/?",
             "source": "Nexus",
             "versions": "1.12",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled",
             "comments": "<p>Installed twice:</p><ul><li>First time, options: Real Girls, non-muscular normal map, no gloss, 4k</li><li>Second time, changed directory structure to fit Custom Races (Redux)<ul><li>Options: Fair/Mature Skin mix, muscular normal map 4, no gloss, 8k</li></ul></li></ul>"
         },
@@ -2688,24 +2697,24 @@
             "url": "http://www.nexusmods.com/skyrim/mods/13429/?",
             "source": "Nexus",
             "versions": "1.5",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Detailed Chests Texture Replacers",
             "url": "http://www.nexusmods.com/skyrim/mods/4457/?",
             "source": "Nexus",
             "versions": "1.2",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Detailed Rugs",
             "url": "http://www.nexusmods.com/skyrim/mods/29608/?",
             "source": "Nexus",
             "versions": "1.3",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC",
+            "category": "SMC",
+            "status": "Enabled",
             "comments": "<p>Pelts version</p>"
         },
         {
@@ -2716,16 +2725,16 @@
                 "Main file": "1.3",
                 "Giant Club": "Pre1.4"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Detailing the Eldrich - Higher-Res Riekling Architecture",
             "url": "http://www.nexusmods.com/skyrim/mods/46741/?",
             "source": "Nexus",
             "versions": "MEDIAL",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "DienesTools",
@@ -2750,8 +2759,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/39790/?",
             "source": "Nexus",
             "versions": "2.0",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Diverse Dragons Collection",
@@ -2788,7 +2797,7 @@
             "url": "http://robton.nu/doa-5-christmas-set/",
             "source": "Robton&apos;s Mods",
             "versions": "28.11.16",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -2799,7 +2808,7 @@
                 "Older Replacers": "1",
                 "Vanilla Clothes Replacer": "1"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Use only \"Old versions\" because they are replacers -- newer ones add .esp files</p><p>For \"Older Replacers\", install \"North Child\" variation</p>"
         },
@@ -2808,7 +2817,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/51401/?",
             "source": "Nexus",
             "versions": "1.10",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Removed unnecessary components from ESP</p><p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -2816,7 +2825,7 @@
             "name": "Dragon Age Mage Hawke Armor - Remodeled Version",
             "url": "http://modtype.doorblog.jp/archives/21760290.html",
             "source": "Skyrim Modtype",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -2877,15 +2886,15 @@
             "url": "http://www.nexusmods.com/skyrim/mods/27095/?",
             "source": "Nexus",
             "versions": "2.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Dragon Masks Retextured",
             "url": "http://www.nexusmods.com/skyrim/mods/54805/?",
             "source": "Nexus",
             "versions": "2",
-            "category": "Textures &amp; Meshes - SMC",
+            "category": "SMC",
             "status": "SMC - Disabled"
         },
         {
@@ -2893,8 +2902,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/67247/?",
             "source": "Nexus",
             "versions": "1.2",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Dragon Priests - Enhanced",
@@ -2914,7 +2923,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/6537/?",
             "source": "Nexus",
             "versions": "0.2a",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -2944,7 +2953,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/66778/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Removed worldspace edits</p><p>Added breakdown recipes and CCOR compatibility</p><p>Renamed items</p>"
         },
@@ -2957,7 +2966,7 @@
                 "Small ESP Fix": "1.6",
                 "UUNP": "1.6"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Removed worldspace edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -2965,7 +2974,7 @@
             "name": "Dragonbone Barbarian Armors – TMB",
             "url": "http://robton.nu/dragonbone-barbarian-armors-tmb/",
             "source": "Robton&apos;s Mods",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -2973,8 +2982,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/75175/?",
             "source": "Nexus",
             "versions": "2.1.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC",
+            "category": "SMC",
+            "status": "Enabled",
             "comments": "<p>WITHOUT Engravings version</p>"
         },
         {
@@ -2982,7 +2991,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/35965/?",
             "source": "Nexus",
             "versions": "0.0",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -3023,14 +3032,14 @@
                 "No.male.pupill": "1.1",
                 "Reduced.FXEyes": "1.1"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "DreamBurrows Exotic Garb",
             "url": "http://dreamburrow.tumblr.com/post/61443371526/hey-everyone-today-i-decided-to-pack-up-an-old",
             "source": "Tumblr",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -3038,7 +3047,7 @@
             "name": "DreamBurrows Floral Head Accessory",
             "url": "http://dreamburrow.tumblr.com/post/64824125478/heres-a-quick-little-accessory-i-put-together-for",
             "source": "Tumblr",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -3052,14 +3061,14 @@
             "url": "http://www.nexusmods.com/skyrim/mods/22607/?",
             "source": "Nexus",
             "versions": "19 August 2012",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
             "name": "DreamBurrows Lion Eyes",
             "url": "http://dreamburrow.tumblr.com/tagged/skyrim-mods",
             "source": "Tumblr",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled"
         },
         {
@@ -3067,7 +3076,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/36234/?",
             "source": "Nexus",
             "versions": "3.1",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -3081,7 +3090,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/23626/?",
             "source": "Nexus",
             "versions": "2.1",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -3092,7 +3101,7 @@
                 "Main file": "6.0",
                 "zzjay and Grace Darklings Hoods With Hairs": "1.0"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -3106,7 +3115,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/39983/?",
             "source": "Nexus",
             "versions": "2.0",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -3120,7 +3129,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/26374/?",
             "source": "Nexus",
             "versions": "0.1",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -3128,7 +3137,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/17699/?",
             "source": "Nexus",
             "versions": "2.1",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -3137,8 +3146,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/48861/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Drunkzealot&apos;s Somewhat Historically Accurate Weapons",
@@ -3159,7 +3168,7 @@
             "url": "https://www.patreon.com/posts/ds-poser-v0-35-15695414",
             "source": "Patreon",
             "versions": "0.35",
-            "category": "Animations - Poses",
+            "category": "Poses",
             "status": "Enabled",
             "mergedFiles": {
                 "Poses - Merged.esp": [
@@ -3197,7 +3206,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/41634/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
+            "category": "SMC",
             "status": "SMC - Disabled"
         },
         {
@@ -3217,7 +3226,7 @@
             "name": "Ebony Armour Remodels",
             "url": "http://mod.dysintropi.me/unpcm/",
             "source": "Halo&apos;s Mods",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Renamed items in .esp</p>"
         },
@@ -3225,7 +3234,7 @@
             "name": "Ebony Remodel UUNP",
             "url": "https://tesmistel.tumblr.com/post/150106278995/ebony-remodel-uunp-halofarms-ebony-armor",
             "source": "Tumblr",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -3233,14 +3242,14 @@
             "url": "http://www.nexusmods.com/skyrim/mods/49953/?",
             "source": "Nexus",
             "versions": "final",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
             "name": "Ebony Valkyrie Armor UUNP HDT",
             "url": "http://wtfuun.tumblr.com/post/143097465394/ebony-valkyrie-armor-uunp-hdt-need-this",
             "source": "Tumblr",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -3248,16 +3257,16 @@
             "url": "http://www.nexusmods.com/skyrim/mods/61818/?",
             "source": "Nexus",
             "versions": "1.2.6",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "EcthelionOtW Mage Equipment Overhaul",
             "url": "http://www.nexusmods.com/skyrim/mods/40592/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC",
+            "category": "SMC",
+            "status": "Enabled",
             "comments": "<p>Azura Pack only</p>"
         },
         {
@@ -3265,7 +3274,7 @@
             "url": "http://www.loverslab.com/files/file/1010-efeebr-eyes-for-everyone-except-beast-races/",
             "source": "LoversLab",
             "versions": "1.4",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Disabled",
             "comments": "<p>Seems to be the successor to &lsquo;DorkDivas Eyes for Elves&rsquo;, which was removed from Nexus</p>"
         },
@@ -3282,7 +3291,7 @@
             "name": "Eldrids Armor Mashup - UUNP HDT Bodyslide files",
             "url": "http://www.loverslab.com/topic/69192-jrconversions-uunp-hdt/",
             "source": "LoversLab",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -3290,7 +3299,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/48652/?",
             "source": "Nexus",
             "versions": "1.2",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -3299,7 +3308,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/29432?",
             "source": "Nexus",
             "versions": "0.1",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Removed worldspace edits</p>"
         },
@@ -3307,21 +3316,21 @@
             "name": "Elika Outfit - UUNP HDT Bodyslide files",
             "url": "http://www.loverslab.com/topic/69192-jrconversions-uunp-hdt/",
             "source": "LoversLab",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
             "name": "Elika Outfit UNP",
             "url": "https://www.flickr.com/photos/brokefoot/10739986233/",
             "source": "Flickr",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
             "name": "Ella&apos;s Fantasy Eyes",
             "url": "https://aixia-tumbleweed.tumblr.com/post/162864673888/ellasworkshop-ellas-fantasy-eyes-i-created",
             "source": "Tumblr",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled"
         },
         {
@@ -3332,14 +3341,14 @@
                 "Main file": "1.1",
                 "4k armour textures": "1.1"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
             "name": "Elven ChainMail UUNP HDT",
             "url": "http://wtfuun.tumblr.com/post/152474340915/elven-chainmail-uunp-hdt-main-mod-required-by",
             "source": "Tumblr",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Removed cell edits</p>"
         },
@@ -3348,14 +3357,14 @@
             "url": "http://www.nexusmods.com/skyrim/mods/39922/?",
             "source": "Nexus",
             "versions": "1.0.Fixed",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
             "name": "Elven Dresses by Naihaan Retexture - 2.0 version",
             "url": "http://skyravblog.blogspot.ru/2013/11/elven-dresses-by-naihaan-retexture-20.html",
             "source": "Raven&apos;s Blog",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -3371,14 +3380,14 @@
             "name": "Elwing",
             "url": "http://ninirim.tistory.com/73",
             "source": "Tumblr",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
             "name": "Elwing Dress UUNP HDT",
             "url": "http://wtfuun.tumblr.com/post/152299810800/elwing-dress-uunp-hdt-main-mod-required",
             "source": "Tumblr",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -3386,8 +3395,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/62425/?",
             "source": "Nexus",
             "versions": "1.33",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC",
+            "category": "SMC",
+            "status": "Enabled",
             "comments": "<p>Technically not necessary but SMC insists</p>"
         },
         {
@@ -3395,8 +3404,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/81556/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "ENB Water on Horse Trough with Optional Blacksmith Forge",
@@ -3406,8 +3415,8 @@
                 "Main file": "1.0",
                 "For Realistic Water Two": "1.0"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Enchantment Reload Fix",
@@ -3421,7 +3430,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/60/?",
             "source": "Nexus",
             "versions": "3.6c",
-            "category": "Textures &amp; Meshes",
+            "category": "Textures | Meshes",
             "status": "Enabled",
             "comments": "<p>Don&apos;t install through SMC anymore - it doesn&apos;t account for patches</p>"
         },
@@ -3438,7 +3447,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/50731/?",
             "source": "Nexus",
             "versions": "2.3",
-            "category": "User Interface",
+            "category": "UI",
             "status": "Disabled",
             "comments": "<p>EnhancedENBNightEye.esp only</p><p>Only necessary for some ENBs</p>"
         },
@@ -3476,7 +3485,7 @@
             "url": "https://www.reddit.com/r/skyrimmods/comments/55ke71/enhanced_vanilla_treesskyrim_flora_overhaul_pines/",
             "source": "Reddit",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes",
+            "category": "Textures | Meshes",
             "status": "Enabled"
         },
         {
@@ -3484,14 +3493,14 @@
             "url": "http://www.nexusmods.com/skyrim/mods/46915/?",
             "source": "Nexus",
             "versions": "1.5",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Enio Barbarian Jewelry",
             "url": "http://tes-game.ru/load/skyrim/bronja_i_odezhda/2518/39-1-0-3614",
             "source": "TES-GAME.RU",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Translated from Russian as best I could and removed unnecessary edits from ESP</p><p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -3499,7 +3508,7 @@
             "name": "Enio Vampire Hunter",
             "url": "http://mitakusaner.blog.fc2.com/blog-entry-926.html",
             "source": "Sky TM",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -3507,7 +3516,7 @@
             "name": "Enio Vampire Hunter - UUNP BodySlide",
             "url": "http://www.loverslab.com/files/file/2335-diannes-bodyslide-conversions/",
             "source": "LoversLab",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -3522,14 +3531,14 @@
             "name": "ENSE HD + Heterochromia",
             "url": "http://www.loverslab.com/topic/24763-anyone-got-an-additional-file-of-ense-eyecolors-with-new-style-eyelashes/",
             "source": "LoversLab",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled"
         },
         {
             "name": "EotW Dawnguard DLC Textures Remastered",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes",
+            "category": "Textures | Meshes",
             "status": "Enabled",
             "comments": "<p>Removed from Nexus</p>"
         },
@@ -3538,7 +3547,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/44592/?",
             "source": "Nexus",
             "versions": "1.2",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -3549,7 +3558,7 @@
                 "Main file": "1.0",
                 "Hearthfire DLC Robes Addon": "1.0"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Removed from Nexus</p>"
         },
@@ -3565,7 +3574,7 @@
             "name": "Equipable Tongues",
             "url": "http://www.loverslab.com/topic/9898-sharing-my-ports/",
             "source": "LoversLab",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Removed worldspace edits</p>"
         },
@@ -3577,7 +3586,7 @@
                 "Main file": "1.3",
                 "ESO Altmer Armor Redux by Gamwich": "1.1"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Removed worldspace edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -3585,7 +3594,7 @@
             "name": "ESO Altmer Armor by NewerMind43 RELOAD - UUNP BodySlide",
             "url": "http://www.loverslab.com/files/file/2335-diannes-bodyslide-conversions/",
             "source": "LoversLab",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled"
         },
         {
@@ -3593,15 +3602,15 @@
             "url": "http://www.nexusmods.com/skyrim/mods/56279/?",
             "source": "Nexus",
             "versions": "1.4",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Evil MasterMind Armor",
             "url": "http://www.nexusmods.com/skyrim/mods/25476/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Removed worldspace and NPC edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -3626,7 +3635,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/12933/?",
             "source": "Nexus",
             "versions": "4.0.2",
-            "category": "NPCs &amp; Followers",
+            "category": "NPCs | Followers",
             "status": "Enabled"
         },
         {
@@ -3647,15 +3656,15 @@
                 "Main file": "2.01",
                 "Smooth Multilayer Parallax option for Rustic Soulgems": "1.01"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Eyebrow Specularity Fix",
             "url": "http://www.nexusmods.com/skyrim/mods/49168/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled"
         },
         {
@@ -3663,7 +3672,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/41599/?",
             "source": "Nexus",
             "versions": "1.1",
-            "category": "Textures &amp; Meshes - SMC",
+            "category": "SMC",
             "status": "SMC - Disabled",
             "comments": "<p>Deprecated</p>"
         },
@@ -3672,7 +3681,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/50132/?",
             "source": "Nexus",
             "versions": "3.0",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled"
         },
         {
@@ -3680,7 +3689,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/59192/?",
             "source": "Nexus",
             "versions": "1.3",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Disabled"
         },
         {
@@ -3714,7 +3723,7 @@
                 "Main file": "2.0",
                 "Update v3": "3.0"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Removed cell edits</p>"
         },
@@ -3734,7 +3743,7 @@
                 "For UNP": "9.4",
                 "BlankDetailMap.dds Fix v1.0": "22 August 2015"
             },
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled",
             "comments": "<p>Freckles only for all races</p><p>BlankDetailMap.dds fix not installed anymore</p>"
         },
@@ -3743,8 +3752,8 @@
             "url": "http://www.nexusmods.com/skyrim/mods/66770/?",
             "source": "Nexus",
             "versions": "1.0",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Falmer Ear and Hagraven Claw",
@@ -3754,8 +3763,8 @@
                 "Falmer Ear 1K": "1.0",
                 "Hagraven Claw": "1.0"
             },
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Falskaar",
@@ -3770,7 +3779,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/72837/?",
             "source": "Nexus",
             "versions": "3.0",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Resource",
             "comments": "<p>4K Pack - 2.0 - Photoshop</p>"
         },
@@ -3778,7 +3787,7 @@
             "name": "Fancy Dress",
             "url": "http://mitakusaner.blog.fc2.com/blog-entry-353.html",
             "source": "Sky TM",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -3786,7 +3795,7 @@
             "name": "Fancy Dress UUNP",
             "url": "https://tesmistel.tumblr.com/post/151904272695/fancy-dress-uunp-apparently-fancy",
             "source": "Tumblr",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -3820,7 +3829,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/25393/?",
             "source": "Nexus",
             "versions": "3.0",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -3843,7 +3852,7 @@
                 "Main file": "1.2",
                 "Cleaned Plugin": "1.4"
             },
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "comments": "<p>Removed cell edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -3852,15 +3861,15 @@
             "url": "http://www.nexusmods.com/skyrim/mods/35303/?",
             "source": "Nexus",
             "versions": "1.5",
-            "category": "Textures &amp; Meshes - SMC",
-            "status": "SMC"
+            "category": "SMC",
+            "status": "Enabled"
         },
         {
             "name": "Female Light Blades Armor UUNP Conversion",
             "url": "http://www.nexusmods.com/skyrim/mods/70425/?",
             "source": "Nexus",
             "versions": "1.2",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled"
         },
         {
@@ -3878,7 +3887,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/37022/?",
             "source": "Nexus",
             "versions": "1.2",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Disabled",
             "comments": "<p>FFR for SOS Default Body with Hair and Vanilla Male</p>"
         },
@@ -3887,7 +3896,7 @@
             "url": "http://www.nexusmods.com/skyrim/mods/62574/?",
             "source": "Nexus",
             "versions": "2.0",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled",
             "comments": "<p>(Chameleon and Lizard) - UNP version</p>"
         },
@@ -3896,16 +3905,68 @@
             "url": "http://www.nexusmods.com/skyrim/mods/62193/?",
             "source": "Nexus",
             "versions": "2.0",
-            "category": "Body, Hair &amp; Face",
+            "category": "Body | Hair | Face",
             "status": "Enabled",
             "comments": "<p>(Grey Cat and Leopard) - UNP version</p>"
+        },
+        {
+            "name": "Fences of Skyrim - No More Flickering Fences",
+            "url": "http://www.nexusmods.com/skyrim/mods/58980/?",
+            "source": "Nexus",
+            "versions": "2.0",
+            "category": "SMC",
+            "status": "Enabled"
+        },
+        {
+            "name": "FileAccess Interface for Skyrim Script - FISS",
+            "url": "http://www.nexusmods.com/skyrim/mods/48265/?",
+            "source": "Nexus",
+            "versions": "1.21",
+            "category": "Utilities",
+            "status": "Enabled"
+        },
+        {
+            "name": "Final Younger Characters",
+            "url": "http://www.nexusmods.com/skyrim/mods/2332/?",
+            "source": "Nexus",
+            "versions": "1.2",
+            "category": "Body | Hair | Face",
+            "status": "Enabled"
+        },
+        {
+            "name": "Fine Face Textures for Men by Urshi",
+            "url": "http://www.nexusmods.com/skyrim/mods/27815/?",
+            "source": "Nexus",
+            "versions": "2.0",
+            "category": "Body | Hair | Face",
+            "status": "Disabled",
+            "comments": "<p>&lsquo;Black Subsurface Maps for Male FACE and BODY&rsquo; only</p>"
+        },
+        {
+            "name": "Fine Imperial Dress UUNP HDT",
+            "url": "https://tesmistel.tumblr.com/post/149724419550/fine-imperial-dress-uunp-hdt-simple-dress-with-a",
+            "source": "Tumblr",
+            "category": "Equipment",
+            "status": "Enabled"
+        },
+        {
+            "name": "Fire Keeper Mask ＆amp; Cloak",
+            "url": "http://wtfuun.tumblr.com/post/155242793915/xuniana-skyrim-mod-release-fire-keeper",
+            "source": "Tumblr",
+            "versions": {
+                "Main file": "",
+                "UUNP HDT": ""
+            },
+            "category": "Equipment",
+            "status": "Disabled",
+            "comments": "<p>Replaced with Nini version</p>"
         },
         {
             "name": "[NINI] BDO Orwen Travel UUNP",
             "url": "http://regenbot.tistory.com/87",
             "source": "RegenBot Nest",
             "versions": "",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "hasEsps": "y"
         },
@@ -3913,7 +3974,7 @@
             "name": "[NINI] Kokoro UUNP HDT",
             "url": "https://tesmistel.tumblr.com/post/148374421540/nini-kokoro-uunp-hdt-ive-modified-the-hood-to",
             "source": "Tumblr",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Enabled",
             "comments": "<p>Original is part of Ninirim Pirated Mods</p>"
         },
@@ -3921,7 +3982,7 @@
             "name": "Royal Hunting UNP",
             "url": "http://kartermods.blogspot.com/2017/01/royal-hunting-unp.html",
             "source": "Karter's House",
-            "category": "Armor, Clothing &amp; Accessories",
+            "category": "Equipment",
             "status": "Disabled",
             "hasEsps": "y",
             "comments": "<p>Translated armor names</p>"
