@@ -83,12 +83,22 @@
         return cleanedName;
     }
 
-    function checkBasicField(field) {
-        if (field) {
-            return `<div>${field}</div>`;
-        } else {
-            return "";
+    function checkBasicField(config, field) {
+        let output = "";
+
+        if (field && typeof field === "object") {
+            let fieldArray = Object.values(field);
+
+            output = `<ul class="list-unstyled">`;
+            fieldArray.forEach(function(item) {
+                output += `<li class="text-truncate" style="max-width: ${config.defaults["maxWidth"]};" title="${item}">${item}</li>`;
+            });
+            output += `</ul>`;
+        } else if (field && typeof field === "string") {
+            output += `<div>${field}</div>`;
         }
+
+        return output;
     }
 
     function compareValues(key, order = "asc") {
@@ -299,17 +309,17 @@
 
                 newModalContent = `<dl class="row">
                     <dt class="col-sm-3">Source:</dt>
-                    <dd class="col-sm-9">${checkBasicField(found.source)}</dd>
+                    <dd class="col-sm-9">${checkBasicField(config, found.source)}</dd>
                     <dt class="col-sm-3">Version(s):</dt>
                     <dd class="col-sm-9">${showVersions(config, found.versions)}</dd>
                     <dt class="col-sm-3">Category:</dt>
-                    <dd class="col-sm-9">${checkBasicField(found.category)}</dd>
+                    <dd class="col-sm-9">${checkBasicField(config, found.category)}</dd>
                     <dt class="col-sm-3">Merged to:</dt>
                     <dd class="col-sm-9">${showAssociatedMerges(config, found.mergedFiles)}</dd>
                     <dt class="col-sm-3">Status:</dt>
                     <dd class="col-sm-9">${showStatus(config, found.status)}</dd>
                     <dt class="col-sm-3">Comments:</dt>
-                    <dd class="col-sm-9">${checkBasicField(found.comments)}</dd>
+                    <dd class="col-sm-9">${checkBasicField(config, found.comments)}</dd>
                     </dl>`;
 
             } else { // merge modal
@@ -329,7 +339,7 @@
                 }
                 if (found.comments) {
                     newModalContent += `<dt class="col-sm-3">Comments:</dt>
-                        <dd class="col-sm-9">${checkBasicField(found.comments)}</dd>`;
+                        <dd class="col-sm-9">${checkBasicField(config, found.comments)}</dd>`;
                 }
 
                 newModalContent += `</dl>`;
@@ -581,12 +591,12 @@
                     params.childAttr["class"] = "text-muted font-italic";
                 }
                 params.contents = `<td>${showLink(config, params)}</td>
-                    <td>${checkBasicField(subset[key].source)}</td>
+                    <td>${checkBasicField(config, subset[key].source)}</td>
                     <td>${showVersions(config, subset[key].versions)}</td>
-                    <td>${checkBasicField(subset[key].category)}</td>
+                    <td>${checkBasicField(config, subset[key].category)}</td>
                     <td>${showAssociatedMerges(config, subset[key].mergedFiles)}</td>
                     <td>${showStatus(config, subset[key].status)}</td>
-                    <td>${checkBasicField(subset[key].comments)}</td>`;
+                    <td>${checkBasicField(config, subset[key].comments)}</td>`;
 
                 modsTableNode.appendChild(insertChildNode(params));
             });
@@ -650,10 +660,10 @@
                     id: `row-${cleanName(tools[key].name)}`
                 };
                 params.contents = `<td>${showLink(config, params)}</td>
-                    <td>${checkBasicField(tools[key].source)}</td>
+                    <td>${checkBasicField(config, tools[key].source)}</td>
                     <td>${showVersions(config, tools[key].versions)}</td>
                     <td>${showStatus(config, tools[key].status)}</td>
-                    <td>${checkBasicField(tools[key].comments)}</td>`;
+                    <td>${checkBasicField(config, tools[key].comments)}</td>`;
 
                 toolsTableNode.appendChild(insertChildNode(params));
             });
@@ -690,9 +700,9 @@
             Object.keys(merges).forEach(function(key) {
                 params.childAttr["id"] = `row-${cleanMergeName(merges[key].name)}`;
                 params.mergeName = merges[key].name;
-                params.contents = `<td>${checkBasicField(merges[key].name)} ${showMergedFileAccordion(params)}</td>
+                params.contents = `<td>${checkBasicField(config, merges[key].name)} ${showMergedFileAccordion(params)}</td>
                     <td>${showNavmeshToggle(merges[key].rebuildNavmeshOnMerge)}</td>
-                    <td>${checkBasicField(merges[key].comments)}</td>`;
+                    <td>${checkBasicField(config, merges[key].comments)}</td>`;
                 mergesTableNode.appendChild(insertChildNode(params));
 
                 params.childAttr = {};
