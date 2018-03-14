@@ -872,7 +872,7 @@
                 category: "all",
                 maxWidth: "10rem",
                 offset: 0,
-                show: 25,
+                show: 50,
                 source: "all",
                 view: "mods"
             },
