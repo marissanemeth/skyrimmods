@@ -7,91 +7,87 @@
 (function() {
     "use strict";
 
-    function loadJSON(callback) {
-        const xhr = new XMLHttpRequest();
-        xhr.overrideMimeType("application/json");
-        xhr.open("GET", "js/data.json", true);
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                callback(xhr.responseText);
-            }
-        };
-        xhr.send();
-    }
+    const url = "js/data.json";
 
-    /**********
-     * Callback for loaded JSON
-     **********/
-    loadJSON(function(response) {
-        const jsonResponse = JSON.parse(response);
-        let params = {
-            data: {
-                categories: jsonResponse.categories,
-                merges: jsonResponse.merges,
-                mods: jsonResponse.mods,
-                sources: jsonResponse.sources,
-                statuses: jsonResponse.statuses,
-                tools: jsonResponse.tools
-            },
-            childAttr: {},
-            containers: {
-                categoryNav: "mods-category-navbar-dropdown",
-                messages: "messages",
-                main: "container-main",
-                pagination: "pagination-mods",
-                sourceNav: "mods-source-navbar-dropdown",
-                statusNav: "mods-status-navbar-dropdown",
-                topNav: "navbar-top"
-            },
-            defaults: {
-                category: "all",
-                maxWidth: "10rem",
-                offset: 0,
-                show: 1000,
-                source: "all",
-                status: "all",
-                nsfw: true,
-                view: "mods"
-            },
-            messages: [],
-            mergedFileContents: {},
-            modals: {
-                merges: "#modal-merges",
-                mods: "#modal-mods"
-            },
-            tables: {
-                merges: "table-merges",
-                mods: "table-mods",
-                tools: "table-tools"
-            }
-        };
-        params.dataLength = {
-            merges: params.data["merges"].length,
-            mods: params.data["mods"].length,
-            tools: params.data["tools"].length
-        };
+    fetch(url)
+        .then((resp) => resp.json())
+        .then(function(jsonData) {
 
-        // update view
-        updateQuery(params);
-        showSection(params);
+            let params = {
+                data: {
+                    categories: jsonData.categories,
+                    merges: jsonData.merges,
+                    mods: jsonData.mods,
+                    sources: jsonData.sources,
+                    statuses: jsonData.statuses,
+                    tools: jsonData.tools
+                },
+                childAttr: {},
+                containers: {
+                    categoryNav: "mods-category-navbar-dropdown",
+                    messages: "messages",
+                    main: "container-main",
+                    pagination: "pagination-mods",
+                    sourceNav: "mods-source-navbar-dropdown",
+                    statusNav: "mods-status-navbar-dropdown",
+                    topNav: "navbar-top"
+                },
+                defaults: {
+                    category: "all",
+                    maxWidth: "10rem",
+                    offset: 0,
+                    show: 1000,
+                    source: "all",
+                    status: "all",
+                    nsfw: true,
+                    view: "mods"
+                },
+                messages: [],
+                mergedFileContents: {},
+                modals: {
+                    merges: "#modal-merges",
+                    mods: "#modal-mods"
+                },
+                tables: {
+                    merges: "table-merges",
+                    mods: "table-mods",
+                    tools: "table-tools"
+                }
+            };
+            params.dataLength = {
+                merges: params.data["merges"].length,
+                mods: params.data["mods"].length,
+                tools: params.data["tools"].length
+            };
 
-        // deal with modals
-        $(params.modals["mods"]).on("show.bs.modal", function(e) { // Bootstrap modal
-            params.find = $(e.relatedTarget);
-            params.find = params.find[0].innerHTML;
-            params.modal = "mods";
-            params.searchIn = params.data["mods"];
-            refreshModalContents(params);
-        });
-        $(params.modals["merges"]).on("show.bs.modal", function(e) { // Bootstrap modal
-            params.find = $(e.relatedTarget);
-            params.find = params.find[0].innerHTML;
-            params.modal = "merges";
-            params.searchIn = params.data["merges"];
-            refreshModalContents(params);
+            // update view
+            updateQuery(params);
+            showSection(params);
+
+            // deal with modals
+            $(params.modals["mods"]).on("show.bs.modal", function(e) { // Bootstrap modal
+                params.find = $(e.relatedTarget);
+                params.find = params.find[0].innerHTML;
+                params.modal = "mods";
+                params.searchIn = params.data["mods"];
+                refreshModalContents(params);
+            });
+            $(params.modals["merges"]).on("show.bs.modal", function(e) { // Bootstrap modal
+                params.find = $(e.relatedTarget);
+                params.find = params.find[0].innerHTML;
+                params.modal = "merges";
+                params.searchIn = params.data["merges"];
+                refreshModalContents(params);
+            });
+
+            console.log("test successful");
+
+        })
+        .catch(function(error) {
+            console.log(error);
+            displayFatalError();
         });
 
-    });
 
     /**********
      * Function declarations: Element node utilities
