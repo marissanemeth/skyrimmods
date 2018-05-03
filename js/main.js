@@ -42,6 +42,7 @@
                     nsfw: true,
                     view: "mods"
                 },
+                fileListToCopy: "",
                 messages: [],
                 mergedFileContents: {},
                 modals: {
@@ -79,8 +80,6 @@
                 params.searchIn = params.data["merges"];
                 refreshModalContents(params);
             });
-
-            console.log("test successful");
 
         })
         .catch(function(error) {
@@ -210,6 +209,21 @@
             );
         };
     }
+
+    function copyToClipboard(fileListString) {
+        const box = document.createElement("textarea");
+        box.value = fileListString;
+        box.setAttribute("readonly", "");
+        box.style.position = "absolute";
+        box.style.left = "-9999px";
+        document.body.appendChild(box);
+        box.select();
+
+        document.execCommand("copy");
+        document.body.removeChild(box);
+
+        return;
+    };
 
     function matchAttributeToReference(list, attribute, matchBy = "friendlyName") {
         let output = null;
@@ -565,6 +579,7 @@
     function showMergedFileContents(params) {
         let output = "";
         let merge = params.mergedFileContents[params.mergeName];
+        let mergedFileListRaw = [];
 
         if (checkForMergedFileContents(merge)) {
             output += `<ul>`;
@@ -576,37 +591,19 @@
                 output += merge[key][0].map((file) => `<li>${file}</li>`).join("");
                 output += `</ul>
                     </li>`;
-            });
-
-            output += `</ul>`;
-        }
-
-        return output;
-    }
-
-    function showMergedFileListInBow(params) {
-        let output = "";
-        let merge = params.mergedFileContents[params.mergeName];
-        let mergedFileList = [];
-
-        if (checkForMergedFileContents(merge)) {
-            Object.keys(merge).forEach(function(key) {
                 if (merge[key][0].length > 1) {
                     merge[key][0].forEach(function(i) {
-                        mergedFileList.push(i);
+                        mergedFileListRaw.push(i);
                     });
                 } else {
-                    mergedFileList.push(merge[key][0].toString());
+                    mergedFileListRaw.push(merge[key][0].toString());
                 }
             });
 
-            output += `
-                <form>
-                    <div class="form-group">
-                        <label for="merged-file-list">File list only</label>
-                        <textarea class="form-control form-control-sm" id="merged-file-list" rows="5">${caseInsensitiveSort(mergedFileList).join("\n")}</textarea>
-                    </div>
-                </form>`;
+            params.fileListToCopy = caseInsensitiveSort(mergedFileListRaw).join("\n");
+
+            output += `</ul>`;
+            output += `<div><button type="button" class="btn btn-primary btn-sm" id="copy-button">Copy file list</button></div>`;
         }
 
         return output;
@@ -749,13 +746,13 @@
                 }
 
                 newModalContent += `</dl>`;
-                newModalContent += showMergedFileListInBow(params);
 
             }
         }
 
         modalTitleNode.innerHTML = newModalTitle;
         modalContentNode.innerHTML = newModalContent;
+        document.getElementById("copy-button").addEventListener("click", copyToClipboard(params.fileListToCopy), false);
 
         return;
     }
