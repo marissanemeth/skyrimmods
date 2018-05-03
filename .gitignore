@@ -3,4 +3,8 @@ js/mergedEsp_template.json
 js/mod_template.json
 js/modlist_example.js
 js/tool_template.json
-fonts/*
+fonts/open-iconic.eot
+fonts/open-iconic.otf
+fonts/open-iconic.svg
+fonts/open-iconic.ttf
+fonts/open-iconic.woff
