@@ -1,6 +1,6 @@
 /**************************************************
  * Still need to implement:
- ** Filter by name (search), category, source, status, nsfw/sfw
+ ** Filter by name (search), nsfw/sfw
  ** Compare to Modwatch??? (May not be feasible with this particular approach)
  **************************************************/
 
@@ -18,6 +18,85 @@
         };
         xhr.send();
     }
+
+    /**********
+     * Callback for loaded JSON
+     **********/
+    loadJSON(function(response) {
+        const jsonResponse = JSON.parse(response);
+        let params = {
+            data: {
+                categories: jsonResponse.categories,
+                merges: jsonResponse.merges,
+                mods: jsonResponse.mods,
+                sources: jsonResponse.sources,
+                statuses: jsonResponse.statuses,
+                tools: jsonResponse.tools
+            },
+            childAttr: {},
+            containers: {
+                categoryNav: "mods-category-navbar-dropdown",
+                messages: "messages",
+                main: "container-main",
+                pagination: "pagination-mods",
+                sourceNav: "mods-source-navbar-dropdown",
+                statusNav: "mods-status-navbar-dropdown",
+                //stats: "stats-mods",
+                topNav: "navbar-top"
+            },
+            defaults: {
+                category: "all",
+                maxWidth: "10rem",
+                offset: 0,
+                show: 1000,
+                source: "all",
+                status: "all",
+                nsfw: true,
+                view: "mods"
+            },
+            messages: [],
+            mergedFileContents: {},
+            modals: {
+                merges: "#modal-merges",
+                mods: "#modal-mods"
+            },
+            /*modStats: {
+                enabled: 0,
+                disabled: 0
+            },*/
+            tables: {
+                merges: "table-merges",
+                mods: "table-mods",
+                tools: "table-tools"
+            }
+        };
+        params.dataLength = {
+            merges: params.data["merges"].length,
+            mods: params.data["mods"].length,
+            tools: params.data["tools"].length
+        };
+
+        // update view
+        updateQuery(params);
+        showSection(params);
+
+        // deal with modals
+        $(params.modals["mods"]).on("show.bs.modal", function(e) { // Bootstrap modal
+            params.find = $(e.relatedTarget);
+            params.find = params.find[0].innerHTML;
+            params.modal = "mods";
+            params.searchIn = params.data["mods"];
+            refreshModalContents(params);
+        });
+        $(params.modals["merges"]).on("show.bs.modal", function(e) { // Bootstrap modal
+            params.find = $(e.relatedTarget);
+            params.find = params.find[0].innerHTML;
+            params.modal = "merges";
+            params.searchIn = params.data["merges"];
+            refreshModalContents(params);
+        });
+
+    });
 
     /**********
      * Function declarations: Element node utilities
@@ -72,6 +151,22 @@
     /**********
      * Function declarations: General utilities
      **********/
+    function caseInsensitiveSort(array) {
+        return array.sort(function(a, b) {
+            let x = a.toLowerCase();
+            let y = b.toLowerCase();
+
+            if (x < y) {
+                return -1;
+            }
+            if (y < x) {
+                return 1;
+            }
+
+            return 0;
+        });
+    }
+
     function cleanName(name) {
         return name.toLowerCase().replace(/[^a-zA-Z0-9]/g, ""); // strip special characters
     }
@@ -83,7 +178,7 @@
         return cleanedName;
     }
 
-    function checkBasicField(config, field) {
+    function checkBasicField(params, field) {
         let output = "";
 
         if (field && typeof field === "object") {
@@ -91,7 +186,7 @@
 
             output = `<ul class="list-unstyled">`;
             fieldArray.forEach(function(item) {
-                output += `<li class="text-truncate" style="max-width: ${config.defaults["maxWidth"]};" title="${item}">${item}</li>`;
+                output += `<li class="text-truncate" style="max-width: ${params.defaults["maxWidth"]};" title="${item}">${item}</li>`;
             });
             output += `</ul>`;
         } else if (field && typeof field === "string") {
@@ -125,16 +220,238 @@
         };
     }
 
+    function matchAttributeToReference(list, attribute, matchBy = "friendlyName") {
+        let output = null;
+
+        //console.log(list, "vs", attribute);
+
+        Object.keys(list).forEach(function(key) {
+            if (list[key][matchBy] === attribute) {
+                //console.log(list[key][matchBy], "vs", attribute);
+                output = list[key];
+            }
+        });
+
+        return output;
+    }
+
+    function matchAttributeToMod(attribute, search) {
+        let output = false;
+
+        if (attribute === search) {
+            output = true;
+        }
+
+        return output;
+    }
+
     /**********
-     * Function declarations: Data display
+     * Function declarations: Data
      **********/
-    function getModAttributes(data, config, params) {
-        const mods = data.mods;
+    function filterModData(params) {
+        let offset = Number(params.search.get("offset"));
+        let maxNum = Number(params.maxNum);
+        let categories = params.data["categories"];
+        let sources = params.data["sources"];
+        let statuses = params.data["statuses"];
+        let searchCategory = null;
+        let searchSource = null;
+        let searchStatus = null;
+        let filterMessageText = [];
+        params.subset = [];
+
+        /*console.log("params.search.get(\"category\") = " + params.search.get("category"));
+        console.log("params.search.get(\"source\") = " + params.search.get("source"));
+        console.log("params.search.get(\"status\") = " + params.search.get("status"));
+        console.log("params.defaults[\"category\"] = " + params.defaults["category"]);
+        console.log("params.defaults[\"source\"] = " + params.defaults["source"]);
+        console.log("params.defaults[\"status\"] = " + params.defaults["status"]);*/
+
+        if ((params.search.get("category") !== "all") || (params.search.get("source") !== "all") || (params.search.get("status") !== "all")) {
+            //if ((params.search.get("category") !== params.defaults["category"]) || (params.search.get("source") !== params.defaults["source"]) || (params.search.get("status") !== params.defaults["status"])) {
+            console.log("some filter is active");
+
+            searchCategory = matchAttributeToReference(categories, params.search.get("category"));
+            searchSource = matchAttributeToReference(sources, params.search.get("source"));
+            searchStatus = matchAttributeToReference(statuses, params.search.get("status"));
+
+            console.log("searchCategory = ", searchCategory, "-----");
+            console.log("searchSource = ", searchSource, "-----");
+            console.log("searchStatus = ", searchStatus, "-----------");
+
+            // set error messages if necessary
+            if ((params.search.get("category") !== params.defaults["category"]) && (searchCategory === null || searchCategory === undefined)) {
+                params.messages.push({
+                    messageText: "Invalid filter criteria. Showing all categories.",
+                    messageType: "error"
+                });
+            }
+            if ((params.search.get("source") !== params.defaults["source"]) && (searchSource === null || searchSource === undefined)) {
+                params.messages.push({
+                    messageText: "Invalid filter criteria. Showing all sources.",
+                    messageType: "error"
+                });
+            }
+            if ((params.search.get("status") !== params.defaults["status"]) && (searchStatus === null || searchStatus === undefined)) {
+                params.messages.push({
+                    messageText: "Invalid filter criteria. Showing all statuses.",
+                    messageType: "error"
+                });
+            }
+
+            // set filter messages
+            if (params.search.get("category") !== "all") {
+                filterMessageText.push(`Category: &lsquo;${searchCategory.name}&rsquo;`);
+            }
+            if (params.search.get("source") !== "all") {
+                filterMessageText.push(`Source: &lsquo;${searchSource.name}&rsquo;`);
+            }
+            if (params.search.get("status") !== "all") {
+                filterMessageText.push(`Status: &lsquo;${searchStatus.name}&rsquo;`);
+            }
+            params.messages.push({
+                messageText: "<span class=\"font-weight-bold\">Filtering by&hellip;</span>     " + filterMessageText.join(" | "),
+                messageType: "info"
+            });
+
+            // get with the filtering
+            let mods = params.data["mods"];
+            Object.keys(mods).forEach(function(key) {
+                params.mod = mods[key];
+
+                // all mod filter scenarios (category / source / status)
+                if ((mods[key].category && searchCategory !== null) && (mods[key].source && searchSource !== null) && (mods[key].status && searchStatus !== null)) { // if category + source + status
+
+                    // handle category filtering
+                    params.filter = searchCategory;
+                    filterModDataByAttribute(params);
+                    // handle source filtering
+                    params.filter = searchSource;
+                    filterModDataByAttribute(params, "source", true);
+                    // handle status filtering
+                    params.filter = searchStatus;
+                    filterModDataByAttribute(params, "status", true);
+
+                } else if ((mods[key].category && searchCategory !== null) && (mods[key].source && searchSource !== null)) { // if category + source
+
+                    // handle category filtering
+                    params.filter = searchCategory;
+                    filterModDataByAttribute(params);
+                    // handle source filtering
+                    params.filter = searchSource;
+                    filterModDataByAttribute(params, "source", true);
+
+                } else if ((mods[key].category && searchCategory !== null) && (mods[key].status && searchStatus !== null)) { // if category + status
+
+                    // handle category filtering
+                    params.filter = searchCategory;
+                    filterModDataByAttribute(params, "category");
+                    // handle status filtering
+                    params.filter = searchStatus;
+                    filterModDataByAttribute(params, "status", true);
+
+                } else if (mods[key].category && searchCategory !== null) { // if category
+
+                    // handle category filtering
+                    params.filter = searchCategory;
+                    filterModDataByAttribute(params, "category");
+
+                } else if ((mods[key].source && searchSource !== null) && (mods[key].status && searchStatus !== null)) { // if source + status
+
+                    // handle source filtering
+                    params.filter = searchSource;
+                    filterModDataByAttribute(params, "source");
+                    // handle status filtering
+                    params.filter = searchStatus;
+                    filterModDataByAttribute(params, "status", true);
+
+                } else if (mods[key].source && searchSource !== null) { // if source
+
+                    // handle source filtering
+                    params.filter = searchSource;
+                    filterModDataByAttribute(params, "source");
+
+                } else if (mods[key].status && searchStatus !== null) { // if status
+
+                    // handle status filtering
+                    params.filter = searchStatus;
+                    filterModDataByAttribute(params, "status");
+
+                }
+
+            });
+
+            if (params.subset.length === 0) {
+                //params.subset = mods;
+                params.messages.push({
+                    messageText: "No results found.",
+                    messageType: "error"
+                });
+            }
+
+            params.dataLength["mods"] = params.subset.length;
+            params.subset = params.subset.slice(offset, maxNum);
+            handlePaginationMath(params);
+
+            return params;
+        } else {
+            console.log("no filter is active");
+
+            params.subset = params.data["mods"].slice(offset, maxNum);
+
+            return params;
+        }
+
+        return;
+    }
+
+    function filterModDataByAttribute(params, field = "category", reductive = false) {
+        let mod = params.mod;
+        let filter = params.filter;
+        let index = null;
+
+        if (typeof mod[field] === "object") {
+            let filterTypeArray = Object.values(mod[field]);
+
+            filterTypeArray.forEach(function(item) {
+                if (matchAttributeToMod(item, filter.name) && !reductive) {
+                    params.subset.push(mod);
+                } else if (!matchAttributeToMod(item, filter.name) && reductive) {
+                    index = params.subset.indexOf(mod);
+                    //console.log("index = " + index);
+                    if (index >= 0) {
+                        //console.log("removing...", mod);
+                        params.subset.splice(index, 1);
+                    }
+                }
+            });
+
+            return params;
+        } else {
+            if (matchAttributeToMod(mod[field], filter.name) && !reductive) {
+                params.subset.push(mod);
+            } else if (!matchAttributeToMod(mod[field], filter.name) && reductive) {
+                index = params.subset.indexOf(mod);
+                //console.log("index = " + index);
+                if (index >= 0) {
+                    //console.log("removing...", mod);
+                    params.subset.splice(index, 1);
+                }
+            }
+
+            return params;
+        }
+
+        return;
+    }
+
+    function getModAttributes(params) {
+        const mods = params.data["mods"];
+        let modStatuses = [];
 
         Object.keys(mods).forEach(function(key) {
             let files = mods[key].mergedFiles;
-            let status = mods[key].status.toLowerCase();
-            let category = mods[key].category;
+            let status = mods[key].status;
 
             if (files !== undefined) {
                 Object.keys(files).forEach(function(key2) {
@@ -148,34 +465,47 @@
                 });
             }
 
-            if (status && config.validStatuses["enabled"].includes(status)) {
-                params.modStats["enabled"]++;
-            } else if (status && (config.validStatuses["disabled"].includes(status) || config.validStatuses["downloaded"].includes(status))) {
-                params.modStats["disabled"]++;
-            }
+            if (status) {
+                /*if (typeof status === "string" && !modStatuses.includes(status)) {
+                    modStatuses.push(status);
+                } else if (typeof status === "object") {
+                    let statusArray = Object.values(status);
 
-            if (category && !params.modCategories.includes(category)) {
-                params.modCategories.push(category);
+                    statusArray.forEach(function(item) {
+                        if (!modStatuses.includes(item)) {
+                            modStatuses.push(item);
+            }
+                    });
+            }*/
+                status = status.toLowerCase();
             }
         });
+
+        //console.log(modStatuses);
 
         return params;
     }
 
-    function showLink(config, params) {
+    function showLink(params) {
         let output = "";
-        let maxWidth = Math.floor(Number(config.defaults["maxWidth"].substring(0, (config.defaults["maxWidth"].length - 3))) * 2);
+        let maxWidth = Math.floor(Number(params.defaults["maxWidth"].substring(0, (params.defaults["maxWidth"].length - 3))) * 2);
+        let target = "_self";
+        let linkText = params.resultName;
 
         if (params.linkUrl) {
-            output = `<a class="d-inline-block" href="${params.linkUrl}" style="max-width: ${maxWidth}rem;" title="${params.resultName}">${params.resultName}</a>`;
+            if (params.linkUrl.startsWith("http")) {
+                target = "_blank";
+                linkText += ` <small class="text-muted font-weight-light oi oi-external-link" title="(external link)"></small>`;
+            }
+            output = `<a class="d-inline-block" href="${params.linkUrl}" target="${target}" style="max-width: ${maxWidth}rem;" title="${params.resultName}">${linkText}</a>`;
         } else {
-            output = `<div style="max-width: ${maxWidth}rem;" title="${params.resultName}">${params.resultName}</div>`;
+            output = `<div style="max-width: ${maxWidth}rem;" title="${params.resultName}">${linkText}</div>`;
         }
 
         return output;
     }
 
-    function showVersions(config, versions) {
+    function showVersions(params, versions) {
         let output = "";
         let versionText = "";
 
@@ -187,43 +517,36 @@
                 if (versions[key]) {
                     versionText += `: ${versions[key]}`;
                 }
-                output += `<li class="text-truncate" style="max-width: ${config.defaults["maxWidth"]};" title="${versionText}">${versionText}</li>`;
+                output += `<li class="text-truncate" style="max-width: ${params.defaults["maxWidth"]};" title="${versionText}">${versionText}</li>`;
             });
 
             output += `</ul>`;
         } else if (typeof versions === "string") {
-            output = `<div class="text-truncate" style="max-width: ${config.defaults["maxWidth"]};" title="${versions}">${versions}</div>`;
+            output = `<div class="text-truncate" style="max-width: ${params.defaults["maxWidth"]};" title="${versions}">${versions}</div>`;
         }
 
         return output;
     }
 
-    function showStatus(config, status) {
+    function showStatus(params, status) {
+        let statusKey = matchAttributeToReference(params.data["statuses"], status, "name");
         let output = "";
 
-        if (config.validStatuses["enabled"].includes(status.toLowerCase())) {
-            output = `<span class="badge badge-pill badge-success">${status}</span>`;
-        } else if (config.validStatuses["disabled"].includes(status.toLowerCase())) {
-            output = `<span class="badge badge-pill badge-danger">${status}</span>`;
-        } else if (config.validStatuses["cannibalize"].includes(status.toLowerCase())) {
-            output = `<span class="badge badge-pill badge-light">${status}</span>`;
-        } else if (config.validStatuses["downloaded"].includes(status.toLowerCase())) {
-            output = `<span class="badge badge-pill badge-secondary">${status}</span>`;
-        } else if (status !== undefined) {
-            output = `<span class="badge badge-pill badge-warning">${status}</span>`;
+        if (statusKey) {
+            output = `<span class="badge badge-pill badge-${statusKey["type"]}">${status}</span>`;
         }
 
         return output;
     }
 
-    function showAssociatedMerges(config, merge) {
+    function showAssociatedMerges(params, merge) {
         let output = "";
 
         if (typeof merge === "object") {
             output = `<ul class="list-unstyled">`;
 
             Object.keys(merge).forEach(function(key) {
-                output += `<li class="text-truncate" style="max-width: ${config.defaults["maxWidth"]};" title="${key}"><a id="modal-for-${cleanMergeName(key)}" data-dismiss="modal" data-toggle="modal" data-target="#modal-merges" href="#">${key}</a></li>`;
+                output += `<li class="text-truncate" style="max-width: ${params.defaults["maxWidth"]};" title="${key}"><a id="modal-for-${cleanMergeName(key)}" data-dismiss="modal" data-toggle="modal" data-target="#modal-merges" href="#">${key}</a></li>`;
             });
 
             output += `</ul>`;
@@ -285,10 +608,117 @@
         return output;
     }
 
+    function showMergedFileListInBow(params) {
+        let output = "";
+        let merge = params.mergedFileContents[params.mergeName];
+        let mergedFileList = [];
+
+        if (checkForMergedFileContents(merge)) {
+            Object.keys(merge).forEach(function(key) {
+                if (merge[key][0].length > 1) {
+                    merge[key][0].forEach(function(i) {
+                        mergedFileList.push(i);
+                    });
+                } else {
+                    mergedFileList.push(merge[key][0].toString());
+                }
+            });
+
+            output += `
+                <form>
+                    <div class="form-group">
+                        <label for="merged-file-list">File list only</label>
+                        <textarea class="form-control form-control-sm" id="merged-file-list" rows="5">${caseInsensitiveSort(mergedFileList).join("\n")}</textarea>
+                    </div>
+                </form>`;
+        }
+
+        return output;
+    }
+
+    function updateFilterAllNav(params) {
+        params.nav = params.containers["categoryNav"];
+        params.list = params.categories;
+        updateFilterNav(params);
+
+        params.nav = params.containers["sourceNav"];
+        params.list = params.sources;
+        updateFilterNav(params, "sources");
+
+        params.nav = params.containers["statusNav"];
+        params.list = params.statuses;
+        updateFilterNav(params, "statuses");
+
+        return;
+    }
+
+    function updateFilterNav(params, type = "categories") {
+        let navNode = null;
+        let list = params.list;
+        let offset = Number(params.defaults["offset"]);
+        let show = Number(params.defaults["show"]);
+        let category = params.search.get("category");
+        let source = params.search.get("source");
+        let status = params.search.get("status");
+        let nsfw = params.search.get("nsfw");
+        params.container = document.getElementById(params.nav);
+        params.returnAllNodes = false;
+        params.elem = "div";
+        params.childNode = "a";
+        params.childAttr = {
+            class: "dropdown-item"
+        };
+
+        switch (type) {
+            case "sources":
+                source = "all";
+                break;
+            case "statuses":
+                status = "all";
+                break;
+            default:
+                category = "all";
+        }
+
+        if (params.container) {
+            navNode = findNode(params);
+        }
+
+        if (navNode) {
+            params.childAttr["href"] = `?view=mods&offset=${offset}&show=${show}&category=${category}&source=${source}&status=${status}`;
+            params.contents = `All ${type}`;
+
+            navNode.appendChild(insertChildNode(params));
+
+            category = params.search.get("category");
+            source = params.search.get("source");
+            status = params.search.get("status");
+
+            Object.keys(list).forEach(function(key) {
+                switch (type) {
+                    case "sources":
+                        source = list[key].friendlyName;
+                        break;
+                    case "statuses":
+                        status = list[key].friendlyName;
+                        break;
+                    default:
+                        category = list[key].friendlyName;
+                }
+                params.childAttr["href"] = `?view=mods&offset=${offset}&show=${show}&category=${category}&source=${source}&status=${status}`;
+                params.contents = `${list[key].name}`;
+
+                navNode.appendChild(insertChildNode(params));
+            });
+        }
+
+        return;
+    }
+
     /**********
      * Function declarations: Modals
      **********/
-    function refreshModalContents(config, params) {
+    function refreshModalContents(params) {
         const pool = params.searchIn;
         const found = pool.find(function(item) {
             return item.name === params.find;
@@ -309,17 +739,17 @@
 
                 newModalContent = `<dl class="row">
                     <dt class="col-sm-3">Source:</dt>
-                    <dd class="col-sm-9">${checkBasicField(config, found.source)}</dd>
+                    <dd class="col-sm-9">${checkBasicField(params, found.source)}</dd>
                     <dt class="col-sm-3">Version(s):</dt>
-                    <dd class="col-sm-9">${showVersions(config, found.versions)}</dd>
+                    <dd class="col-sm-9">${showVersions(params, found.versions)}</dd>
                     <dt class="col-sm-3">Category:</dt>
-                    <dd class="col-sm-9">${checkBasicField(config, found.category)}</dd>
+                    <dd class="col-sm-9">${checkBasicField(params, found.category)}</dd>
                     <dt class="col-sm-3">Merged to:</dt>
-                    <dd class="col-sm-9">${showAssociatedMerges(config, found.mergedFiles)}</dd>
+                    <dd class="col-sm-9">${showAssociatedMerges(params, found.mergedFiles)}</dd>
                     <dt class="col-sm-3">Status:</dt>
-                    <dd class="col-sm-9">${showStatus(config, found.status)}</dd>
+                    <dd class="col-sm-9">${showStatus(params, found.status)}</dd>
                     <dt class="col-sm-3">Comments:</dt>
-                    <dd class="col-sm-9">${checkBasicField(config, found.comments)}</dd>
+                    <dd class="col-sm-9">${checkBasicField(params, found.comments)}</dd>
                     </dl>`;
 
             } else { // merge modal
@@ -339,10 +769,11 @@
                 }
                 if (found.comments) {
                     newModalContent += `<dt class="col-sm-3">Comments:</dt>
-                        <dd class="col-sm-9">${checkBasicField(config, found.comments)}</dd>`;
+                        <dd class="col-sm-9">${checkBasicField(params, found.comments)}</dd>`;
                 }
 
                 newModalContent += `</dl>`;
+                newModalContent += showMergedFileListInBow(params);
 
             }
         }
@@ -356,31 +787,35 @@
     /**********
      * Function declarations: Search/filter/views
      **********/
-    function updateQuery(data, config, params) {
+    function updateQuery(params) {
         params.search = new URLSearchParams(document.location.search.substring(1));
 
         if (params.search.has("view") === false) {
-            params.search.set("view", config.defaults["view"]);
+            params.search.set("view", params.defaults["view"]);
         }
         if (params.search.has("offset") === false) {
-            params.search.set("offset", config.defaults["offset"]);
+            params.search.set("offset", params.defaults["offset"]);
         }
         if (params.search.has("show") === false) {
-            params.search.set("show", config.defaults["show"]);
+            params.search.set("show", params.defaults["show"]);
         }
         if (params.search.has("category") === false) {
-            params.search.set("category", config.defaults["category"]);
+            params.search.set("category", params.defaults["category"]);
         }
         if (params.search.has("source") === false) {
-            params.search.set("source", config.defaults["source"]);
+            params.search.set("source", params.defaults["source"]);
+        }
+        if (params.search.has("status") === false) {
+            params.search.set("status", params.defaults["status"]);
+        }
+        if (params.search.has("nsfw") === false) {
+            params.search.set("nsfw", params.defaults["nsfw"]);
         }
 
         //console.log(`?view=${params.search.get("view")}&offset=${params.search.get("offset")}&show=${params.search.get("show")}`);
         //console.log(document.location.search);
 
         updateUrl(params);
-
-        showSection(data, config, params);
 
         return;
     }
@@ -389,7 +824,7 @@
         let newUrl = "";
 
         if (params.search.get("view") === "mods") {
-            newUrl = `?view=${params.search.get("view")}&offset=${params.search.get("offset")}&show=${params.search.get("show")}`;
+            newUrl = `?view=${params.search.get("view")}&offset=${params.search.get("offset")}&show=${params.search.get("show")}&category=${params.search.get("category")}&source=${params.search.get("source")}&status=${params.search.get("status")}`;
         } else {
             newUrl = `?view=${params.search.get("view")}`;
         }
@@ -401,22 +836,21 @@
         return;
     }
 
-    function validateOffset(config, params) {
-        let offset = Number(params.offset);
-        let modListLength = Number(params.modListLength);
-        let show = Number(params.show);
+    function validateOffset(params) {
+        let offset = Number(params.search.get("offset"));
+        let show = Number(params.search.get("show"));
+        let modListLength = Number(params.dataLength["mods"]);
         let newOffset = offset;
 
         if (offset < 0) {
-            newOffset = Number(config.defaults["offset"]);
+            newOffset = Number(params.defaults["offset"]);
         } else if (offset > modListLength) {
             newOffset = modListLength - show;
         } else if (offset >= 0 && offset < modListLength) {
             newOffset = offset;
         }
 
-        params.offset = newOffset;
-        params.search.set("offset", params.offset);
+        params.search.set("offset", newOffset);
 
         updateUrl(params);
 
@@ -424,8 +858,8 @@
     }
 
     function validateShow(params) {
-        let show = params.show;
-        let modListLength = Number(params.modListLength);
+        let show = Number(params.search.get("show"));
+        let modListLength = Number(params.dataLength["mods"]);
         let newShow = show;
 
         if (show === "all") {
@@ -433,15 +867,15 @@
             params.maxNum = modListLength;
         } else {
             show = Number(show);
+            if (show > modListLength) {
+                newShow = modListLength;
+            }
             if (show <= 0) {
                 newShow = 1;
-            } else if (show > modListLength) {
-                newShow = modListLength;
             }
         }
 
-        params.show = newShow;
-        params.search.set("show", params.show);
+        params.search.set("show", newShow);
 
         updateUrl(params);
 
@@ -450,27 +884,36 @@
 
     function validateMaxNum(params) {
         let maxNum = Number(params.maxNum);
-        let modListLength = Number(params.modListLength);
-        let offset = Number(params.offset);
+        let modListLength = Number(params.dataLength["mods"]);
+        let offset = Number(params.search.get("offset"));
+        let show = Number(params.search.get("show"));
         let newMaxNum = maxNum;
 
         if (maxNum > modListLength) {
             newMaxNum = modListLength;
         }
         if (offset >= newMaxNum) {
-            params.offset = Math.floor(newMaxNum - show);
-            params.search.set("offset", params.offset);
+            offset = Math.floor(newMaxNum - show);
+            params.search.set("offset", offset);
         }
         params.maxNum = newMaxNum;
 
         updateUrl(params);
 
+        /*console.log("validateMaxNum(params)...");
+        console.log("maxNum = " + maxNum);
+        console.log("modListLength = " + modListLength);
+        console.log("offset = " + offset);
+        console.log("show = " + show);
+        console.log("newMaxNum = " + newMaxNum);
+        console.log("----------");*/
+
         return params;
     }
 
-    function hideAllSections(config, params) {
+    function hideAllSections(params) {
         let mainNode = null;
-        params.container = document.getElementById(config.containers["main"]);
+        params.container = document.getElementById(params.containers["main"]);
         params.returnAllNodes = true;
         params.elem = "section";
 
@@ -488,9 +931,9 @@
         return;
     }
 
-    function toggleActiveNav(config, params) {
+    function toggleActiveNav(params) {
         let navNode = null;
-        params.container = document.getElementById(config.containers["topNav"]);
+        params.container = document.getElementById(params.containers["topNav"]);
         params.returnAllNodes = true;
         params.elem = "li";
 
@@ -517,101 +960,131 @@
             ancestorNode.classList.remove("invisible");
             ancestorNode.classList.add("visible");
         } else {
-            displayError();
+            displayFatalError();
         }
 
         return;
     }
 
-    function showSection(data, config, params) {
-        hideAllSections(config, params);
+    function showSection(params) {
+        hideAllSections(params);
 
         switch (params.search.get("view")) {
             case "tools":
-                displayTools(data, config, params);
+                displayTools(params);
                 break;
             case "merges":
-                displayMerges(data, config, params);
+                displayMerges(params);
                 console.log(params);
                 break;
             default:
-                displayMods(data, config, params);
+                displayMods(params);
         }
 
         return;
     }
 
-    function displayError() {
+    function showMessages(params) {
+        let messagesNode = null;
+        params.container = document.getElementById(params.containers["messages"]);
+        params.returnAllNodes = false;
+        params.elem = "div";
+        params.childNode = "p";
+        params.childAttr = {
+            class: "alert"
+        };
+
+        if (params.container) {
+            messagesNode = findNode(params);
+        }
+
+        if (messagesNode && (params.messages.length > 0)) {
+            params.messages.forEach(function(item) {
+                if (item.messageType === "error") {
+                    params.childAttr.class = params.childAttr.class + " alert-danger";
+                } else {
+                    params.childAttr.class = params.childAttr.class + " alert-info";
+                }
+                params.contents = `${item.messageText}`;
+
+                messagesNode.appendChild(insertChildNode(params));
+            });
+            params.container.classList.remove("invisible");
+        }
+    }
+
+    function displayFatalError() {
         document.body.innerHTML = `<div class="alert alert-danger" role="alert">Something went very wrong!</div>`;
 
         return;
     }
 
-    function displayMods(data, config, params) {
-        const mods = data.mods.sort(compareValues("name"));
-        /*const nsfwMods = Object.keys(mods).filter(function(key) {
-            //console.log(mods[key]);
-            //return mods[key]["nsfw"] === "y";
-            return mods[key];
-        });
-        console.log(nsfwMods);*/
+    function displayMods(params) {
+        const mods = params.data["mods"].sort(compareValues("name"));
         let modsTableNode = null;
-        params.container = document.getElementById(config.tables["mods"]);
+        params.container = document.getElementById(params.tables["mods"]);
         params.returnAllNodes = false;
         params.elem = "tbody";
         params.childNode = "tr";
         params.childAttr = {};
         params.activeNav = "mods";
+        params.categories = params.data["categories"].sort(compareValues("name"));
+        params.sources = params.data["sources"].sort(compareValues("name"));
+        params.statuses = params.data["statuses"].sort(compareValues("name"));
 
         if (params.container) {
             modsTableNode = findNode(params);
         } else {
-            displayError();
+            displayFatalError();
         }
 
         if (modsTableNode) {
-            toggleActiveNav(config, params);
+            toggleActiveNav(params);
             enableAncestorSection(modsTableNode);
 
-            // respect requested pagination
-            handlePaginationMath(config, params);
-
             // get all the mods and create the merged file objects, stats, and categories list
-            getModAttributes(data, config, params);
+            getModAttributes(params);
+
+            // respect requested pagination
+            handlePaginationMath(params);
 
             // ... but now only show what's necessary
-            let subset = mods.slice(params.offset, params.maxNum);
-            Object.keys(subset).forEach(function(key) {
-                params.resultName = subset[key].name;
-                params.linkUrl = subset[key].url;
+            filterModData(params);
+            console.log("----------");
+            console.log(params);
+
+            Object.keys(params.subset).forEach(function(key) {
+                params.resultName = params.subset[key].name;
+                params.linkUrl = params.subset[key].url;
                 params.childAttr = {
-                    id: `row-${cleanName(subset[key].name)}`
+                    id: `row-${cleanName(params.subset[key].name)}`
                 };
-                if (subset[key].nsfw === "y") {
+                if (params.subset[key].nsfw === "y") {
                     params.childAttr["class"] = "text-muted font-italic";
                 }
-                params.contents = `<td>${showLink(config, params)}</td>
-                    <td>${checkBasicField(config, subset[key].source)}</td>
-                    <td>${showVersions(config, subset[key].versions)}</td>
-                    <td>${checkBasicField(config, subset[key].category)}</td>
-                    <td>${showAssociatedMerges(config, subset[key].mergedFiles)}</td>
-                    <td>${showStatus(config, subset[key].status)}</td>
-                    <td>${checkBasicField(config, subset[key].comments)}</td>`;
+                params.contents = `<td>${showLink(params)}</td>
+                    <td>${checkBasicField(params, params.subset[key].source)}</td>
+                    <td>${showVersions(params, params.subset[key].versions)}</td>
+                    <td>${checkBasicField(params, params.subset[key].category)}</td>
+                    <td>${showAssociatedMerges(params, params.subset[key].mergedFiles)}</td>
+                    <td>${showStatus(params, params.subset[key].status)}</td>
+                    <td>${checkBasicField(params, params.subset[key].comments)}</td>`;
 
                 modsTableNode.appendChild(insertChildNode(params));
             });
 
             // show filters
-            if (params.modCategories.length > 0) {
-                //console.log(params.modCategories.sort()); // dev
-            }
+            updateFilterAllNav(params);
 
             // show pagination
-            showPagination(config, params);
+            showPagination(params);
+
+            // show any error messages
+            showMessages(params);
 
             // show stats
             /*let statsNode = null;
-            params.container = document.getElementById(config.containers["stats"]);
+            params.container = document.getElementById(params.containers["stats"]);
             params.elem = null;
             params.childNode = "div";
             params.childAttr = {
@@ -627,16 +1100,16 @@
                 statsNode.appendChild(insertChildNode(params));
             }*/
         } else {
-            displayError();
+            displayFatalError();
         }
 
         return;
     }
 
-    function displayTools(data, config, params) {
-        const tools = data.tools.sort(compareValues("name"));
+    function displayTools(params) {
+        const tools = params.data["tools"].sort(compareValues("name"));
         let toolsTableNode = null;
-        params.container = document.getElementById(config.tables["tools"]);
+        params.container = document.getElementById(params.tables["tools"]);
         params.returnAllNodes = false;
         params.elem = "tbody";
         params.childNode = "tr";
@@ -646,11 +1119,11 @@
         if (params.container) {
             toolsTableNode = findNode(params);
         } else {
-            displayError();
+            displayFatalError();
         }
 
         if (toolsTableNode) {
-            toggleActiveNav(config, params);
+            toggleActiveNav(params);
             enableAncestorSection(toolsTableNode);
 
             Object.keys(tools).forEach(function(key) {
@@ -659,25 +1132,25 @@
                 params.childAttr = {
                     id: `row-${cleanName(tools[key].name)}`
                 };
-                params.contents = `<td>${showLink(config, params)}</td>
-                    <td>${checkBasicField(config, tools[key].source)}</td>
-                    <td>${showVersions(config, tools[key].versions)}</td>
-                    <td>${showStatus(config, tools[key].status)}</td>
-                    <td>${checkBasicField(config, tools[key].comments)}</td>`;
+                params.contents = `<td>${showLink(params)}</td>
+                    <td>${checkBasicField(params, tools[key].source)}</td>
+                    <td>${showVersions(params, tools[key].versions)}</td>
+                    <td>${showStatus(params, tools[key].status)}</td>
+                    <td>${checkBasicField(params, tools[key].comments)}</td>`;
 
                 toolsTableNode.appendChild(insertChildNode(params));
             });
         } else {
-            displayError();
+            displayFatalError();
         }
 
         return;
     }
 
-    function displayMerges(data, config, params) {
-        const merges = data.merges.sort(compareValues("name"));
+    function displayMerges(params) {
+        const merges = params.data["merges"].sort(compareValues("name"));
         let mergesTableNode = null;
-        params.container = document.getElementById(config.tables["merges"]);
+        params.container = document.getElementById(params.tables["merges"]);
         params.returnAllNodes = false;
         params.elem = "tbody";
         params.childNode = "tr";
@@ -687,28 +1160,28 @@
         if (params.container) {
             mergesTableNode = findNode(params);
         } else {
-            displayError();
+            displayFatalError();
         }
 
         if (mergesTableNode) {
             // get all the mods and create the merged file objects, stats, and categories list
-            getModAttributes(data, config, params);
+            getModAttributes(params);
 
-            toggleActiveNav(config, params);
+            toggleActiveNav(params);
             enableAncestorSection(mergesTableNode);
 
             Object.keys(merges).forEach(function(key) {
                 params.childAttr["id"] = `row-${cleanMergeName(merges[key].name)}`;
                 params.mergeName = merges[key].name;
-                params.contents = `<td>${checkBasicField(config, merges[key].name)} ${showMergedFileAccordion(params)}</td>
+                params.contents = `<td>${checkBasicField(params, merges[key].name)} ${showMergedFileAccordion(params)}</td>
                     <td>${showNavmeshToggle(merges[key].rebuildNavmeshOnMerge)}</td>
-                    <td>${checkBasicField(config, merges[key].comments)}</td>`;
+                    <td>${checkBasicField(params, merges[key].comments)}</td>`;
                 mergesTableNode.appendChild(insertChildNode(params));
 
                 params.childAttr = {};
             });
         } else {
-            displayError();
+            displayFatalError();
         }
 
         return;
@@ -718,33 +1191,41 @@
     /**********
      * Function declarations: Pagination and statistics
      **********/
-    function handlePaginationMath(config, params) {
-        params.show = params.search.get("show");
-        params.offset = Number(params.search.get("offset"));
-        params.modListLength = Number(config.dataLength["mods"]);
-        params.maxNum = params.modListLength;
+    function handlePaginationMath(params) {
+        let show = Number(params.search.get("show"));
+        let offset = Number(params.search.get("offset"));
+        let modListLength = Number(params.dataLength["mods"]);
+        params.maxNum = modListLength;
 
-        validateOffset(config, params);
+        validateOffset(params);
         validateShow(params);
+        validateMaxNum(params);
 
-        if (params.show !== "all") { // show by page
-            params.maxNum = Number(params.offset) + Number(params.show);
-            params.show = Number(params.show);
+        if (show !== "all") { // show by page
+            params.maxNum = offset + show;
 
             validateMaxNum(params);
 
-            params.pageCount = Math.ceil(params.modListLength / params.show);
-            params.currentPage = Math.ceil(params.offset / params.show) + 1;
+            params.pageCount = Math.ceil(modListLength / show);
+            params.currentPage = Math.ceil(offset / show) + 1;
         }
+
+        /*console.log("handlePaginationMath(params)...");
+        console.log("show = " + show);
+        console.log("offset = " + offset);
+        console.log("modListLength = " + modListLength);
+        console.log("params.maxNum = " + params.maxNum);
+        console.log("----------");*/
 
         return params;
     }
 
-    function showPagination(config, params) {
+    function showPagination(params) {
         let paginationNode = null;
+        let modListLength = Number(params.dataLength["mods"]);
 
-        if ((params.show !== "all") && (params.show < params.modListLength)) {
-            params.container = document.getElementById(config.containers["pagination"]);
+        if ((params.search.get("show") !== "all") && (Number(params.search.get("show")) < modListLength)) {
+            params.container = document.getElementById(params.containers["pagination"]);
             params.elem = null;
             params.childNode = "ul";
             params.childAttr = {
@@ -764,35 +1245,48 @@
             }
         }
 
+        /*console.log("showPagination(params)...");
+        console.log("modListLength = " + modListLength);
+        console.log("----------");*/
+
         return;
     }
 
     function showPrevPage(params) {
-        let newOffset = Number(params.offset) - Number(params.show);
+        let offset = Number(params.search.get("offset"));
+        let show = Number(params.search.get("show"));
+        let newOffset = offset - show;
+        let category = params.search.get("category");
+        let source = params.search.get("source");
+        let status = params.search.get("status");
         let classes = ["page-item"];
         let output = "";
 
         if (newOffset < 0) {
             newOffset = 0;
         }
-        params.search.set("offset", newOffset);
 
         if (params.currentPage < 2) {
             classes.push("disabled");
         }
 
         output += `<li class="${classes.join(" ")}">
-                <a class="page-link" href="?view=mods&offset=${newOffset}&show=${params.show}">Previous</a>
+                <a class="page-link" href="?view=mods&offset=${newOffset}&show=${show}&category=${category}&source=${source}&status=${status}">Previous</a>
             </li>`;
 
         return output;
     }
 
     function showNextPage(params) {
-        let newOffset = Number(params.offset) + Number(params.show);
-        let offsetLimit = Number(params.modListLength) - Number(params.show);
+        let offset = Number(params.search.get("offset"));
+        let show = Number(params.search.get("show"));
+        let newOffset = offset + show;
+        let offsetLimit = Number(params.dataLength["mods"]) - show;
         //let pageLimit = Number(params.pageCount) - 1;
         let pageLimit = Number(params.pageCount);
+        let category = params.search.get("category");
+        let source = params.search.get("source");
+        let status = params.search.get("status");
         let classes = ["page-item"];
         let output = "";
 
@@ -806,33 +1300,29 @@
         }
 
         output += `<li class="${classes.join(" ")}">
-                <a class="page-link" href="?view=mods&offset=${newOffset}&show=${params.show}">Next</a>
+                <a class="page-link" href="?view=mods&offset=${newOffset}&show=${show}&category=${category}&source=${source}&status=${status}">Next</a>
             </li>`;
 
         return output;
     }
 
     function showNumberedPages(params) {
-        let offset = Number(params.offset);
-        let show = Number(params.show);
+        let offset = Number(params.search.get("offset"));
+        let show = Number(params.search.get("show"));
         let maxNum = Number(params.maxNum);
-        let offsetText = offset;
+        let offsetText = offset + 1;
         let output = "";
-
-        if (offset === 0) {
-            offsetText = 1;
-        }
 
         // numbered page situation was a shitshow - cheating with a prev + text + next solution for now
 
         output += `<li class="page-item disabled">
-                <a class="page-link text-dark" href="?view=mods&offset=${offset}&show=${show}">Viewing ${offsetText} &ndash; ${maxNum} of ${params.modListLength}</a>
+                <a class="page-link text-dark" href="?view=mods&offset=${offset}&show=${show}">Viewing ${offsetText} &ndash; ${maxNum} of ${params.dataLength["mods"]}</a>
             </li>`;
 
         return output;
     }
 
-    function showModStats(params) {
+    /*function showModStats(params) {
         let output = "";
         let total = Number(params.modStats["enabled"]) + Number(params.modStats["disabled"]);
         let enabledCount = Math.ceil((Number(params.modStats["enabled"]) / total) * 100);
@@ -844,83 +1334,6 @@
         output += `<div class="progress-bar bg-warning" role="progressbar" style="width: ${otherCount}%" title="???: ${otherCount}%">???</div>`;
 
         return output;
-    }
-
-    /**********
-     * Callback for loaded JSON
-     **********/
-    loadJSON(function(response) {
-        const jsonResponse = JSON.parse(response);
-        const data = {
-            merges: jsonResponse.mergedEsps,
-            mods: jsonResponse.mods,
-            tools: jsonResponse.tools
-        };
-        const config = {
-            containers: {
-                main: "container-main",
-                pagination: "pagination-mods",
-                stats: "stats-mods",
-                topNav: "navbar-top"
-            },
-            dataLength: {
-                merges: data["merges"].length,
-                mods: data["mods"].length,
-                tools: data["tools"].length
-            },
-            defaults: {
-                category: "all",
-                maxWidth: "10rem",
-                offset: 0,
-                show: 50,
-                source: "all",
-                view: "mods"
-            },
-            modals: {
-                merges: "#modal-merges",
-                mods: "#modal-mods"
-            },
-            tables: {
-                merges: "table-merges",
-                mods: "table-mods",
-                tools: "table-tools"
-            },
-            validStatuses: {
-                cannibalize: ["resource"],
-                disabled: ["deactivated", "disabled", "smc - deactivated", "smc - disabled", "not installed"],
-                downloaded: ["downloaded"],
-                enabled: ["activated", "enabled", "smc", "smc - activated", "smc - enabled", "installed"]
-            }
-        };
-        let params = {
-            childAttr: {},
-            mergedFileContents: {},
-            modCategories: [],
-            modStats: {
-                enabled: 0,
-                disabled: 0
-            }
-        };
-
-        // update view
-        updateQuery(data, config, params);
-
-        // deal with modals
-        $(config.modals["mods"]).on("show.bs.modal", function(e) { // Bootstrap modal
-            params.find = $(e.relatedTarget);
-            params.find = params.find[0].innerHTML;
-            params.modal = "mods";
-            params.searchIn = data.mods;
-            refreshModalContents(config, params);
-        });
-        $(config.modals["merges"]).on("show.bs.modal", function(e) { // Bootstrap modal
-            params.find = $(e.relatedTarget);
-            params.find = params.find[0].innerHTML;
-            params.modal = "merges";
-            params.searchIn = data.merges;
-            refreshModalContents(config, params);
-        });
-
-    });
+    }*/
 
 })();
