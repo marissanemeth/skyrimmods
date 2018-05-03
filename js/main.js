@@ -41,7 +41,6 @@
                 pagination: "pagination-mods",
                 sourceNav: "mods-source-navbar-dropdown",
                 statusNav: "mods-status-navbar-dropdown",
-                //stats: "stats-mods",
                 topNav: "navbar-top"
             },
             defaults: {
@@ -60,10 +59,6 @@
                 merges: "#modal-merges",
                 mods: "#modal-mods"
             },
-            /*modStats: {
-                enabled: 0,
-                disabled: 0
-            },*/
             tables: {
                 merges: "table-merges",
                 mods: "table-mods",
@@ -223,11 +218,8 @@
     function matchAttributeToReference(list, attribute, matchBy = "friendlyName") {
         let output = null;
 
-        //console.log(list, "vs", attribute);
-
         Object.keys(list).forEach(function(key) {
             if (list[key][matchBy] === attribute) {
-                //console.log(list[key][matchBy], "vs", attribute);
                 output = list[key];
             }
         });
@@ -259,13 +251,6 @@
         let searchStatus = null;
         let filterMessageText = [];
         params.subset = [];
-
-        /*console.log("params.search.get(\"category\") = " + params.search.get("category"));
-        console.log("params.search.get(\"source\") = " + params.search.get("source"));
-        console.log("params.search.get(\"status\") = " + params.search.get("status"));
-        console.log("params.defaults[\"category\"] = " + params.defaults["category"]);
-        console.log("params.defaults[\"source\"] = " + params.defaults["source"]);
-        console.log("params.defaults[\"status\"] = " + params.defaults["status"]);*/
 
         if ((params.search.get("category") !== "all") || (params.search.get("source") !== "all") || (params.search.get("status") !== "all")) {
             //if ((params.search.get("category") !== params.defaults["category"]) || (params.search.get("source") !== params.defaults["source"]) || (params.search.get("status") !== params.defaults["status"])) {
@@ -420,7 +405,6 @@
                     index = params.subset.indexOf(mod);
                     //console.log("index = " + index);
                     if (index >= 0) {
-                        //console.log("removing...", mod);
                         params.subset.splice(index, 1);
                     }
                 }
@@ -432,9 +416,7 @@
                 params.subset.push(mod);
             } else if (!matchAttributeToMod(mod[field], filter.name) && reductive) {
                 index = params.subset.indexOf(mod);
-                //console.log("index = " + index);
                 if (index >= 0) {
-                    //console.log("removing...", mod);
                     params.subset.splice(index, 1);
                 }
             }
@@ -480,8 +462,6 @@
                 status = status.toLowerCase();
             }
         });
-
-        //console.log(modStatuses);
 
         return params;
     }
@@ -812,9 +792,6 @@
             params.search.set("nsfw", params.defaults["nsfw"]);
         }
 
-        //console.log(`?view=${params.search.get("view")}&offset=${params.search.get("offset")}&show=${params.search.get("show")}`);
-        //console.log(document.location.search);
-
         updateUrl(params);
 
         return;
@@ -899,14 +876,6 @@
         params.maxNum = newMaxNum;
 
         updateUrl(params);
-
-        /*console.log("validateMaxNum(params)...");
-        console.log("maxNum = " + maxNum);
-        console.log("modListLength = " + modListLength);
-        console.log("offset = " + offset);
-        console.log("show = " + show);
-        console.log("newMaxNum = " + newMaxNum);
-        console.log("----------");*/
 
         return params;
     }
@@ -1082,23 +1051,6 @@
             // show any error messages
             showMessages(params);
 
-            // show stats
-            /*let statsNode = null;
-            params.container = document.getElementById(params.containers["stats"]);
-            params.elem = null;
-            params.childNode = "div";
-            params.childAttr = {
-                class: "progress"
-            };
-
-            if (params.container) {
-                statsNode = params.container;
-            }
-
-            if (statsNode) {
-                params.contents = showModStats(params);
-                statsNode.appendChild(insertChildNode(params));
-            }*/
         } else {
             displayFatalError();
         }
@@ -1210,13 +1162,6 @@
             params.currentPage = Math.ceil(offset / show) + 1;
         }
 
-        /*console.log("handlePaginationMath(params)...");
-        console.log("show = " + show);
-        console.log("offset = " + offset);
-        console.log("modListLength = " + modListLength);
-        console.log("params.maxNum = " + params.maxNum);
-        console.log("----------");*/
-
         return params;
     }
 
@@ -1244,10 +1189,6 @@
                 paginationNode.appendChild(insertChildNode(params));
             }
         }
-
-        /*console.log("showPagination(params)...");
-        console.log("modListLength = " + modListLength);
-        console.log("----------");*/
 
         return;
     }
@@ -1321,19 +1262,5 @@
 
         return output;
     }
-
-    /*function showModStats(params) {
-        let output = "";
-        let total = Number(params.modStats["enabled"]) + Number(params.modStats["disabled"]);
-        let enabledCount = Math.ceil((Number(params.modStats["enabled"]) / total) * 100);
-        let disabledCount = Math.ceil((Number(params.modStats["disabled"]) / total) * 100);
-        let otherCount = 100 - (enabledCount + disabledCount);
-
-        output += `<div class="progress-bar bg-success" role="progressbar" style="width: ${enabledCount}%" title="Enabled: ${enabledCount}%">Enabled</div>`;
-        output += `<div class="progress-bar bg-danger" role="progressbar" style="width: ${disabledCount}%" title="Disabled: ${disabledCount}%">Disabled</div>`;
-        output += `<div class="progress-bar bg-warning" role="progressbar" style="width: ${otherCount}%" title="???: ${otherCount}%">???</div>`;
-
-        return output;
-    }*/
 
 })();
