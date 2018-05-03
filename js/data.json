@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2018-05-02",
+    "lastUpdated": "2018-05-03",
     "status": "incomplete",
     "categories": [{
             "friendlyName": "animation",
@@ -3021,7 +3021,12 @@
                 "Gameplay",
                 "Compatibility Patches"
             ],
-            "status": "???",
+            "status": "Enabled",
+            "mergedFiles": {
+                "Creatures - Merged.esp": [
+                    "CACO_SkyrimImmersiveCreatures+DLC2_Patch.esp"
+                ]
+            },
             "relatesTo": "???"
         },
         {
@@ -3046,6 +3051,9 @@
             "mergedFiles": {
                 "Core - Merged.esp": [
                     "Complete Crafting Overhaul_Remade.esp"
+                ],
+                "Creatures - Merged.esp": [
+                    "CACO_SkyrimImmersiveCreatures+DLC2_Patch.esp"
                 ]
             }
         },
@@ -4668,7 +4676,12 @@
             "source": "Nexus",
             "versions": "3.6c",
             "category": "Textures | Meshes",
-            "status": "???",
+            "status": "Enabled",
+            "mergedFiles": {
+                "Creatures - Merged.esp": [
+                    "dD-DG-DB-Immersive Creatures EBT Patch.esp"
+                ]
+            },
             "comments": "<p>Don&apos;t install through SMC anymore - it doesn&apos;t account for patches</p>"
         },
         {
