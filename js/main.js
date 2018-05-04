@@ -26,6 +26,7 @@
                 containers: {
                     categoryNav: "mods-category-navbar-dropdown",
                     messages: "messages",
+                    index: "index",
                     main: "container-main",
                     pagination: "pagination-mods",
                     sourceNav: "mods-source-navbar-dropdown",
@@ -36,11 +37,11 @@
                     category: "all",
                     maxWidth: "10rem",
                     offset: 0,
-                    show: 1000,
+                    show: 100,
                     source: "all",
                     status: "all",
                     nsfw: true,
-                    view: "mods"
+                    view: "index"
                 },
                 fileListToCopy: "",
                 messages: [],
@@ -485,7 +486,6 @@
         if (params.linkUrl) {
             if (params.linkUrl.startsWith("http")) {
                 target = "_blank";
-                linkText += ` <small class="text-muted font-weight-light oi oi-external-link" title="(external link)"></small>`;
             }
             output = `<a class="d-inline-block" href="${params.linkUrl}" target="${target}" style="max-width: ${maxWidth}rem;" title="${params.resultName}">${linkText}</a>`;
         } else {
@@ -582,10 +582,10 @@
         let mergedFileListRaw = [];
 
         if (checkForMergedFileContents(merge)) {
-            output += `<ul>`;
+            output += `<ul class="list-group list-group-flush">`;
 
             Object.keys(merge).forEach(function(key) {
-                output += `<li>
+                output += `<li class="list-group-item">
                     <a id="modal-for-${cleanName(key)}" data-dismiss="modal" data-toggle="modal" data-target="#modal-mods" href="#">${key}</a>
                     <ul>`;
                 output += merge[key][0].map((file) => `<li>${file}</li>`).join("");
@@ -603,7 +603,7 @@
             params.fileListToCopy = caseInsensitiveSort(mergedFileListRaw).join("\n");
 
             output += `</ul>`;
-            output += `<div><button type="button" class="btn btn-primary btn-sm" id="copy-button">Copy file list</button></div>`;
+            output += `<div class="mt-2"><button type="button" class="btn btn-secondary btn-sm" id="copy-button">Copy file list</button></div>`;
         }
 
         return output;
@@ -932,6 +932,9 @@
         hideAllSections(params);
 
         switch (params.search.get("view")) {
+            case "mods":
+                displayMods(params);
+                break;
             case "tools":
                 displayTools(params);
                 break;
@@ -940,7 +943,7 @@
                 console.log(params);
                 break;
             default:
-                displayMods(params);
+                displayIndex(params);
         }
 
         return;
@@ -977,6 +980,65 @@
 
     function displayFatalError() {
         document.body.innerHTML = `<div class="alert alert-danger" role="alert">Something went very wrong!</div>`;
+
+        return;
+    }
+
+    function displayIndex(params) {
+        const categories = params.data.categories;
+        let indexNode = null;
+        params.container = document.getElementById(params.containers["index"]);
+        params.returnAllNodes = false;
+        params.elem = "div";
+        params.childNode = "div";
+        params.childAttr = {
+            class: "card-deck row"
+        };
+
+        if (params.container) {
+            indexNode = findNode(params);
+        } else {
+            displayFatalError();
+        }
+
+        if (indexNode) {
+            params.contents = "";
+
+            console.log("total cards = ", categories.length);
+
+            let i = 1;
+            Object.keys(categories).forEach(function(key) {
+                params.contents += `
+                    <div class="col mb-4">
+                        <div class="card bg-light">
+                            <strong class="card-header material-icons text-center">${categories[key].symbol}</strong>
+                            <div class="card-body">
+                                <h6 class="card-title"><a href="?view=mods&category=${categories[key].friendlyName}" class="text-dark">${categories[key].name}</a></h6>
+                                <p class="card-text">
+                                    <a href="?view=mods&category=${categories[key].friendlyName}" class="card-link text-secondary">All</a>
+                                    <a href="?view=mods&category=${categories[key].friendlyName}&status=enabled" class="card-link text-secondary">Enabled</a>
+                                    <a href="?view=mods&category=${categories[key].friendlyName}&status=disabled" class="card-link text-secondary"">Disabled</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>`;
+
+                console.log("i = ", i);
+                console.log("i % 3 = ", i % 3);
+
+                if (i % 3 === 0) {
+                    params.contents += `<div class="w-100"></div>`;
+                }
+
+                i++;
+            });
+
+            indexNode.appendChild(insertChildNode(params));
+
+            params.container.classList.remove("invisible");
+        } else {
+            displayFatalError();
+        }
 
         return;
     }

@@ -3,139 +3,219 @@
     "status": "incomplete",
     "categories": [{
             "friendlyName": "animation",
-            "name": "Animation"
+            "name": "Animation",
+            "type": "",
+            "symbol": "directions_run"
         },
         {
             "friendlyName": "audio",
-            "name": "Audio"
+            "name": "Audio",
+            "type": "",
+            "symbol": "volume_down"
         },
         {
             "friendlyName": "balance",
-            "name": "Balance"
+            "name": "Balance",
+            "type": "",
+            "symbol": "linear_scale"
         },
         {
             "friendlyName": "body-hair-face",
-            "name": "Body | Hair | Face"
+            "name": "Body | Hair | Face",
+            "type": "",
+            "symbol": "face"
         },
         {
             "friendlyName": "bug-fixes",
-            "name": "Bug Fixes"
+            "name": "Bug Fixes",
+            "type": "",
+            "symbol": "bug_report"
+        },
+        {
+            "friendlyName": "character-arya",
+            "name": "Character: Arya",
+            "type": "",
+            "symbol": "person"
+        },
+        {
+            "friendlyName": "character-lasha",
+            "name": "Character: Lasha",
+            "type": "",
+            "symbol": "person"
         },
         {
             "friendlyName": "cheats",
-            "name": "Cheats"
+            "name": "Cheats",
+            "type": "",
+            "symbol": "casino"
         },
         {
             "friendlyName": "compatibility-patches",
-            "name": "Compatibility Patches"
+            "name": "Compatibility Patches",
+            "type": "",
+            "symbol": "sync"
         },
         {
             "friendlyName": "conversions",
-            "name": "GMP"
+            "name": "Conversions",
+            "type": "",
+            "symbol": "wc"
         },
         {
             "friendlyName": "core",
-            "name": "Core"
+            "name": "Core",
+            "type": "",
+            "symbol": "build"
         },
         {
             "friendlyName": "creatures",
-            "name": "Creatures"
+            "name": "Creatures",
+            "type": "",
+            "symbol": "pets"
         },
         {
             "friendlyName": "enb-data-files",
-            "name": "ENB Data Files"
+            "name": "ENB Data Files",
+            "type": "",
+            "symbol": "art_track"
         },
         {
             "friendlyName": "environment",
-            "name": "Environment"
+            "name": "Environment",
+            "type": "",
+            "symbol": "landscape"
         },
         {
             "friendlyName": "equipment",
-            "name": "Equipment"
+            "name": "Equipment",
+            "type": "",
+            "symbol": "local_grocery_store"
         },
         {
             "friendlyName": "gameplay",
-            "name": "Gameplay"
+            "name": "Gameplay",
+            "type": "",
+            "symbol": "games"
         },
         {
             "friendlyName": "general",
-            "name": "General"
+            "name": "General",
+            "type": "",
+            "symbol": "grade"
         },
         {
             "friendlyName": "immersion",
-            "name": "Immersion"
+            "name": "Immersion",
+            "type": "",
+            "symbol": "looks"
         },
         {
             "friendlyName": "lighting",
-            "name": "Lighting"
+            "name": "Lighting",
+            "type": "",
+            "symbol": "flash_on"
         },
         {
             "friendlyName": "locations",
-            "name": "Locations"
+            "name": "Locations",
+            "type": "",
+            "symbol": "location_city"
         },
         {
             "friendlyName": "modders-resources",
-            "name": "Modders&apos; Resources"
+            "name": "Modders&apos; Resources",
+            "type": "",
+            "symbol": "extension"
         },
         {
             "friendlyName": "music",
-            "name": "Music"
+            "name": "Music",
+            "type": "",
+            "symbol": "hearing"
         },
         {
             "friendlyName": "npcs-followers",
-            "name": "NPCs | Followers"
+            "name": "NPCs | Followers",
+            "type": "",
+            "symbol": "people"
         },
         {
             "friendlyName": "player-homes",
-            "name": "Player Homes"
+            "name": "Player Homes",
+            "type": "",
+            "symbol": "home"
         },
         {
             "friendlyName": "poses",
-            "name": "Poses"
+            "name": "Poses",
+            "type": "",
+            "symbol": "accessibility"
         },
         {
             "friendlyName": "quests",
-            "name": "Quests"
+            "name": "Quests",
+            "type": "",
+            "symbol": "assignment"
         },
         {
             "friendlyName": "remove-later",
-            "name": "Remove Later"
+            "name": "Remove Later",
+            "type": "",
+            "symbol": "thumb_down"
         },
         {
             "friendlyName": "shouts",
-            "name": "Shouts"
+            "name": "Shouts",
+            "type": "",
+            "symbol": "record_voice_over"
         },
         {
             "friendlyName": "skse-only",
-            "name": "SKSE-only"
+            "name": "SKSE-only",
+            "type": "",
+            "symbol": "settings_input_component"
         },
         {
             "friendlyName": "smc",
-            "name": "SMC"
+            "name": "SMC",
+            "type": "",
+            "symbol": "collections"
         },
         {
             "friendlyName": "textures-meshes",
-            "name": "Textures | Meshes"
+            "name": "Textures | Meshes",
+            "type": "",
+            "symbol": "palette"
         },
         {
             "friendlyName": "tools",
-            "name": "Tools"
+            "name": "Tools",
+            "type": "",
+            "symbol": "gavel"
         },
         {
             "friendlyName": "translations",
-            "name": "Translations"
+            "name": "Translations",
+            "type": "",
+            "symbol": "translate"
         },
         {
             "friendlyName": "ui",
-            "name": "UI"
+            "name": "UI",
+            "type": "",
+            "symbol": "speaker_notes"
         },
         {
             "friendlyName": "utilities",
-            "name": "Utilities"
+            "name": "Utilities",
+            "type": "",
+            "symbol": "device_hub"
         },
         {
             "friendlyName": "weather",
-            "name": "Weather"
+            "name": "Weather",
+            "type": "",
+            "symbol": "ac_unit"
         }
     ],
     "sources": [{
@@ -3019,7 +3099,8 @@
             },
             "category": [
                 "Gameplay",
-                "Compatibility Patches"
+                "Compatibility Patches",
+                "Creatures"
             ],
             "status": "Enabled",
             "mergedFiles": {
@@ -4675,7 +4756,11 @@
             "url": "https://www.nexusmods.com/skyrim/mods/60/?",
             "source": "Nexus",
             "versions": "3.6c",
-            "category": "Textures | Meshes",
+            "category": [
+                "Textures | Meshes",
+                "Compatibility Patches",
+                "Creatures"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Creatures - Merged.esp": [
