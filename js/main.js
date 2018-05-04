@@ -968,7 +968,7 @@
                 if (item.messageType === "error") {
                     params.childAttr.class = params.childAttr.class + " alert-danger";
                 } else {
-                    params.childAttr.class = params.childAttr.class + " alert-info";
+                    params.childAttr.class = params.childAttr.class + " alert-primary";
                 }
                 params.contents = `${item.messageText}`;
 
@@ -992,7 +992,7 @@
         params.elem = "div";
         params.childNode = "div";
         params.childAttr = {
-            class: "card-deck row"
+            class: ""
         };
 
         if (params.container) {
@@ -1004,33 +1004,8 @@
         if (indexNode) {
             params.contents = "";
 
-            console.log("total cards = ", categories.length);
-
-            let i = 1;
             Object.keys(categories).forEach(function(key) {
-                params.contents += `
-                    <div class="col mb-4">
-                        <div class="card bg-light">
-                            <strong class="card-header material-icons text-center">${categories[key].symbol}</strong>
-                            <div class="card-body">
-                                <h6 class="card-title"><a href="?view=mods&category=${categories[key].friendlyName}" class="text-dark">${categories[key].name}</a></h6>
-                                <p class="card-text">
-                                    <a href="?view=mods&category=${categories[key].friendlyName}" class="card-link text-secondary">All</a>
-                                    <a href="?view=mods&category=${categories[key].friendlyName}&status=enabled" class="card-link text-secondary">Enabled</a>
-                                    <a href="?view=mods&category=${categories[key].friendlyName}&status=disabled" class="card-link text-secondary"">Disabled</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>`;
-
-                console.log("i = ", i);
-                console.log("i % 3 = ", i % 3);
-
-                if (i % 3 === 0) {
-                    params.contents += `<div class="w-100"></div>`;
-                }
-
-                i++;
+                params.contents += `<a href="?view=mods&category=${categories[key].friendlyName}" class="btn btn-info btn-lg mb-3 mr-3">${categories[key].name} <span class="material-icons md-18 badge badge-light">${categories[key].symbol}</span></a>`;
             });
 
             indexNode.appendChild(insertChildNode(params));
@@ -1084,7 +1059,7 @@
                     id: `row-${cleanName(params.subset[key].name)}`
                 };
                 if (params.subset[key].nsfw === "y") {
-                    params.childAttr["class"] = "text-muted font-italic";
+                    params.childAttr["class"] = "text-muted";
                 }
                 params.contents = `<td>${showLink(params)}</td>
                     <td>${checkBasicField(params, params.subset[key].source)}</td>

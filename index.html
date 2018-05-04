@@ -15,7 +15,7 @@
         }
         
         main button,
-        main .btn,
+        main .btn:not(.btn-lg),
         main label,
         main p,
         main dt,
@@ -38,6 +38,11 @@
             display: block;
         }
         
+        .h3,
+        h3 {
+            font-size: 1.25rem;
+        }
+        
         p+ul {
             margin-top: -0.75rem;
         }
@@ -45,6 +50,22 @@
         section.invisible,
         div.invisible {
             display: none;
+        }
+        
+        .material-icons.md-18 {
+            font-size: 18px;
+        }
+        
+        .material-icons.md-24 {
+            font-size: 24px;
+        }
+        
+        .material-icons.md-36 {
+            font-size: 36px;
+        }
+        
+        .material-icons.md-48 {
+            font-size: 48px;
         }
     </style>
 </head>
@@ -129,7 +150,7 @@
 
             <div class="table-responsive row-fluid">
                 <table class="table table-striped table-hover table-sm" id="table-mods">
-                    <thead class="thead-dark">
+                    <thead>
                         <tr>
                             <th scope="col">Name</th>
                             <th scope="col">Source</th>
@@ -155,7 +176,7 @@
         <section class="row-fluid invisible" id="tools">
             <div class="table-responsive row-fluid">
                 <table class="table table-striped table-hover table-sm" id="table-tools">
-                    <thead class="thead-dark">
+                    <thead>
                         <tr>
                             <th scope="col">Name</th>
                             <th scope="col">Source</th>
@@ -173,7 +194,7 @@
         <section class="row-fluid invisible" id="merges">
             <div class="table-responsive row-fluid">
                 <table class="table table-striped table-hover table-sm" id="table-merges">
-                    <thead class="thead-dark">
+                    <thead>
                         <tr>
                             <th scope="col">Name</th>
                             <th scope="col">Rebuild navmesh after merge?</th>
