@@ -194,9 +194,9 @@
                 return 0;
             }
 
-            const varA = (typeof a[key] === 'string') ?
+            const varA = (typeof a[key] === "string") ?
                 a[key].toUpperCase() : a[key];
-            const varB = (typeof b[key] === 'string') ?
+            const varB = (typeof b[key] === "string") ?
                 b[key].toUpperCase() : b[key];
 
             let comparison = 0;
@@ -206,7 +206,7 @@
                 comparison = -1;
             }
             return (
-                (order == 'desc') ? (comparison * -1) : comparison
+                (order === "desc") ? (comparison * -1) : comparison
             );
         };
     }
@@ -800,7 +800,7 @@
         }
 
         history.pushState({
-            id: 'homepage'
+            id: "homepage"
         }, document.title, newUrl);
 
         return;
