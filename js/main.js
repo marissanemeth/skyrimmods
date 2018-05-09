@@ -316,7 +316,7 @@
                 params.mod = mods[key];
 
                 // all mod filter scenarios (category / source / status)
-                if ((mods[key].category && searchCategory !== null) && (mods[key].source && searchSource !== null) && (mods[key].status && searchStatus !== null)) { // if category + source + status
+                if ((mods[key].categories && searchCategory !== null) && (mods[key].source && searchSource !== null) && (mods[key].status && searchStatus !== null)) { // if category + source + status
 
                     // handle category filtering
                     params.filter = searchCategory;
@@ -328,7 +328,7 @@
                     params.filter = searchStatus;
                     filterModDataByAttribute(params, "status", true);
 
-                } else if ((mods[key].category && searchCategory !== null) && (mods[key].source && searchSource !== null)) { // if category + source
+                } else if ((mods[key].categories && searchCategory !== null) && (mods[key].source && searchSource !== null)) { // if category + source
 
                     // handle category filtering
                     params.filter = searchCategory;
@@ -337,20 +337,20 @@
                     params.filter = searchSource;
                     filterModDataByAttribute(params, "source", true);
 
-                } else if ((mods[key].category && searchCategory !== null) && (mods[key].status && searchStatus !== null)) { // if category + status
+                } else if ((mods[key].categories && searchCategory !== null) && (mods[key].status && searchStatus !== null)) { // if category + status
 
                     // handle category filtering
                     params.filter = searchCategory;
-                    filterModDataByAttribute(params, "category");
+                    filterModDataByAttribute(params, "categories");
                     // handle status filtering
                     params.filter = searchStatus;
                     filterModDataByAttribute(params, "status", true);
 
-                } else if (mods[key].category && searchCategory !== null) { // if category
+                } else if (mods[key].categories && searchCategory !== null) { // if category
 
                     // handle category filtering
                     params.filter = searchCategory;
-                    filterModDataByAttribute(params, "category");
+                    filterModDataByAttribute(params, "categories");
 
                 } else if ((mods[key].source && searchSource !== null) && (mods[key].status && searchStatus !== null)) { // if source + status
 
@@ -401,7 +401,7 @@
         return;
     }
 
-    function filterModDataByAttribute(params, field = "category", reductive = false) {
+    function filterModDataByAttribute(params, field = "categories", reductive = false) {
         let mod = params.mod;
         let filter = params.filter;
         let index = null;
@@ -713,10 +713,10 @@
                 newModalContent = `<dl class="row">
                     <dt class="col-sm-3">Source:</dt>
                     <dd class="col-sm-9">${checkBasicField(params, found.source)}</dd>
-                    <dt class="col-sm-3">Version(s):</dt>
+                    <dt class="col-sm-3">Versions:</dt>
                     <dd class="col-sm-9">${showVersions(params, found.versions)}</dd>
-                    <dt class="col-sm-3">Category:</dt>
-                    <dd class="col-sm-9">${checkBasicField(params, found.category)}</dd>
+                    <dt class="col-sm-3">Categories:</dt>
+                    <dd class="col-sm-9">${checkBasicField(params, found.categories)}</dd>
                     <dt class="col-sm-3">Merged to:</dt>
                     <dd class="col-sm-9">${showAssociatedMerges(params, found.mergedFiles)}</dd>
                     <dt class="col-sm-3">Status:</dt>
@@ -1064,7 +1064,7 @@
                 params.contents = `<td>${showLink(params)}</td>
                     <td>${checkBasicField(params, params.subset[key].source)}</td>
                     <td>${showVersions(params, params.subset[key].versions)}</td>
-                    <td>${checkBasicField(params, params.subset[key].category)}</td>
+                    <td>${checkBasicField(params, params.subset[key].categories)}</td>
                     <td>${showAssociatedMerges(params, params.subset[key].mergedFiles)}</td>
                     <td>${showStatus(params, params.subset[key].status)}</td>
                     <td>${checkBasicField(params, params.subset[key].comments)}</td>`;
