@@ -1084,7 +1084,7 @@
             "status": "???"
         },
         {
-            "name": "Apachii Divine Elegance Store",
+            "name": "Apachii Divine Elegance Store *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/81073/?",
             "source": "Nexus",
             "versions": {
@@ -1096,7 +1096,7 @@
             "category": "Equipment",
             "status": "Enabled",
             "bodyType": "UUNP",
-            "comments": "<p>Disabled included patch (why racial edits??)</p><p>Removed cell, container, door, faction, furniture, head part, leveled item, light, location, magic effect, movable static, navigation mesh info map, NPC, outfit, package, race, and worldspace entries</p><p>Removed crafting recipes</p><p>Removed unwanted items<br>Removed unreferenced entries</p>"
+            "comments": "<p>Disabled included patch (why racial edits??)</p><p>Removed cell, container, door, faction, furniture, head part, leveled item, light, location, magic effect, movable static, navigation mesh info map, NPC, outfit, package, race, and worldspace entries</p><p>Removed weird crafting/tempering conditions</p>"
         },
         {
             "name": "ApachiiSkyHair",
@@ -2322,7 +2322,7 @@
             "bodyType": "Unknown"
         },
         {
-            "name": "Bless EC 0001",
+            "name": "Bless EC 0001 *VERIFIED*",
             "url": "https://www.patreon.com/posts/bless-ec-0001-by-17721644",
             "source": "Patreon",
             "versions": {
@@ -2336,7 +2336,7 @@
             "nsfw": "y"
         },
         {
-            "name": "Bless HV 0101",
+            "name": "Bless HV 0101 *VERIFIED*",
             "url": "https://www.patreon.com/posts/bless-hv-0101-by-17859746",
             "source": "Patreon",
             "versions": "Mar 30 2018",
@@ -2347,7 +2347,7 @@
             "bodyType": "UUNP"
         },
         {
-            "name": "Bless HV 2004",
+            "name": "Bless HV 2004 *VERIFIED*",
             "url": "https://www.patreon.com/posts/bless-hv-2004-by-18552876",
             "source": "Patreon",
             "versions": {
@@ -2403,7 +2403,7 @@
             "bodyType": "UUNP"
         },
         {
-            "name": "Bless MD 0102",
+            "name": "Bless MD 0102 *VERIFIED*",
             "url": "https://www.patreon.com/posts/bless-md-0102-by-17349735",
             "source": "Patreon",
             "versions": {
@@ -2417,7 +2417,7 @@
             "nsfw": "y"
         },
         {
-            "name": "Bless MD 0204",
+            "name": "Bless MD 0204 *VERIFIED*",
             "url": "https://www.patreon.com/posts/bless-md-0204-by-18112873",
             "source": "Patreon",
             "versions": {
@@ -3252,10 +3252,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/49791/?",
             "source": "Nexus",
             "versions": {
-                "Main file": "1.6",
+                "Main file": "1.7",
                 "CCO Compatibility Patch for Skyrim Immersive Creatures": "1.1",
-                "CCO Compatibility Patch for WAF True Weapons": "1.6",
-                "Hotfix": "1.61"
+                "CCO Resource File": "1.0"
             },
             "category": [
                 "Gameplay",
@@ -7405,7 +7404,7 @@
             "status": "Enabled"
         },
         {
-            "name": "Lind&apos;s Marksmage Garb",
+            "name": "Lind&apos;s Marksmage Garb *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/79489/?",
             "source": "Nexus",
             "versions": {
@@ -7812,7 +7811,7 @@
             "comments": "<p>No longer available on Nexus</p>"
         },
         {
-            "name": "Nini Stuff",
+            "name": "Nini Stuff *VERIFIED*",
             "url": "https://www.patreon.com/posts/nini-stuff-1-0-17143657",
             "source": "Patreon",
             "versions": {
@@ -7976,7 +7975,12 @@
                 "Audio",
                 "Creatures"
             ],
-            "status": "Enabled"
+            "status": "Enabled",
+            "mergedFiles": {
+                "Creatures - Merged.esp": [
+                    "Noisy Fox Fix.esp"
+                ]
+            }
         },
         {
             "name": "Northfire&apos;s Photoreal Mountains",
@@ -8575,7 +8579,12 @@
                 "Audio",
                 "Creatures"
             ],
-            "status": "Enabled"
+            "status": "Enabled",
+            "mergedFiles": {
+                "Creatures - Merged.esp": [
+                    "RealisticHuskySounds.esp"
+                ]
+            }
         },
         {
             "name": "Realistic Instruments",
@@ -9250,15 +9259,21 @@
             "status": "Download Later"
         },
         {
-            "name": "Simple Territorial Dragons",
+            "name": "Simple Territorial Dragons *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/82921/?",
             "source": "Nexus",
-            "versions": "TBD",
+            "versions": "1.0",
             "category": [
                 "Creatures",
                 "Immersion"
             ],
-            "status": "Download Later"
+            "status": "Enabled",
+            "mergedFiles": {
+                "Creatures - Merged.esp": [
+                    "Simple Territorial Dragons.esp"
+                ]
+            },
+            "comments": "<p>Cleaned in TES5Edit</p>"
         },
         {
             "name": "Simply Knock",
@@ -10081,7 +10096,7 @@
             }
         },
         {
-            "name": "The Book of UUNP",
+            "name": "The Book of UUNP *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/75861/?",
             "source": "Nexus",
             "versions": {
@@ -10719,10 +10734,11 @@
                 "Compatibility Patches"
             ],
             "status": "???",
+            "status": "???",
             "bodyType": "UNP"
         },
         {
-            "name": "UNP Ranger Armor",
+            "name": "UNP Ranger Armor *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/77215/?",
             "source": "Nexus",
             "versions": {
@@ -10758,16 +10774,21 @@
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p><p>Renamed armor pieces with &ldquo;UNPCM Craftwear: &rdquo; prefix</p><p>Added a merged armor piece for the TMB version</p>"
         },
         {
-            "name": "Useful Dogs",
+            "name": "Useful Dogs *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/64021/?",
             "source": "Nexus",
-            "versions": "TBD",
+            "versions": "1.1",
             "category": [
                 "Creatures",
                 "NPCs | Followers",
                 "Utilities"
             ],
-            "status": "Download Later"
+            "status": "Enabled",
+            "mergedFiles": {
+                "Creatures - Merged.esp": [
+                    "UsefulDogs.esp"
+                ]
+            }
         },
         {
             "name": "Utopium&apos;s Utilities",
