@@ -445,7 +445,9 @@
             "name": "9204 Bless Armor Pack by Team TAL",
             "url": "https://www.patreon.com/posts/9204-bless-armor-14816824",
             "source": "Patreon",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "Unknown"
         },
@@ -481,7 +483,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/44091/?",
             "source": "Nexus",
             "versions": "2.0.10",
-            "categories": "UI",
+            "categories": [
+                "UI"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Interfaces - Merged.esp": [
@@ -512,7 +516,9 @@
         {
             "name": "aaaa-OhanaMod_MiraakCultist-Outfit (UNPB BBP)",
             "source": "Tumblr",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Archived",
             "bodyType": "UNPB",
             "comments": "<p>Original post/blog deleted</p><p>Removed worldspace, NPC edits</p><p>Removed extraneous container + renamed other one to something logical in English</p><p>Removed cloth versions</p>"
@@ -532,7 +538,9 @@
             "name": "Accessorize for UNP",
             "url": "https://www.flickr.com/photos/125472966@N04/15323425636",
             "source": "Flickr",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Archived",
             "bodyType": "UNP",
             "comments": "<p>Removed cell edits</p><p>Renamed items</p>"
@@ -571,7 +579,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/64905/?",
             "source": "Nexus",
             "versions": "2.8",
-            "categories": "Utilities",
+            "categories": [
+                "Utilities"
+            ],
             "status": "Enabled"
         },
         {
@@ -579,7 +589,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/50998/?",
             "source": "Nexus",
             "versions": "1.25",
-            "categories": "Poses",
+            "categories": [
+                "Poses"
+            ],
             "status": "Enabled",
             "comments": "<p>Moved/renamed files to replace 15th module of Public Poser since Halo&apos;s Poser has changed since this was released</p>"
         },
@@ -599,7 +611,9 @@
             "name": "Adler",
             "url": "http://ninirim.tistory.com/46",
             "source": "Ninirm",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "Unknown",
             "mergedFiles": {
@@ -627,7 +641,9 @@
                 "Main file": "1.2",
                 "UUNP HDT Bodslide Sliders": "1.1"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -645,7 +661,9 @@
             "url": "http://mod.dysintropi.me/aether-suite-2-8-0-bloodlines/",
             "source": "Halo&apos;s Mods",
             "versions": "2.8.0",
-            "categories": "New Locations",
+            "categories": [
+                "New Locations"
+            ],
             "status": "Disabled",
             "comments": "<p>Disable for regular play</p>"
         },
@@ -693,7 +711,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/52721/?",
             "source": "Nexus",
             "versions": "1",
-            "categories": "Quests",
+            "categories": [
+                "Quests"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Locations and Quests - Merged.esp": [
@@ -706,7 +726,9 @@
             "url": "http://www.loverslab.com/files/file/2476-all-in-one-hdt-animated-pussy/",
             "source": "LoversLab",
             "versions": "3.3",
-            "categories": "Body | Hair | Face",
+            "categories": [
+                "Body | Hair | Face"
+            ],
             "status": "Enabled",
             "nsfw": "y",
             "comments": "<p>Only HDT config files installed for jiggle</p>"
@@ -716,7 +738,9 @@
             "url": "http://aloe-ygroot.tumblr.com/post/115535676262/aloe-poser-%E5%87%BA%E6%9D%A5%E3%81%9F%E3%82%88",
             "source": "Tumblr",
             "versions": "0.1",
-            "categories": "Poses",
+            "categories": [
+                "Poses"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Poses - Merged.esp": [
@@ -729,14 +753,18 @@
             "url": "https://www.nexusmods.com/skyrim/mods/9557/?",
             "source": "Nexus",
             "versions": "3.1.6a",
-            "categories": "Immersion",
+            "categories": [
+                "Immersion"
+            ],
             "status": "Disabled"
         },
         {
             "name": "Althea-Alt&apos;s Pose Resources",
             "url": "http://althea-alt.tumblr.com/tagged/tes%20pose%20resource",
             "source": "Tumblr",
-            "categories": "Poses",
+            "categories": [
+                "Poses"
+            ],
             "status": "Enabled",
             "comments": "<p>Original download links are broken</p>"
         },
@@ -873,7 +901,9 @@
                 "Lifted up meshes for Male model": "4.01",
                 "Update file": "4.061"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -889,7 +919,9 @@
             "versions": {
                 "Main file": "1.0"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -918,7 +950,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/54423/?",
             "source": "Nexus",
             "versions": "1.0",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Archived",
             "bodyType": "UNP",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
@@ -978,10 +1012,12 @@
             "comments": "<p>Replaces Aurora</p>"
         },
         {
-            "name": "Angelika Amulets",
+            "name": "Angelika Amulets *VERIFIED*",
             "url": "http://tes-game.ru/load/skyrim/bronja_i_odezhda/4199/39-1-0-5600",
             "source": "TES-GAME.RU",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -1012,7 +1048,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/57413/?",
             "source": "Nexus",
             "versions": "1.3",
-            "categories": "Creatures",
+            "categories": [
+                "Creatures"
+            ],
             "status": "Enabled",
             "comments": "<p>&lsquo;Animallica.esp&rsquo; hidden; replaced by &ldquo;Animallica Lore Edition - Redux&rdquo;</p>"
         },
@@ -1093,7 +1131,9 @@
                 "UUNP BodySlide HDT": "1.0",
                 "UUNP HDT": "1.6"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "UUNP",
             "comments": "<p>Disabled included patch (why racial edits??)</p><p>Removed cell, container, door, faction, furniture, head part, leveled item, light, location, magic effect, movable static, navigation mesh info map, NPC, outfit, package, race, and worldspace entries</p><p>Removed weird crafting/tempering conditions</p><p>Added CCOR breakdown recipes</p>"
@@ -1107,7 +1147,9 @@
                 "Full": "1.6.Full",
                 "Male": "1.2"
             },
-            "categories": "Body | Hair | Face",
+            "categories": [
+                "Body | Hair | Face"
+            ],
             "status": "Enabled",
             "comments": "<p>Mod enabled to provide assets to NPC overhauls but ESP files hidden</p>"
         },
@@ -1164,7 +1206,9 @@
                 "Main file": "1.2",
                 "Enhanced Camera INI": "1.1"
             },
-            "categories": "Gameplay",
+            "categories": [
+                "Gameplay"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Gameplay - Merged.esp": [
@@ -1199,7 +1243,9 @@
                 "Beast Races Fix Update": "16 June 2013",
                 "Update": "23 October 2013"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -1229,7 +1275,9 @@
                 "Meshes for UNPB body with and without High Heel System": "1.21",
                 "Texture 2K for All Bodies": "1.21"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Archived",
             "bodyType": "UNPB",
             "comments": "<p>Removed worldspace edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
@@ -1251,7 +1299,9 @@
             "url": "http://skyarsenic.tumblr.com/post/143757593163/arsenic-pose-2-released-yes-its-done-woo-hoo",
             "source": "Tumblr",
             "versions": "2",
-            "categories": "Poses",
+            "categories": [
+                "Poses"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Poses - Merged.esp": [
@@ -1264,7 +1314,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/65613/?",
             "source": "Nexus",
             "versions": "1.0.1",
-            "categories": "Immersion",
+            "categories": [
+                "Immersion"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Immersion - Merged.esp": [
@@ -1319,7 +1371,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/14146/?",
             "source": "Nexus",
             "versions": "4.1",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Archived",
             "bodyType": "UNP",
             "comments": "<p>Removed cell and NPC edits</p><p>Added breakdown recipes and CCOR compatibility</p><p>Remove bear and falmer eye items</p>"
@@ -1344,7 +1398,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/57613/?",
             "source": "Nexus",
             "versions": "Nexus",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Archived",
             "bodyType": "Unknown",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
@@ -1354,7 +1410,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/18008/?",
             "source": "Nexus",
             "versions": "5.4",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -1411,7 +1469,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/74045/?",
             "source": "Nexus",
             "versions": "2.0",
-            "categories": "UI",
+            "categories": [
+                "UI"
+            ],
             "status": "Enabled"
         },
         {
@@ -1419,7 +1479,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/43773/?",
             "source": "Nexus",
             "versions": "2.5.1",
-            "categories": "Audio",
+            "categories": [
+                "Audio"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Audio - Merged.esp": [
@@ -1461,7 +1523,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/89219/?",
             "source": "Nexus",
             "versions": "",
-            "categories": "Gameplay",
+            "categories": [
+                "Gameplay"
+            ],
             "status": "Downloaded",
             "comments": "<p>Don&apos;t activate until removing any dependencies on Aurora</p>"
         },
@@ -1481,7 +1545,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/61048/?",
             "source": "Nexus",
             "versions": "1.21",
-            "categories": "Utilities",
+            "categories": [
+                "Utilities"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Utilities - Merged.esp": [
@@ -1494,7 +1560,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/10753/?",
             "source": "Nexus",
             "versions": "5.0",
-            "categories": "Utilities",
+            "categories": [
+                "Utilities"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Utilities - Merged.esp": [
@@ -1612,7 +1680,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/34539/?",
             "source": "Nexus",
             "versions": "2.5",
-            "categories": "Body | Hair | Face",
+            "categories": [
+                "Body | Hair | Face"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Body Hair Face - Merged.esp": [
@@ -1626,7 +1696,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/69681/?",
             "source": "Nexus",
             "versions": "1.5",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -1651,7 +1723,9 @@
             "name": "BDLeatherRobe SevenBase 7B Cleavage BBP",
             "url": "http://mods247.blogspot.no/2014/07/bdleatherrobe-sevenbase-7b-bombshell-bbp.html",
             "source": "mods24/7",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Archived",
             "bodyType": "7B Cleavage"
         },
@@ -1674,7 +1748,9 @@
             "name": "BDO Clead Cuirass Retouched",
             "url": "http://regenbot.tistory.com/60",
             "source": "ReGenBot Nest",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment02 - Merged.esp": [
@@ -1781,7 +1857,9 @@
             "name": "BDO Pack II v1.0 by Team TAL [HDT Cloth]",
             "url": "http://eskrimmods.blogspot.com/2017/08/bdo-pack-ii-v10-by-team-tal-hdt-cloth.html",
             "source": "ESkyrim",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment02 - Merged.esp": [
@@ -1794,7 +1872,9 @@
             "name": "BDO Pirated Mods",
             "url": "https://www.reddit.com/r/modpiracy/comments/6x71s0/whatcha_lookin_for/",
             "source": "Reddit",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "Unknown",
             "comments": "<p>Only the ones I wanted are installed - the rest are moved to the mod archive</p>"
@@ -1818,7 +1898,9 @@
             "name": "BDO SinTerna v1.3 Retouched",
             "url": "http://regenbot.tistory.com/95",
             "source": "ReGenBot Nest",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "Unknown"
         },
@@ -1872,7 +1954,9 @@
             "name": "BDO Valkyrie Venslar Retouched",
             "url": "http://regenbot.tistory.com/63",
             "source": "ReGenBot Nest",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "Unknown",
             "comments": "<p>Standalone version of a BDO Pack armor</p>"
@@ -1968,7 +2052,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/80746/?",
             "source": "Nexus",
             "versions": "2.0",
-            "categories": "Utilities",
+            "categories": [
+                "Utilities"
+            ],
             "status": "Enabled"
         },
         {
@@ -2035,7 +2121,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/65044/?",
             "source": "Nexus",
             "versions": "1.3",
-            "categories": "Gameplay",
+            "categories": [
+                "Gameplay"
+            ],
             "status": "Enabled"
         },
         {
@@ -2093,7 +2181,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/75296/?",
             "source": "Nexus",
             "versions": "1.0",
-            "categories": "Gameplay",
+            "categories": [
+                "Gameplay"
+            ],
             "status": "Enabled"
         },
         {
@@ -2123,7 +2213,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/79740/?",
             "source": "Nexus",
             "versions": "1.0",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "Unknown"
         },
@@ -2166,7 +2258,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/72626/?",
             "source": "Nexus",
             "versions": "1.2",
-            "categories": "NPCs | Followers",
+            "categories": [
+                "NPCs | Followers"
+            ],
             "status": "Disabled",
             "comments": "<p>NPC overhaul #11</p><p>Patched a few things for USLEEP that were missed</p><p>REPLACED WITH BIJIN WARMAIDENS 3.1.2</p>"
         },
@@ -2175,7 +2269,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/71054/?",
             "source": "Nexus",
             "versions": "1.2",
-            "categories": "NPCs | Followers",
+            "categories": [
+                "NPCs | Followers"
+            ],
             "status": "Enabled",
             "comments": "<p>NPC overhaul #10</p>"
         },
@@ -2188,7 +2284,9 @@
                 "AIO for USLEEP users": "16 March 2017",
                 "High-resolution skin textures for UNP": "3.1.2"
             },
-            "categories": "NPCs | Followers",
+            "categories": [
+                "NPCs | Followers"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "NPCs - Merged.esp": [
@@ -2206,7 +2304,9 @@
                 "Fix for Temba hands texture path": "1.1.1",
                 "High-resolution skin textures for UNP": "1.1"
             },
-            "categories": "NPCs | Followers",
+            "categories": [
+                "NPCs | Followers"
+            ],
             "status": "Enabled",
             "comments": "<p>NPC overhaul #9</p>"
         },
@@ -2215,7 +2315,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/17723/?",
             "source": "Nexus",
             "versions": "0.6.5",
-            "categories": "Creatures",
+            "categories": [
+                "Creatures"
+            ],
             "status": "Enabled",
             "comments": "<p>&lsquo;Birdsofskyrim.esp&rsquo; hidden; replaced by Ruhadre Patch</p>"
         },
@@ -2241,7 +2343,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/30224/?",
             "source": "Nexus",
             "versions": "0.3",
-            "categories": "New Locations",
+            "categories": [
+                "New Locations"
+            ],
             "status": "Disabled",
             "comments": "<p>Disable for regular play</p>"
         },
@@ -2273,7 +2377,9 @@
             "name": "Blacktalon Armor for UNP",
             "url": "http://mods247.blogspot.com/2014/02/blacktalon-armor-for-unp.html",
             "source": "mods24/7",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Archived",
             "bodyType": "UNP",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
@@ -2286,7 +2392,9 @@
                 "Main file": "1.6",
                 "Sky Haven Temple esp": "1.0"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "Unknown",
             "comments": "<p>Removed worldspace edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
@@ -2295,7 +2403,9 @@
             "name": "Bless 00022",
             "url": "http://ninirim.tistory.com/79",
             "source": "Tumblr",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -2323,7 +2433,9 @@
             "name": "Bless Armors Pack by s666 Retouched",
             "url": "http://regenbot.tistory.com/66",
             "source": "ReGenBot Nest",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "Unknown"
         },
@@ -2370,7 +2482,9 @@
             "name": "Bless Leoni Armor",
             "url": "http://skyrimfollower.blog.fc2.com/blog-entry-16.html",
             "source": "Skyrim Girls",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "CBBE"
         },
@@ -2393,7 +2507,9 @@
             "name": "Bless MD0007",
             "url": "http://ninirim.tistory.com/77",
             "source": "Tumblr",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "Unknown"
         },
@@ -2440,7 +2556,9 @@
             "name": "BLESS Online Armors Pack UUNP HDT",
             "url": "http://wtfuun.tumblr.com/post/152396699705/bless-online-armors-pack-uunp-hdt-optional-unpb",
             "source": "Tumblr",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "UUNP"
         },
@@ -2449,7 +2567,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/64510/?",
             "source": "Nexus",
             "versions": "1.7",
-            "categories": "Animation",
+            "categories": [
+                "Animation"
+            ],
             "status": "Enabled"
         },
         {
@@ -2457,7 +2577,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/61605/?",
             "source": "Nexus",
             "versions": "1.5",
-            "categories": "Utilities",
+            "categories": [
+                "Utilities"
+            ],
             "status": "Enabled",
             "comments": "<p>Merge Plugins dictionary says it&apos;s unmergeable</p>"
         },
@@ -2466,7 +2588,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/59277/?",
             "source": "Nexus",
             "versions": "1.2",
-            "categories": "Quests",
+            "categories": [
+                "Quests"
+            ],
             "status": "Disabled",
             "comments": "<p>Basic Version</p>"
         },
@@ -2513,7 +2637,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/66404/?",
             "source": "Nexus",
             "versions": "1.1",
-            "categories": "Body | Hair | Face",
+            "categories": [
+                "Body | Hair | Face"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Body Hair Face - Merged.esp": [
@@ -2588,7 +2714,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/17516/?",
             "source": "Nexus",
             "versions": "1.02",
-            "categories": "Audio",
+            "categories": [
+                "Audio"
+            ],
             "status": "Disabled"
         },
         {
@@ -2596,7 +2724,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/49347/?",
             "source": "Nexus",
             "versions": "1.2",
-            "categories": "Player Homes",
+            "categories": [
+                "Player Homes"
+            ],
             "status": "Enabled",
             "comments": "<p>Can&apos;t merge - has errors</p>"
         },
@@ -2608,7 +2738,9 @@
                 "Main file": "4",
                 "Patch": "26 February 2016"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -2623,7 +2755,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/71114/?",
             "source": "Nexus",
             "versions": "1.0",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -2638,7 +2772,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/14178/?",
             "source": "Nexus",
             "versions": "3.0.0",
-            "categories": "Immersion",
+            "categories": [
+                "Immersion"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Immersion - Merged.esp": [
@@ -2651,7 +2787,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/20415/?",
             "source": "Nexus",
             "versions": "1",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "UNP",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
@@ -2677,7 +2815,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/76747/?",
             "source": "Nexus",
             "versions": "1",
-            "categories": "Bug Fixes",
+            "categories": [
+                "Bug Fixes"
+            ],
             "status": "Enabled"
         },
         {
@@ -2712,7 +2852,9 @@
             "name": "Busu Object Poses",
             "url": "https://halosmods.tumblr.com/post/167974430552/manjushage2-busu-object-poses-this-mod",
             "source": "Tumblr",
-            "categories": "Poses",
+            "categories": [
+                "Poses"
+            ],
             "status": "Enabled",
             "comments": "<p>Overwrites FNIS Object Poses</p>"
         },
@@ -2721,7 +2863,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/38829/?",
             "source": "Nexus",
             "versions": "1.0",
-            "categories": "Body | Hair | Face",
+            "categories": [
+                "Body | Hair | Face"
+            ],
             "status": "Enabled"
         },
         {
@@ -2729,7 +2873,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/39549/?",
             "source": "Nexus",
             "versions": "1.2",
-            "categories": "NPCs | Followers",
+            "categories": [
+                "NPCs | Followers"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "NPCs - Merged.esp": [
@@ -2754,7 +2900,9 @@
             "name": "Calyps Barbarian Mashup (necklace only)",
             "url": "http://calypsmods.tumblr.com/post/87802331347/calyps-iswearimakemods",
             "source": "Tumblr",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -2768,7 +2916,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/64798/?",
             "source": "Nexus",
             "versions": "1.11",
-            "categories": "Immersion",
+            "categories": [
+                "Immersion"
+            ],
             "status": "Enabled"
         },
         {
@@ -2814,7 +2964,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/68653/?",
             "source": "Nexus",
             "versions": "1.01",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Unknown",
             "comments": "<p>Removed cell edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
@@ -2847,7 +2999,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/67595/?",
             "source": "Nexus",
             "versions": "1.21",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "UUNP",
             "comments": "<p>Removed cell edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
@@ -2880,7 +3034,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/65816/?",
             "source": "Nexus",
             "versions": "1.8",
-            "categories": "Creatures",
+            "categories": [
+                "Creatures"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Creatures - Merged.esp": [
@@ -2909,7 +3065,9 @@
             "name": "Chapel Shop",
             "url": "http://www.loverslab.com/topic/10943-zzshop/",
             "source": "LoversLab",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -2971,7 +3129,9 @@
                 "Main file": "1.3",
                 "UUNP BodySlide": "1.2"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "UNP",
             "comments": "<p>Added breakdown recipes and CCOR compatibility<br>Renamed items for better sorting</p>"
@@ -3019,7 +3179,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/37216/?",
             "source": "Nexus",
             "versions": "4.03",
-            "categories": "Quests",
+            "categories": [
+                "Quests"
+            ],
             "status": "Disabled",
             "comments": "<p>No longer available</p>"
         },
@@ -3040,7 +3202,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/75918/?",
             "source": "Nexus",
             "versions": "1.0",
-            "categories": "Utilities",
+            "categories": [
+                "Utilities"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Utilities - Merged.esp": [
@@ -3064,7 +3228,9 @@
             "name": "Clearwater Grotto",
             "url": "http://mod.dysintropi.me/mods/skyrim/",
             "source": "Halo&apos;s Mods",
-            "categories": "New Locations",
+            "categories": [
+                "New Locations"
+            ],
             "status": "Disabled",
             "comments": "<p>Disable for regular play</p><p>Merge fails</p>"
         },
@@ -3076,7 +3242,9 @@
                 "Main file": "1.1",
                 "Nif Fix": "1.2"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Unknown",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
@@ -3140,7 +3308,9 @@
             "versions": {
                 "Main file": "1.2"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -3154,7 +3324,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/74768/?",
             "source": "Nexus",
             "versions": "2.1.1",
-            "categories": "Utilities",
+            "categories": [
+                "Utilities"
+            ],
             "status": "Enabled"
         },
         {
@@ -3192,7 +3364,9 @@
             "url": "https://collyscraftbook.tumblr.com/post/170591261768/collygons-poser-version-3collygons-poser-a-pose",
             "source": "Tumblr",
             "versions": "3",
-            "categories": "Poses",
+            "categories": [
+                "Poses"
+            ],
             "status": "Enabled"
         },
         {
@@ -3200,7 +3374,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/52474/?",
             "source": "Nexus",
             "versions": "3",
-            "categories": "Gameplay",
+            "categories": [
+                "Gameplay"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Gameplay - Merged.esp": [
@@ -3213,19 +3389,23 @@
             "url": "https://www.nexusmods.com/skyrim/mods/56147/?",
             "source": "Nexus",
             "versions": "2.4b",
-            "categories": "Gameplay",
+            "categories": [
+                "Gameplay"
+            ],
             "status": "Disabled",
             "comments": "<p>Modular version</p><p>Core and damage modules</p>"
         },
         {
-            "name": "Common Clothes",
+            "name": "Common Clothes *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/51813/?",
             "source": "Nexus",
             "versions": {
                 "Main file": ".98",
                 "ESP- NPC Level List Distribution and Armor Craftable": ".98"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -3284,7 +3464,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/66257/?",
             "source": "Nexus",
             "versions": "3",
-            "categories": "Utilities",
+            "categories": [
+                "Utilities"
+            ],
             "status": "Enabled"
         },
         {
@@ -3295,7 +3477,9 @@
                 "Contractor Armor": "1.0",
                 "Mavari Armor": "1.0"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -3311,7 +3495,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/14950/?",
             "source": "Nexus",
             "versions": "5.0",
-            "categories": "Creatures",
+            "categories": [
+                "Creatures"
+            ],
             "status": "Enabled"
         },
         {
@@ -3347,7 +3533,9 @@
                 "Main file": "3.3",
                 "Add-on": "3.3"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled"
         },
         {
@@ -3402,7 +3590,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/71531/?",
             "source": "Nexus",
             "versions": "2.05",
-            "categories": "Gameplay",
+            "categories": [
+                "Gameplay"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Gameplay - Merged.esp": [
@@ -3430,7 +3620,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/59399/?",
             "source": "Nexus",
             "versions": "1.1",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "UNPB"
         },
@@ -3460,13 +3652,17 @@
             "url": "https://www.nexusmods.com/skyrim/mods/8720/?",
             "source": "Nexus",
             "versions": "1.60",
-            "categories": "Utilities",
+            "categories": [
+                "Utilities"
+            ],
             "status": "Enabled"
         },
         {
             "name": "Custom Races Redux",
             "source": "N/A",
-            "categories": "Utilities",
+            "categories": [
+                "Utilities"
+            ],
             "status": "Enabled",
             "comments": "<p>My changes:</p><ul><li>Added fresh leftsidegash01</li><li>Removed all superfluous headparts</li><li>Fixed morph/armor refs for all races</li><li>Fixed extra races info for all armor addons for all races</li><li>Changed all skeletons to XPMSE 3.2</li><li>Changed default body meshes:<ul><li>CustomArgonian: UUNP Special CNHF / SOS</li><li>CustomBreton: UUNP Special Arya Preset / SOS</li><li>CustomDarkElf: UUNP Special UNPCM / SOS</li><li>CustomHighElf: UUNP Special UNPCM / SOS</li><li>CustomImperial: UUNP Special 7B Natural / SOS</li><li>CustomKhajiit: UUNP Special 7B Natural / SOS</li><li>CustomNord: UUNP Special 7B Natural / SOS</li><li>CustomOrc: UUNP Special UNPCM / SOS</li><li>CustomRedguard: UUNP Special 7B Natural / SOS</li><li>CustomWoodElf: UUNP Special UNPCM / SOS</li></ul></li><li>Changed default textures:<ul><li>CustomArgonian: Forgotten Argonian Roots for UNP and SOS + Feminine Argonian Textures</li><li>CustomBreton: Mega Milkdrinker + Makeup for SKSE / SOS + SOS Custom Body Textures + Urshi's Fine Face Textures + DCE</li><li>CustomDarkElf: SG Texture Renewal + Makeup for SKSE / SOS + SOS Custom Body Textures + Urshi's Fine Face Textures + DCE</li><li>CustomHighElf: SG Texture Renewal + Makeup for SKSE / SOS + SOS Custom Body Textures + Urshi's Fine Face Textures + DCE</li><li>CustomImperial: SG Texture Renewal + Real Girls + Makeup for SKSE / SOS + SOS Custom Body Textures + Urshi's Fine Face Textures + DCE</li><li>CustomKhajiit: Femine Khajiit + Coverkhajiit / SOS + Coverkhajiit</li><li>CustomNord: SG Texture Renewal + Real Girls + Makeup for SKSE / SOS + SOS Custom Body Textures + Urshi's Fine Face Textures + DCE</li><li>CustomOrc: SG Texture Renewal + Makeup for SKSE / SOS + SOS Custom Body Textures + Urshi's Fine Face Textures + DCE</li><li>CustomRedguard: SG Texture Renewal + Real Girls + Makeup for SKSE / SOS + SOS Custom Body Textures + Urshi's Fine Face Textures + DCE</li><li>CustomWoodElf: SG Texture Renewal + Makeup for SKSE / SOS + SOS Custom Body Textures + Urshi's Fine Face Textures + DCE</li></ul></li></ul><p>UPDATE 4/24/16:</p><ul><li>Removed all races except for CustomBreton</li><li>Changed male CustomBreton meshes back to default</li><li>Changed .tri files back to default</li><li>Changed skeletons back to default</li><li>Changed CustomBreton FULL to &lsquo;Unique Breton&rsquo;</li><li>Hid all meshes and textures for races aside from CustomBreton in MO</li></ul>"
         },
@@ -3525,7 +3721,9 @@
             "name": "DA2 Flemeth Armor",
             "url": "http://www.loverslab.com/topic/10341-conversions-for-unpb-with-bbp/",
             "source": "LoversLab",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "UNPB",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
@@ -3609,7 +3807,7 @@
             "url": "https://www.nexusmods.com/skyrim/mods/69640/?",
             "source": "Nexus",
             "versions": "1.0",
-            "categories": "Equipment",
+            "categories": ["Equipment"],
             "status": "Disabled",
             "bodyType": "Unknown",
             "comments": "<p>Removed NPC and worldspace entries</p>"
@@ -3658,7 +3856,7 @@
             "name": "Dawley Syande",
             "url": "http://eskrimmods.blogspot.com/2017/04/dawley-syande-cbbehdt-cloth.html",
             "source": "ESkyrim",
-            "categories": "Equipment",
+            "categories": ["Equipment"],
             "status": "Enabled",
             "bodyType": "CBBE"
         },
@@ -3764,7 +3962,7 @@
             "name": "DB Monster Hunter",
             "url": "http://tesall.ru/files/file/8753-dizona-body-monster-hunter/",
             "source": "TESALL",
-            "categories": "Equipment",
+            "categories": ["Equipment"],
             "status": "Disabled",
             "bodyType": "Dizona Male",
             "comments": "<p>Male only</p><p>Removed all unnecessary edits from the .esp</p><p>Translated armor names</p>"
@@ -3808,7 +4006,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/3829/?",
             "source": "Nexus",
             "versions": "6.4.1b",
-            "categories": "Creatures",
+            "categories": [
+                "Creatures"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Creatures - Merged.esp": [
@@ -3847,7 +4047,9 @@
                 "Main file": "1.0",
                 "Update": "1 July 2013"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment01 - Merged.esp": [
@@ -3925,7 +4127,7 @@
                 "Main file": "3.0",
                 "UPDATE - fixes for both versions": "3.2"
             },
-            "categories": "Equipment",
+            "categories": ["Equipment"],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -4027,7 +4229,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/54325/?",
             "source": "Nexus",
             "versions": "1.0",
-            "categories": "Utilities",
+            "categories": [
+                "Utilities"
+            ],
             "status": "Enabled"
         },
         {
@@ -4038,7 +4242,9 @@
                 "Main file": "1.5",
                 "Backback bedroll retexture for Peltapalooza": "1.4"
             },
-            "categories": "Immersion",
+            "categories": [
+                "Immersion"
+            ],
             "status": "Enabled"
         },
         {
@@ -4115,7 +4321,9 @@
             "url": "http://robton.nu/doa-5-christmas-set/",
             "source": "Robton&apos;s Mods",
             "versions": "28.11.16",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "Unknown"
         },
@@ -4170,7 +4378,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/51401/?",
             "source": "Nexus",
             "versions": "1.10",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Unknown",
             "comments": "<p>Removed unnecessary components from ESP</p><p>Added breakdown recipes and CCOR compatibility</p>"
@@ -4179,7 +4389,9 @@
             "name": "Dragon Age Mage Hawke Armor - Remodeled Version",
             "url": "http://modtype.doorblog.jp/archives/21760290.html",
             "source": "Skyrim Modtype",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -4315,7 +4527,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/6537/?",
             "source": "Nexus",
             "versions": "0.2a",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Unknown"
         },
@@ -4324,7 +4538,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/61471/?",
             "source": "Nexus",
             "versions": "1.1",
-            "categories": "Player Homes",
+            "categories": [
+                "Player Homes"
+            ],
             "status": "Disabled",
             "comments": "<p>Not lore friendly</p>"
         },
@@ -4349,7 +4565,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/66778/?",
             "source": "Nexus",
             "versions": "1.0",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Vanilla Male",
             "comments": "<p>Removed worldspace edits</p><p>Added breakdown recipes and CCOR compatibility</p><p>Renamed items</p>"
@@ -4363,7 +4581,9 @@
                 "Small ESP Fix": "1.6",
                 "UUNP": "1.6"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "UUNP",
             "comments": "<p>Removed worldspace edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
@@ -4438,7 +4658,9 @@
                 "Main file": "1.1",
                 "From location": "1.1"
             },
-            "categories": "Creatures",
+            "categories": [
+                "Creatures"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Creatures - Merged.esp": [
@@ -4477,7 +4699,9 @@
             "name": "DreamBurrows Exotic Garb",
             "url": "http://dreamburrow.tumblr.com/post/61443371526/hey-everyone-today-i-decided-to-pack-up-an-old",
             "source": "Tumblr",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Unknown",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
@@ -4486,7 +4710,9 @@
             "name": "DreamBurrows Floral Head Accessory",
             "url": "http://dreamburrow.tumblr.com/post/64824125478/heres-a-quick-little-accessory-i-put-together-for",
             "source": "Tumblr",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -4521,7 +4747,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/36234/?",
             "source": "Nexus",
             "versions": "3.1",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -4550,7 +4778,9 @@
                 "Main file": "6.0",
                 "zzjay and Grace Darklings Hoods With Hairs": "1.0"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -4565,7 +4795,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/39983/?",
             "source": "Nexus",
             "versions": "2.0",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Equipment00 - Merged.esp": [
@@ -4580,7 +4812,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/26374/?",
             "source": "Nexus",
             "versions": "0.1",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "UNPB"
         },
@@ -4629,7 +4863,9 @@
             "url": "https://www.patreon.com/posts/ds-poser-v0-35-15695414",
             "source": "Patreon",
             "versions": "0.35",
-            "categories": "Poses",
+            "categories": [
+                "Poses"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Poses - Merged.esp": [
@@ -4675,7 +4911,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/9720/?",
             "source": "Nexus",
             "versions": "1.0",
-            "categories": "Quests",
+            "categories": [
+                "Quests"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Locations and Quests - Merged.esp": [
@@ -4717,7 +4955,9 @@
             "name": "Ebony Armour Remodels",
             "url": "http://mod.dysintropi.me/unpcm/",
             "source": "Halo&apos;s Mods",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "UNPCM",
             "comments": "<p>Renamed items in .esp</p>"
@@ -4738,7 +4978,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/49953/?",
             "source": "Nexus",
             "versions": "final",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "Unknown"
         },
@@ -4794,7 +5036,9 @@
             "url": "http://www.loverslab.com/files/file/1010-efeebr-eyes-for-everyone-except-beast-races/",
             "source": "LoversLab",
             "versions": "1.4",
-            "categories": "Body | Hair | Face",
+            "categories": [
+                "Body | Hair | Face"
+            ],
             "status": "Disabled",
             "comments": "<p>Seems to be the successor to &lsquo;DorkDivas Eyes for Elves&rsquo;, which was removed from Nexus</p>"
         },
@@ -4825,7 +5069,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/48652/?",
             "source": "Nexus",
             "versions": "1.2",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "UNP",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
@@ -4835,7 +5081,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/29432?",
             "source": "Nexus",
             "versions": "0.1",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "comments": "<p>Removed worldspace edits</p>"
         },
@@ -4854,7 +5102,9 @@
             "name": "Elika Outfit",
             "url": "https://www.flickr.com/photos/brokefoot/10739986233/",
             "source": "Flickr",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "UNP"
         },
@@ -4873,7 +5123,9 @@
                 "Main file": "1.1",
                 "4k armour textures": "1.1"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Unknown"
         },
@@ -4894,7 +5146,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/39922/?",
             "source": "Nexus",
             "versions": "1.0.Fixed",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Unknown"
         },
@@ -4924,7 +5178,9 @@
             "name": "Elwing",
             "url": "http://ninirim.tistory.com/73",
             "source": "Tumblr",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Unknown"
         },
@@ -4995,7 +5251,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/52717/?",
             "source": "Nexus",
             "versions": "1.2",
-            "categories": "Bug Fixes",
+            "categories": [
+                "Bug Fixes"
+            ],
             "status": "Enabled"
         },
         {
@@ -5032,7 +5290,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/58359/?",
             "source": "Nexus",
             "versions": "Final",
-            "categories": "Audio",
+            "categories": [
+                "Audio"
+            ],
             "status": "Enabled"
         },
         {
@@ -5040,7 +5300,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/50731/?",
             "source": "Nexus",
             "versions": "2.3",
-            "categories": "UI",
+            "categories": [
+                "UI"
+            ],
             "status": "Disabled",
             "comments": "<p>EnhancedENBNightEye.esp only</p><p>Only necessary for some ENBs</p>"
         },
@@ -5052,7 +5314,9 @@
                 "Main file": "1.4.0",
                 "Grasses and Plants": "1.4.0"
             },
-            "categories": "Environment",
+            "categories": [
+                "Environment"
+            ],
             "status": "Enabled"
         },
         {
@@ -5070,7 +5334,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/59733/?",
             "source": "Nexus",
             "versions": "0.9.5b",
-            "categories": "Lighting",
+            "categories": [
+                "Lighting"
+            ],
             "status": "Disabled",
             "comments": "<p>Interiors Only</p>"
         },
@@ -5079,7 +5345,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/27043/?",
             "source": "Nexus",
             "versions": "3.01",
-            "categories": "Lighting",
+            "categories": [
+                "Lighting"
+            ],
             "status": "Enabled",
             "comments": "<p>Interiors only</p>"
         },
@@ -5110,7 +5378,9 @@
             "name": "Enio Barbarian Jewelry",
             "url": "http://tes-game.ru/load/skyrim/bronja_i_odezhda/2518/39-1-0-3614",
             "source": "TES-GAME.RU",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "comments": "<p>Translated from Russian as best I could and removed unnecessary edits from ESP</p><p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -5118,7 +5388,9 @@
             "name": "Enio Vampire Hunter",
             "url": "http://mitakusaner.blog.fc2.com/blog-entry-926.html",
             "source": "Sky TM",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Unknown",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
@@ -5127,7 +5399,9 @@
             "name": "Enio Vampire Hunter - UUNP BodySlide",
             "url": "http://www.loverslab.com/files/file/2335-diannes-bodyslide-conversions/",
             "source": "LoversLab",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "UUNP"
         },
@@ -5146,7 +5420,9 @@
             "name": "ENSE HD + Heterochromia",
             "url": "http://www.loverslab.com/topic/24763-anyone-got-an-additional-file-of-ense-eyecolors-with-new-style-eyelashes/",
             "source": "LoversLab",
-            "categories": "Body | Hair | Face",
+            "categories": [
+                "Body | Hair | Face"
+            ],
             "status": "Enabled"
         },
         {
@@ -5166,7 +5442,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/44592/?",
             "source": "Nexus",
             "versions": "1.2",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "Unknown",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
@@ -5199,7 +5477,9 @@
             "name": "Equipable Tongues",
             "url": "http://www.loverslab.com/topic/9898-sharing-my-ports/",
             "source": "LoversLab",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "comments": "<p>Removed worldspace edits</p>"
         },
@@ -5211,7 +5491,9 @@
                 "Main file": "1.3",
                 "ESO Altmer Armor Redux by Gamwich": "1.1"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "Unknown",
             "comments": "<p>Removed worldspace edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
@@ -5261,7 +5543,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/25476/?",
             "source": "Nexus",
             "versions": "1.0",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Unknown",
             "comments": "<p>Removed worldspace and NPC edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
@@ -5287,6 +5571,22 @@
             ],
             "status": "Enabled",
             "comments": "<p>Removed from Nexus</p>"
+        },
+        {
+            "name": "Exchange Currency *VERIFIED*",
+            "url": "https://www.nexusmods.com/skyrim/mods/67504/?",
+            "source": "Nexus",
+            "versions": {
+                "Main file": "3.01",
+                "Patch for Immersive Jewelry": "2.0.2",
+                "Patch for Skyrim Coin Replace Redux": "3.0"
+            },
+            "categories": [
+                "Immersion",
+                "Compatibility Patches"
+            ],
+            "status": "Enabled",
+            "comments": "<p>Patched for USLEEP</p>"
         },
         {
             "name": "Extensible Follower Framework",
@@ -5369,7 +5669,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/59192/?",
             "source": "Nexus",
             "versions": "1.3",
-            "categories": "Body | Hair | Face",
+            "categories": [
+                "Body | Hair | Face"
+            ],
             "status": "Disabled"
         },
         {
@@ -5377,7 +5679,9 @@
             "url": "http://mergaskittle.blog.fc2.com/blog-entry-5.html",
             "source": "MergaSkittle&apos;s Mods",
             "versions": "3.4",
-            "categories": "Poses",
+            "categories": [
+                "Poses"
+            ],
             "status": "Enabled"
         },
         {
@@ -5410,7 +5714,9 @@
                 "Main file": "2.0",
                 "Update v3": "3.0"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "comments": "<p>Removed cell edits</p>"
         },
@@ -5494,7 +5800,9 @@
             "name": "Fancy Dress",
             "url": "http://mitakusaner.blog.fc2.com/blog-entry-353.html",
             "source": "Sky TM",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Unknown",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
@@ -5503,7 +5811,9 @@
             "name": "Fancy Dress UUNP",
             "url": "https://tesmistel.tumblr.com/post/151904272695/fancy-dress-uunp-apparently-fancy",
             "source": "Tumblr",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "UUNP"
         },
@@ -5548,7 +5858,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/25393/?",
             "source": "Nexus",
             "versions": "3.0",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
         },
@@ -5573,7 +5885,9 @@
                 "Main file": "1.2",
                 "Cleaned Plugin": "1.4"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Unknown",
             "comments": "<p>Removed cell edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
@@ -5595,7 +5909,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/70425/?",
             "source": "Nexus",
             "versions": "1.2",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "UUNP"
         },
@@ -5607,7 +5923,9 @@
                 "Main file": "1.0",
                 "In homes": "1.0"
             },
-            "categories": "Immersion",
+            "categories": [
+                "Immersion"
+            ],
             "status": "Enabled"
         },
         {
@@ -5663,7 +5981,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/48265/?",
             "source": "Nexus",
             "versions": "1.21",
-            "categories": "Utilities",
+            "categories": [
+                "Utilities"
+            ],
             "status": "Enabled"
         },
         {
@@ -5705,7 +6025,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/64824/?",
             "source": "Nexus",
             "versions": "1.0",
-            "categories": "Bug Fixes",
+            "categories": [
+                "Bug Fixes"
+            ],
             "status": "Disabled",
             "comments": "<p>Replaced by &ldquo;Bug Fixes&rdquo;</p>"
         },
@@ -5727,7 +6049,9 @@
                 "Main file": "1.0",
                 "Recolor by 83Willow": "1.0"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "comments": "<p>Removed cell edits</p>"
         },
@@ -5736,7 +6060,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/53518/?",
             "source": "Nexus",
             "versions": "1.0",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Unknown"
         },
@@ -5805,7 +6131,9 @@
             "name": "Forbidden Ebony Armor",
             "url": "http://www.loverslab.com/topic/21547-sevenbase-conversions-bombshell-and-cleavage-bbp/",
             "source": "LoversLab",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Resource",
             "bodyType": "7B Bombshell",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p>"
@@ -7001,6 +7329,21 @@
             "comments": "<p></p>"
         },
         {
+            "name": "Immersive Jewelry *VERIFIED*",
+            "url": "https://www.nexusmods.com/skyrim/mods/64283/?",
+            "source": "Nexus",
+            "versions": {
+                "Main file": "1.04",
+                "CACO patch": "1.03CACO"
+            },
+            "categories": [
+                "Equipment",
+                "Compatibility Patches"
+            ],
+            "status": "Enabled",
+            "comments": "<p>Patched for USLEEP and &ldquo;core&rdquo; mods</p><p>Merged CACO patch into main file</p><p>Cleaned in TES5Edit</p>"
+        },
+        {
             "name": "IMMERSIVE LORE-FRIENDLY CHEESE AND CABBAGE",
             "url": "https://www.nexusmods.com/skyrim/mods/62603/?",
             "source": "Nexus",
@@ -7051,7 +7394,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/61218/?",
             "source": "Nexus",
             "versions": "7.24",
-            "categories": "Gameplay",
+            "categories": [
+                "Gameplay"
+            ],
             "status": "Enabled",
             "comments": "<p>Updates too frequently to merge</p>"
         },
@@ -7433,17 +7778,10 @@
                 "UUNP BodySlide HDT Conversion": "1.0UUNP"
             },
             "categories": [
-                ""
+                "Equipment"
             ],
             "status": "Enabled",
-            "bodyType": "",
-            "nsfw": "",
-            "mergedFiles": {
-                "": [
-                    ""
-                ]
-            },
-            "comments": "<p></p>"
+            "bodyType": "Unknown"
         },
         {
             "name": "Lockpicking Interface Redone",
@@ -7660,7 +7998,7 @@
             "url": "https://www.nexusmods.com/skyrim/mods/59463/?",
             "source": "Nexus",
             "versions": "2.51",
-            "categories": "Gameplay",
+            "categories": ["Gameplay"],
             "status": "Enabled"
         },
         {
@@ -7860,7 +8198,9 @@
             "name": "[NINI] BDO Orwen Travel UUNP",
             "url": "http://regenbot.tistory.com/87",
             "source": "ReGenBot Nest",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "UUNP"
         },
@@ -7909,7 +8249,9 @@
                 "Main file": "430b",
                 "Hot Fix esp v_802": "802"
             },
-            "categories": "Gameplay",
+            "categories": [
+                "Gameplay"
+            ],
             "status": "Enabled"
         },
         {
@@ -8172,7 +8514,7 @@
                 "Main file": "9.26",
                 "Thief Skills Rebalance for Ordinator": "13 Nov 2016"
             },
-            "categories": "Gameplay",
+            "categories": ["Gameplay"],
             "status": "Enabled",
             "comments": "<p>Updates too frequently to merge</p>"
         },
@@ -8496,8 +8838,7 @@
                 "Textures | Meshes",
                 "Objects | Clutter"
             ],
-            "status": "Enabled",
-            "comments": "<p></p>"
+            "status": "Enabled"
         },
         {
             "name": "Realistic HD Baskets",
@@ -8936,7 +9277,9 @@
             "name": "Royal Hunting",
             "url": "http://kartermods.blogspot.com/2017/01/royal-hunting-unp.html",
             "source": "Karter&apos;s House",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "UNP",
             "comments": "<p>Translated armor names</p>"
@@ -10454,7 +10797,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/57046/?",
             "source": "Nexus",
             "versions": "1.2.0",
-            "categories": "Utilities",
+            "categories": [
+                "Utilities"
+            ],
             "status": "Enabled"
         },
         {
@@ -10493,7 +10838,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/61542/?",
             "source": "Nexus",
             "versions": "UNO1",
-            "categories": "NPCs | Followers",
+            "categories": [
+                "NPCs | Followers"
+            ],
             "status": "Enabled",
             "comments": "<p>NPC overhaul #4</p><p>Manually patched for DLC and USLEEP</p>"
         },
@@ -10502,7 +10849,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/64200/?",
             "source": "Nexus",
             "versions": "UNO1",
-            "categories": "NPCs | Followers",
+            "categories": [
+                "NPCs | Followers"
+            ],
             "status": "Enabled",
             "comments": "<p>NPC overhaul #5</p><p>Manually patched for DLC and USLEEP</p><p>Removed Teldryn Sero</p>"
         },
@@ -10582,7 +10931,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/37204/?",
             "source": "Nexus",
             "versions": "1.0",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "UNPB",
             "comments": "<p>Removed cell edits</p><p>Added breakdown recipes and CCOR compatibility</p>"
@@ -10591,7 +10942,9 @@
             "name": "Underworld Armor",
             "url": "http://mitakusaner.blog.fc2.com/blog-entry-570.html",
             "source": "Sky TM",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Disabled",
             "bodyType": "Unknown"
         },
@@ -10689,7 +11042,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/10891/?",
             "source": "Nexus",
             "versions": "2.2",
-            "categories": "Bug Fixes",
+            "categories": [
+                "Bug Fixes"
+            ],
             "status": "Enabled",
             "mergedFiles": {
                 "Core - Merged.esp": [
@@ -10703,7 +11058,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/23491/?",
             "source": "Nexus",
             "versions": "2.1.3b",
-            "categories": "Core",
+            "categories": [
+                "Core"
+            ],
             "status": "Disabled",
             "comments": "<p>Only keeping this around in case mods need to be updated to USLEEP</p>"
         },
@@ -10712,7 +11069,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/31083/?",
             "source": "Nexus",
             "versions": "2.1.3b",
-            "categories": "Core",
+            "categories": [
+                "Core"
+            ],
             "status": "Disabled",
             "comments": "<p>Only keeping this around in case mods need to be updated to USLEEP</p>"
         },
@@ -10721,7 +11080,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/25127/?",
             "source": "Nexus",
             "versions": "2.1.3b",
-            "categories": "Core",
+            "categories": [
+                "Core"
+            ],
             "status": "Disabled",
             "comments": "<p>Only keeping this around in case mods need to be updated to USLEEP</p>"
         },
@@ -10730,7 +11091,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/31255/?",
             "source": "Nexus",
             "versions": "1.2.1",
-            "categories": "Core",
+            "categories": [
+                "Core"
+            ],
             "status": "Enabled",
             "comments": "<p>Dummy ESP(s)</p>"
         },
@@ -10739,7 +11102,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/71214/?",
             "source": "Nexus",
             "versions": "3.0.13a",
-            "categories": "Core",
+            "categories": [
+                "Core"
+            ],
             "status": "Enabled"
         },
         {
@@ -10747,7 +11112,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/19/?",
             "source": "Nexus",
             "versions": "2.1.3b",
-            "categories": "Core",
+            "categories": [
+                "Core"
+            ],
             "status": "Disabled",
             "comments": "<p>Only keeping this around in case mods need to be updated to USLEEP</p>"
         },
@@ -10768,7 +11135,9 @@
             "url": "https://www.nexusmods.com/skyrim/mods/10020/?",
             "source": "Nexus",
             "versions": "2.21",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "UNP",
             "comments": "<p>Removed unnecessary edits</p>"
@@ -10807,7 +11176,9 @@
                 "Main file": "1.3.2",
                 "UUNP with bodyslide support": "1.3.2"
             },
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "UUNP",
             "comments": "<p>TMB conversion in same directory</p>"
@@ -10830,7 +11201,9 @@
             "name": "UNPCM Craftwear",
             "url": "http://mod.dysintropi.me/unpcm/",
             "source": "Halo&apos;s Mods",
-            "categories": "Equipment",
+            "categories": [
+                "Equipment"
+            ],
             "status": "Enabled",
             "bodyType": "UNPCM",
             "comments": "<p>Added breakdown recipes and CCOR compatibility</p><p>Renamed armor pieces with &ldquo;UNPCM Craftwear: &rdquo; prefix</p><p>Added a merged armor piece for the TMB version</p>"
@@ -10922,7 +11295,7 @@
             "name": "Viking Armors",
             "url": "http://robton.nu/unp-viking-armors/",
             "source": "Robton&apos;s Mods",
-            "categories": "Equipment",
+            "categories": ["Equipment"],
             "status": "Enabled",
             "bodyType": "UNP"
         },
@@ -11436,7 +11809,7 @@
             "url": "https://www.nexusmods.com/skyrimspecialedition/mods/6194/?",
             "source": "Nexus",
             "versions": {
-                "Standalone version": "2.1.2"
+                "Standalone version": "2.1.3"
             },
             "status": "Enabled",
             "comments": "<p>Installed in Skyrim Utilities directory</p>"
