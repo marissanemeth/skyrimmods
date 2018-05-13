@@ -605,7 +605,7 @@
                 "Audio",
                 "Remove Later"
             ],
-            "status": "Disabled"
+            "status": "Archived"
         },
         {
             "name": "Adler",
@@ -1137,6 +1137,15 @@
             "status": "Enabled",
             "bodyType": "UUNP",
             "comments": "<p>Disabled included patch (why racial edits??)</p><p>Removed cell, container, door, faction, furniture, head part, leveled item, light, location, magic effect, movable static, navigation mesh info map, NPC, outfit, package, race, and worldspace entries</p><p>Removed weird crafting/tempering conditions</p><p>Added CCOR breakdown recipes</p>"
+        },
+        {
+            "name": "Apachii Divine Elegance Store - retextured *VERIFIED",
+            "source": "N/A",
+            "categories": [
+                "Textures | Meshes",
+                "Equipment"
+            ],
+            "status": "Enabled"
         },
         {
             "name": "ApachiiSkyHair",
@@ -2648,10 +2657,10 @@
             }
         },
         {
-            "name": "BodySlide and Outfit Studio",
+            "name": "BodySlide and Outfit Studio *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/49015/?",
             "source": "Nexus",
-            "versions": "4.4",
+            "versions": "4.5.4",
             "categories": [
                 "Body | Hair | Face",
                 "Tools"
@@ -4225,7 +4234,7 @@
             "status": "Enabled"
         },
         {
-            "name": "DienesTools",
+            "name": "DienesTools *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/54325/?",
             "source": "Nexus",
             "versions": "1.0",
@@ -4281,12 +4290,12 @@
             "comments": "<p>Replaces Diverse Dragons Collection 1.0.2</p>"
         },
         {
-            "name": "DIVERSE SKYRIM",
+            "name": "DIVERSE SKYRIM *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/81462/?",
             "source": "Nexus",
             "versions": {
-                "Main file": "2.6",
-                "Immersive Patrols Addon": "2.6"
+                "Main file": "2.14",
+                "Immersive Patrols Addon": "1.3"
             },
             "categories": [
                 "Immersion",
@@ -4934,7 +4943,7 @@
             "status": "Disabled"
         },
         {
-            "name": "Dynamic Distant Objects LOD - DynDOLOD *VERIFIED*",
+            "name": "Dynamic Distant Objects LOD - DynDOLOD",
             "url": "https://www.nexusmods.com/skyrim/mods/59721/?",
             "source": "Nexus",
             "versions": {
@@ -5341,10 +5350,10 @@
             "comments": "<p>Interiors Only</p>"
         },
         {
-            "name": "Enhanced Lights and FX",
+            "name": "Enhanced Lights and FX *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/27043/?",
             "source": "Nexus",
-            "versions": "3.01",
+            "versions": "3.04",
             "categories": [
                 "Lighting"
             ],
@@ -5600,7 +5609,7 @@
             "status": "Enabled"
         },
         {
-            "name": "Extra CACO Compatibility Patches",
+            "name": "Extra CACO Compatibility Patches *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/70430/?",
             "source": "Nexus",
             "versions": {
@@ -5827,7 +5836,7 @@
                 "Audio",
                 "Remove Later"
             ],
-            "status": "Disabled"
+            "status": "Archived"
         },
         {
             "name": "Farinelli&apos;s Hammerfell Armoury",
@@ -5977,7 +5986,7 @@
             "status": "Enabled"
         },
         {
-            "name": "FileAccess Interface for Skyrim Script - FISS",
+            "name": "FileAccess Interface for Skyrim Script - FISS *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/48265/?",
             "source": "Nexus",
             "versions": "1.21",
@@ -6486,7 +6495,7 @@
             "status": "Enabled"
         },
         {
-            "name": "Grimy Plugin",
+            "name": "Grimy Plugin *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/69341/?",
             "source": "Nexus",
             "versions": "1.14",
@@ -6874,10 +6883,20 @@
             "status": "Enabled"
         },
         {
-            "name": "HDT Physics Extensions",
+            "name": "HDT Physics Extensions *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/53996/?",
             "source": "Nexus",
             "versions": "14.28",
+            "categories": [
+                "Utilities"
+            ],
+            "status": "Enabled"
+        },
+        {
+            "name": "HDT HighHeels System *VERIFIED*",
+            "url": "https://www.nexusmods.com/skyrim/mods/36213/?",
+            "source": "Nexus",
+            "versions": "beta0.5",
             "categories": [
                 "Utilities"
             ],
@@ -7365,7 +7384,18 @@
                 "Music",
                 "Remove Later"
             ],
-            "status": "Disabled"
+            "status": "Archived"
+        },
+        {
+            "name": "Immersive Patrols *VERIFIED*",
+            "url": "https://www.nexusmods.com/skyrim/mods/12977/?",
+            "source": "Nexus",
+            "versions": "2.2.0",
+            "categories": [
+                "Immersion",
+                "NPCs | Followers"
+            ],
+            "status": "Enabled"
         },
         {
             "name": "Imperial Fine Clothes",
@@ -7901,7 +7931,17 @@
             "status": "Download Later"
         },
         {
-            "name": "Mfg Console",
+            "name": "Memory Blocks Log *VERIFIED*",
+            "url": "https://www.nexusmods.com/skyrim/mods/50471/?",
+            "source": "Nexus",
+            "versions": "1.2",
+            "categories": [
+                "Utilities"
+            ],
+            "status": "Enabled"
+        },
+        {
+            "name": "Mfg Console *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/44596/?",
             "source": "Nexus",
             "versions": "1.1",
@@ -8486,6 +8526,19 @@
             "status": "Download Later"
         },
         {
+            "name": "Old Hroldan Ruins *VERIFIED*",
+            "url": "https://www.nexusmods.com/skyrim/mods/66578/?",
+            "source": "Nexus",
+            "versions": {
+                "Enhanced Edition": "2.7"
+            },
+            "categories": [
+                "New Locations",
+                "Immersion"
+            ],
+            "status": "Enabled"
+        },
+        {
             "name": "OMINOUS Dragon Soul Absorb Music",
             "url": "https://www.nexusmods.com/skyrim/mods/60767/?",
             "source": "Nexus",
@@ -8505,6 +8558,16 @@
                 "Textures | Meshes"
             ],
             "status": "Download Later"
+        },
+        {
+            "name": "OneTweak *VERIFIED*",
+            "url": "https://www.nexusmods.com/skyrim/mods/40706/?",
+            "source": "Nexus",
+            "versions": "2.1.0.2",
+            "categories": [
+                "Utilities"
+            ],
+            "status": "Enabled"
         },
         {
             "name": "Ordinator - Perks of Skyrim",
@@ -8558,12 +8621,26 @@
             "status": "Download Later"
         },
         {
-            "name": "PapyrusUtil - Scripting Utility Functions",
+            "name": "PapyrusUtil - Scripting Utility Functions *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/58705/?",
             "source": "Nexus",
             "versions": "3.3",
             "categories": [
                 "Utilities"
+            ],
+            "status": "Enabled"
+        },
+        {
+            "name": "PC Head Tracking and Voice Type *VERIFIED*",
+            "url": "https://www.nexusmods.com/skyrim/mods/72039/?",
+            "source": "Nexus",
+            "versions": {
+                "Main file": "4.7",
+                "Unique voice types": "01 Oct 2016"
+            },
+            "categories": [
+                "Immersion",
+                "Audio"
             ],
             "status": "Enabled"
         },
@@ -9565,7 +9642,7 @@
             "categories": [
                 "Utilities"
             ],
-            "status": "Disabled"
+            "status": "Archived"
         },
         {
             "name": "Seagulls (Mihail Immersive Add-Ons) *VERIFIED*",
@@ -9619,6 +9696,19 @@
             "status": "Enabled"
         },
         {
+            "name": "Serana Dialogue Edit *VERIFIED*",
+            "url": "https://www.nexusmods.com/skyrim/mods/52283/?",
+            "source": "Nexus",
+            "versions": {
+                "Main file": "0.9"
+            },
+            "categories": [
+                "NPCs | Followers",
+                "Immersion"
+            ],
+            "status": "Enabled"
+        },
+        {
             "name": "Serious HD Retexture Skyrim",
             "url": "https://www.nexusmods.com/skyrim/mods/2146/?",
             "source": "Nexus",
@@ -9641,6 +9731,16 @@
                 "Objects | Clutter"
             ],
             "status": "Enabled"
+        },
+        {
+            "name": "Severin Manor Improvements",
+            "url": "https://www.nexusmods.com/skyrim/mods/31167/?",
+            "source": "Nexus",
+            "versions": "TBD",
+            "categories": [
+                "Player Homes"
+            ],
+            "status": "Download Later"
         },
         {
             "name": "Shovels",
@@ -10030,6 +10130,16 @@
             "status": "Download Later"
         },
         {
+            "name": "Skyrim Unbound (Alternate Start) *VERIFIED*",
+            "url": "https://www.nexusmods.com/skyrim/mods/71465/?",
+            "source": "Nexus",
+            "versions": "5.19",
+            "categories": [
+                "General"
+            ],
+            "status": "Enabled"
+        },
+        {
             "name": "SkyrimSouls - Unpaused Game Menus (SKSE Plugin)",
             "url": "https://www.nexusmods.com/skyrim/mods/83379/?",
             "source": "Nexus",
@@ -10222,6 +10332,19 @@
                 "NPCs | Followers"
             ],
             "status": "Download Later"
+        },
+        {
+            "name": "Speed and Stability Guide for ENB *VERIFIED*",
+            "url": "https://www.nexusmods.com/skyrim/mods/50214/?",
+            "source": "Nexus",
+            "versions": {
+                "Subsurface Scattering Patch": "1.01"
+            },
+            "categories": [
+                "Compatibility Patches",
+                "Textures | Meshes"
+            ],
+            "status": "Enabled"
         },
         {
             "name": "Speed Casting - Changed spell charge times (SKSE)",
@@ -10452,6 +10575,16 @@
             "status": "Download Later"
         },
         {
+            "name": "Tentapalooza for Campfire *VERIFIED*",
+            "url": "https://www.nexusmods.com/skyrim/mods/72220/?",
+            "source": "Nexus",
+            "versions": "1.4",
+            "categories": [
+                "Immersion"
+            ],
+            "status": "Enabled"
+        },
+        {
             "name": "The 418th Step",
             "url": "https://www.nexusmods.com/skyrim/mods/19107/?",
             "source": "Nexus",
@@ -10630,12 +10763,12 @@
             "status": "Enabled"
         },
         {
-            "name": "Thunderchild - Epic Shouts and Immersion",
+            "name": "Thunderchild - Epic Shouts and Immersion *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/41376/?",
             "source": "Nexus",
             "versions": {
                 "Main file": "4.09",
-                "Wyrmstooth Compatibility Patch": "4.01"
+                "Wyrmstooth Compatibility Patch": "25 Jan 2015"
             },
             "categories": [
                 "Shouts",
@@ -11061,7 +11194,7 @@
             "categories": [
                 "Core"
             ],
-            "status": "Disabled",
+            "status": "Archived",
             "comments": "<p>Only keeping this around in case mods need to be updated to USLEEP</p>"
         },
         {
@@ -11072,7 +11205,7 @@
             "categories": [
                 "Core"
             ],
-            "status": "Disabled",
+            "status": "Archived",
             "comments": "<p>Only keeping this around in case mods need to be updated to USLEEP</p>"
         },
         {
@@ -11083,7 +11216,7 @@
             "categories": [
                 "Core"
             ],
-            "status": "Disabled",
+            "status": "Archived",
             "comments": "<p>Only keeping this around in case mods need to be updated to USLEEP</p>"
         },
         {
@@ -11115,7 +11248,7 @@
             "categories": [
                 "Core"
             ],
-            "status": "Disabled",
+            "status": "Archived",
             "comments": "<p>Only keeping this around in case mods need to be updated to USLEEP</p>"
         },
         {
@@ -11356,6 +11489,21 @@
             "status": "Download Later"
         },
         {
+            "name": "Warmonger Armory *VERIFIED*",
+            "url": "https://www.nexusmods.com/skyrim/mods/50459/?",
+            "source": "Nexus",
+            "versions": {
+                "Main file": "1.3",
+                "DLC": "1.3",
+                "Leveled list": "1.3"
+            },
+            "categories": [
+                "Equipment"
+            ],
+            "status": "Enabled",
+            "comments": "<p>Patched for USLEEP and core mods</p><p>Renamed items</p><p>Added CCOR breakdown recipes</p>"
+        },
+        {
             "name": "Watercolor for ENB and Realistic Water Two",
             "url": "https://www.nexusmods.com/skyrim/mods/48938/?",
             "source": "Nexus",
@@ -11581,6 +11729,16 @@
                 "Quests"
             ],
             "status": "Disabled"
+        },
+        {
+            "name": "XP32 Maximum Skeleton Extended *VERIFIED*",
+            "url": "https://www.nexusmods.com/skyrim/mods/68000/?",
+            "source": "Nexus",
+            "versions": "4.31",
+            "categories": [
+                "Body | Hair | Face"
+            ],
+            "status": "Enabled"
         },
         {
             "name": "XPMSE Skeleton for RSChildren",
