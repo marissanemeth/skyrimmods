@@ -2562,6 +2562,17 @@
             "nsfw": "y"
         },
         {
+            "name": "Bless MS 0101 *VERIFIED*",
+            "url": "https://www.patreon.com/posts/180512-18746450",
+            "source": "Patreon",
+            "versions": {
+                "Slutty": "May 11 2018"
+            },
+            "status": "Enabled",
+            "bodyType": "UUNP",
+            "nsfw": "y"
+        },
+        {
             "name": "BLESS Online Armors Pack UUNP HDT",
             "url": "http://wtfuun.tumblr.com/post/152396699705/bless-online-armors-pack-uunp-hdt-optional-unpb",
             "source": "Tumblr",
@@ -2602,6 +2613,96 @@
             ],
             "status": "Disabled",
             "comments": "<p>Basic Version</p>"
+        },
+        {
+            "name": "Bloodborne Ashen Hunter *VERIFIED*",
+            "url": "https://www.patreon.com/posts/9204-bloodborne-16826787",
+            "source": "Patreon",
+            "versions": "Feb 5 2018",
+            "categories": [
+                "Equipment"
+            ],
+            "status": "Enabled"
+        },
+        {
+            "name": "Bloodborne Bloody Crow of Cainhurst *VERIFIED*",
+            "url": "https://www.patreon.com/posts/9204-bloodborne-16948873",
+            "source": "Patreon",
+            "versions": "Feb 11 2018",
+            "categories": [
+                "Equipment"
+            ],
+            "status": "Enabled"
+        },
+        {
+            "name": "Bloodborne Cainhurst *VERIFIED*",
+            "url": "https://www.patreon.com/posts/9204-bloodborne-16689800",
+            "source": "Patreon",
+            "versions": "Feb 19 2018",
+            "categories": [
+                "Equipment"
+            ],
+            "status": "Enabled"
+        },
+        {
+            "name": "Bloodborne Crowfeather Set *VERIFIED*",
+            "url": "https://www.patreon.com/posts/9204-bloodborne-16901301",
+            "source": "Patreon",
+            "versions": "Feb 11 2018",
+            "categories": [
+                "Equipment"
+            ],
+            "status": "Enabled"
+        },
+        {
+            "name": "Bloodborne Gascoigne *VERIFIED*",
+            "url": "https://www.patreon.com/posts/9204-bloodborne-18674771",
+            "source": "Patreon",
+            "versions": "May 7 2018",
+            "categories": [
+                "Equipment"
+            ],
+            "status": "Enabled"
+        },
+        {
+            "name": "Bloodborne Hunter Redone *VERIFIED*",
+            "url": "https://www.patreon.com/posts/9204-bloodborne-18288533",
+            "source": "Patreon",
+            "versions": "Apr 28 2018",
+            "categories": [
+                "Equipment"
+            ],
+            "status": "Enabled"
+        },
+        {
+            "name": "Bloodborne Maria Hunter Set *VERIFIED*",
+            "url": "https://www.patreon.com/posts/bloodborne-maria-18421046",
+            "source": "Patreon",
+            "versions": "Apr 26 2018",
+            "categories": [
+                "Equipment"
+            ],
+            "status": "Enabled"
+        },
+        {
+            "name": "Bloodborne Weapon Pack *VERIFIED*",
+            "url": "https://www.patreon.com/posts/bloodborne-pack-18771925",
+            "source": "Patreon",
+            "versions": "0.6",
+            "categories": [
+                "Equipment"
+            ],
+            "status": "Enabled"
+        },
+        {
+            "name": "Bloodborne Yharnam Hunter *VERIFIED*",
+            "url": "https://www.patreon.com/posts/16323058",
+            "source": "Patreon",
+            "versions": "Jan 19 2018",
+            "categories": [
+                "Equipment"
+            ],
+            "status": "Enabled"
         },
         {
             "name": "Bloodskal Blade Redone 2",
@@ -3535,6 +3636,16 @@
             "status": "Disabled"
         },
         {
+            "name": "Cozy Honeyside",
+            "url": "https://www.nexusmods.com/skyrim/mods/83015/?",
+            "source": "Nexus",
+            "versions": "TBD",
+            "categories": [
+                "Player Homes"
+            ],
+            "status": "Download Later"
+        },
+        {
             "name": "Craftable Horse Barding",
             "url": "https://www.nexusmods.com/skyrim/mods/64069/?",
             "source": "Nexus",
@@ -3845,6 +3956,16 @@
                 "Quests"
             ],
             "status": "Disabled"
+        },
+        {
+            "name": "Dark Souls Pack *VERIFIED*",
+            "url": "https://www.patreon.com/posts/alpha-9204-dark-17892990",
+            "source": "Patreon",
+            "versions": "Mar 31 2018",
+            "categories": [
+                "Equipment"
+            ],
+            "status": "Enabled"
         },
         {
             "name": "Darooz Whiterun Retexture",
@@ -7033,6 +7154,17 @@
             "comments": "<p>No longer part of SMC</p>"
         },
         {
+            "name": "HPM- High Poly Male Meshes",
+            "url": "https://www.nexusmods.com/skyrim/mods/91292/?",
+            "source": "Nexus",
+            "versions": "TBD",
+            "categories": [
+                "Body | Hair | Face"
+            ],
+            "status": "Download Later",
+            "comments": "<p>Downloaded Nexus version to get update notifications, but overwrote with <a href=\"https://www.loverslab.com/files/file/5853-high-poly-males-sos/\" target=\"_blank\">SOS meshes from LoversLab</a></p>"
+        },
+        {
             "name": "High Poly Project",
             "url": "https://www.nexusmods.com/skyrim/mods/76439/?",
             "source": "Nexus",
@@ -7344,8 +7476,7 @@
                 "Quests",
                 "Towns | Cities"
             ],
-            "status": "Enabled",
-            "comments": "<p></p>"
+            "status": "Enabled"
         },
         {
             "name": "Immersive Jewelry *VERIFIED*",
@@ -8682,6 +8813,16 @@
             "bodyType": "UUNP"
         },
         {
+            "name": "Perseids Inns and Taverns - Realistic Room Rental Enhanced",
+            "url": "https://www.nexusmods.com/skyrim/mods/25029/?",
+            "source": "Nexus",
+            "versions": "TBD",
+            "categories": [
+                "Immersion"
+            ],
+            "status": "Download Later"
+        },
+        {
             "name": "Pheasants Ducks and Chickens (Mihail Immersive Add-Ons) *VERIFIED*",
             "url": "https://www.nexusmods.com/skyrim/mods/89772/?",
             "source": "Nexus",
@@ -8868,8 +9009,7 @@
                 "Textures | Meshes",
                 "Environment"
             ],
-            "status": "Enabled",
-            "comments": "<p></p>"
+            "status": "Enabled"
         },
         {
             "name": "Real Herbs",
@@ -8891,8 +9031,7 @@
                 "SMC",
                 "Textures | Meshes"
             ],
-            "status": "Enabled",
-            "comments": "<p></p>"
+            "status": "Enabled"
         },
         {
             "name": "Realistic Aspen Trees 4k",
@@ -9596,8 +9735,7 @@
                 "Textures | Meshes",
                 "Environment"
             ],
-            "status": "Enabled",
-            "comments": "<p></p>"
+            "status": "Enabled"
         },
         {
             "name": "S6o6T Lore - Dark Anchors ruins and Dolmens",
@@ -9982,8 +10120,7 @@
                 "SMC",
                 "Textures | Meshes"
             ],
-            "status": "Enabled",
-            "comments": "<p></p>"
+            "status": "Enabled"
         },
         {
             "name": "Skyrim Mod Combiner",
@@ -10289,6 +10426,17 @@
                 "Utilities"
             ],
             "status": "Enabled"
+        },
+        {
+            "name": "SOS Armor and Clothes Refits",
+            "url": "https://www.loverslab.com/topic/95875-sos-armor-and-clothes-refits/",
+            "source": "LoversLab",
+            "versions": "TBD",
+            "categories": [
+                "Conversions",
+                "Equipment"
+            ],
+            "status": "Download Later"
         },
         {
             "name": "SOS - Schlongs of Skyrim",
@@ -10728,6 +10876,16 @@
             "categories": [
                 "Environment",
                 "Immersion"
+            ],
+            "status": "Download Later"
+        },
+        {
+            "name": "The Witcher 3 Weaponry",
+            "url": "https://www.nexusmods.com/skyrim/mods/71633/?",
+            "source": "Nexus",
+            "versions": "TBD",
+            "categories": [
+                "Equipment"
             ],
             "status": "Download Later"
         },
